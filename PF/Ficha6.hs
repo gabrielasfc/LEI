@@ -81,7 +81,7 @@ abpex2 = Node 5 Empty
                         (Node 8 Empty Empty))
 
 --a--
---Numa árvore binária de procura à esquerda está sempre um valor menor que o nodo e à direita um maior
+--Numa árvore binária de procura à esquerda está sempre um valor <= que o nodo e à direita um >=
 minimo :: Ord a => BTree a -> a
 minimo (Node r Empty _) = r
 minimo (Node r e d) = minimo e
