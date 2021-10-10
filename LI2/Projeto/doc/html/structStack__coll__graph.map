@@ -1,5 +1,0 @@
-<map id="Stack" name="Stack">
-<area shape="rect" id="node1" title="Tipo de dados da Stack, com o seu tamanho, elementos e variáveis." alt="" coords="63,5,122,32"/>
-<area shape="rect" id="node3" href="$unionelemdata.html" title="Define qual o datatype do elemento e guarda a variável com o valor no respetivo membro da union." alt="" coords="5,96,89,123"/>
-<area shape="rect" id="node2" href="$structStackElem.html" title="Estrutura que devolve o tipo de um dado elemento e o seu valor." alt="" coords="47,187,138,213"/>
-</map>
