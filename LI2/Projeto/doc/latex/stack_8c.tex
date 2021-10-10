@@ -1,0 +1,220 @@
+\hypertarget{stack_8c}{}\doxysection{stack.\+c File Reference}
+\label{stack_8c}\index{stack.c@{stack.c}}
+
+
+Ficheiro com funções relativas à implementação da \mbox{\hyperlink{structStack}{Stack}}.  
+
+
+{\ttfamily \#include \char`\"{}stack.\+h\char`\"{}}\newline
+Include dependency graph for stack.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stack_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structStack}{Stack}} $\ast$ \mbox{\hyperlink{stack_8c_ababc8c59acfae77cbd28d8f17103cfb0}{criar\+\_\+stack}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa-\/se a \mbox{\hyperlink{structStack}{Stack}} com tamanho 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_8c_af337948d84db88e8bac4247e715c2788}{criar\+\_\+variaveis}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que inicializa as variáveis com o seu valor por omissão. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_8c_a89f6b80914b5fee206c434ab3d736713}{push}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, \mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} t,...)
+\begin{DoxyCompactList}\small\item\em Função que insere um elemento no topo da \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_8c_a02ff6e9ee40167f0274839a464eb704c}{pushaux}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, \mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} x, \mbox{\hyperlink{unionelemdata}{elemdata}} y)
+\begin{DoxyCompactList}\small\item\em Função auxiliar com o mesmo efeito da push, mas com o tipo do elemento variável. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{unionelemdata}{elemdata}} \mbox{\hyperlink{stack_8c_a450385e20b5ac2cae78d168fc0f6343a}{pop}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira o elemento do topo da \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{unionelemdata}{elemdata}} \mbox{\hyperlink{stack_8c_ae588df3811c978be997b155a71965867}{pop\+\_\+bottom}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que remove o elemento da \mbox{\hyperlink{structStack}{Stack}} do fundo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} \mbox{\hyperlink{stack_8c_a41357e76f345cefeb2e3b5bacf8c8f4b}{peek}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que devolve o tipo do elemento do topo da \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} \mbox{\hyperlink{stack_8c_aabb6f19157351652cf43e3028e9666b2}{peekind}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, int n)
+\begin{DoxyCompactList}\small\item\em Função que devolve o tipo do elemento de indice n da \mbox{\hyperlink{structStack}{Stack}}, onde o índice 0 corresponde ao elemento do topo da \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} \mbox{\hyperlink{stack_8c_a7dc6b9677324bf81d0a3c5a58deab75a}{peekind2}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, int n)
+\begin{DoxyCompactList}\small\item\em Função que devolve o tipo do elemento de indice n da \mbox{\hyperlink{structStack}{Stack}}, onde o índice 0 corresponde ao elemento do fundo da \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_8c_a75032a8d9f06e200bdbb63da4741da04}{print\+\_\+stack}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que imprime a \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ficheiro com funções relativas à implementação da \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{stack_8c_ababc8c59acfae77cbd28d8f17103cfb0}\label{stack_8c_ababc8c59acfae77cbd28d8f17103cfb0}} 
+\index{stack.c@{stack.c}!criar\_stack@{criar\_stack}}
+\index{criar\_stack@{criar\_stack}!stack.c@{stack.c}}
+\doxysubsubsection{\texorpdfstring{criar\_stack()}{criar\_stack()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structStack}{Stack}}$\ast$ criar\+\_\+stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa-\/se a \mbox{\hyperlink{structStack}{Stack}} com tamanho 0. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structStack}{Stack}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_8c_af337948d84db88e8bac4247e715c2788}\label{stack_8c_af337948d84db88e8bac4247e715c2788}} 
+\index{stack.c@{stack.c}!criar\_variaveis@{criar\_variaveis}}
+\index{criar\_variaveis@{criar\_variaveis}!stack.c@{stack.c}}
+\doxysubsubsection{\texorpdfstring{criar\_variaveis()}{criar\_variaveis()}}
+{\footnotesize\ttfamily void criar\+\_\+variaveis (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que inicializa as variáveis com o seu valor por omissão. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{stack_8c_a41357e76f345cefeb2e3b5bacf8c8f4b}\label{stack_8c_a41357e76f345cefeb2e3b5bacf8c8f4b}} 
+\index{stack.c@{stack.c}!peek@{peek}}
+\index{peek@{peek}!stack.c@{stack.c}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} peek (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que devolve o tipo do elemento do topo da \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tipo do elemento do topo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_8c_aabb6f19157351652cf43e3028e9666b2}\label{stack_8c_aabb6f19157351652cf43e3028e9666b2}} 
+\index{stack.c@{stack.c}!peekind@{peekind}}
+\index{peekind@{peekind}!stack.c@{stack.c}}
+\doxysubsubsection{\texorpdfstring{peekind()}{peekind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} peekind (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Função que devolve o tipo do elemento de indice n da \mbox{\hyperlink{structStack}{Stack}}, onde o índice 0 corresponde ao elemento do topo da \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em n} & Índice do elemento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tipo do elemento de indice n 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_8c_a7dc6b9677324bf81d0a3c5a58deab75a}\label{stack_8c_a7dc6b9677324bf81d0a3c5a58deab75a}} 
+\index{stack.c@{stack.c}!peekind2@{peekind2}}
+\index{peekind2@{peekind2}!stack.c@{stack.c}}
+\doxysubsubsection{\texorpdfstring{peekind2()}{peekind2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} peekind2 (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Função que devolve o tipo do elemento de indice n da \mbox{\hyperlink{structStack}{Stack}}, onde o índice 0 corresponde ao elemento do fundo da \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em i} & Índice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tipo do elemento de índice n 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_8c_a450385e20b5ac2cae78d168fc0f6343a}\label{stack_8c_a450385e20b5ac2cae78d168fc0f6343a}} 
+\index{stack.c@{stack.c}!pop@{pop}}
+\index{pop@{pop}!stack.c@{stack.c}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{unionelemdata}{elemdata}} pop (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira o elemento do topo da \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Elemento retirado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_8c_ae588df3811c978be997b155a71965867}\label{stack_8c_ae588df3811c978be997b155a71965867}} 
+\index{stack.c@{stack.c}!pop\_bottom@{pop\_bottom}}
+\index{pop\_bottom@{pop\_bottom}!stack.c@{stack.c}}
+\doxysubsubsection{\texorpdfstring{pop\_bottom()}{pop\_bottom()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{unionelemdata}{elemdata}} pop\+\_\+bottom (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que remove o elemento da \mbox{\hyperlink{structStack}{Stack}} do fundo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Elemento retirado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_8c_a75032a8d9f06e200bdbb63da4741da04}\label{stack_8c_a75032a8d9f06e200bdbb63da4741da04}} 
+\index{stack.c@{stack.c}!print\_stack@{print\_stack}}
+\index{print\_stack@{print\_stack}!stack.c@{stack.c}}
+\doxysubsubsection{\texorpdfstring{print\_stack()}{print\_stack()}}
+{\footnotesize\ttfamily void print\+\_\+stack (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que imprime a \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{stack_8c_a89f6b80914b5fee206c434ab3d736713}\label{stack_8c_a89f6b80914b5fee206c434ab3d736713}} 
+\index{stack.c@{stack.c}!push@{push}}
+\index{push@{push}!stack.c@{stack.c}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void push (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{t,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Função que insere um elemento no topo da \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em t} & Tipo do elemento que vamos inserir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{stack_8c_a02ff6e9ee40167f0274839a464eb704c}\label{stack_8c_a02ff6e9ee40167f0274839a464eb704c}} 
+\index{stack.c@{stack.c}!pushaux@{pushaux}}
+\index{pushaux@{pushaux}!stack.c@{stack.c}}
+\doxysubsubsection{\texorpdfstring{pushaux()}{pushaux()}}
+{\footnotesize\ttfamily void pushaux (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{x,  }\item[{\mbox{\hyperlink{unionelemdata}{elemdata}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar com o mesmo efeito da push, mas com o tipo do elemento variável. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em x} & Tipo do elemento \\
+\hline
+{\em y} & Data do elemento \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,9 @@
+<map id="stack.h" name="stack.h">
+<area shape="rect" id="node1" title="Ficheiro com funções relativas à implementação da Stack." alt="" coords="212,5,281,32"/>
+<area shape="rect" id="node2" href="$operadores_8h.html" title="Ficheiro com as funções relativas aos operadores." alt="" coords="137,80,244,107"/>
+<area shape="rect" id="node7" href="$stack_8c.html" title="Ficheiro com funções relativas à implementação da Stack." alt="" coords="269,80,337,107"/>
+<area shape="rect" id="node3" href="$parser_8h.html" title="Ficheiro com as funções relativas ao parse." alt="" coords="116,155,191,181"/>
+<area shape="rect" id="node5" href="$operadores_8c.html" title="Ficheiro com as funções relativas aos operadores." alt="" coords="195,229,301,256"/>
+<area shape="rect" id="node4" href="$main_8c.html" title="Ficheiro que contém a função principal do programa." alt="" coords="5,229,72,256"/>
+<area shape="rect" id="node6" href="$parser_8c.html" title="Ficheiro com as funções relativas ao parse." alt="" coords="97,229,170,256"/>
+</map>

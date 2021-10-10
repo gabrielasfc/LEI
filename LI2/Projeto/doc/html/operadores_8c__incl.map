@@ -1,0 +1,12 @@
+<map id="operadores.c" name="operadores.c">
+<area shape="rect" id="node1" title="Ficheiro com as funções relativas aos operadores." alt="" coords="94,5,201,32"/>
+<area shape="rect" id="node2" href="$operadores_8h.html" title="Ficheiro com as funções relativas aos operadores." alt="" coords="94,155,201,181"/>
+<area shape="rect" id="node10" href="$parser_8h.html" title="Ficheiro com as funções relativas ao parse." alt="" coords="147,80,222,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,229,73,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="76,304,147,331"/>
+<area shape="rect" id="node5" title=" " alt="" coords="149,229,220,256"/>
+<area shape="rect" id="node6" href="$stack_8h.html" title="Ficheiro com funções relativas à implementação da Stack." alt="" coords="245,229,314,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="171,304,238,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="262,304,337,331"/>
+<area shape="rect" id="node9" title=" " alt="" coords="361,304,435,331"/>
+</map>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e8584246-ba94-41c5-add2-d3aea7952578" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/annotated.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/bc_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/bdwn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/closed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/doxygen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/doxygen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/dynsections.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/folderclosed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/folderopen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/functions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/functions_vars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/globals_enum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/globals_eval.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/graph_legend.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/graph_legend.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/graph_legend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/main_8c.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/main_8c__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/main_8c__incl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/nav_f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/nav_g.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/nav_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/operadores_8c__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/operadores_8c__incl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/operadores_8h__dep__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/operadores_8h__dep__incl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/operadores_8h__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/operadores_8h__incl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/parser_8c__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/parser_8c__incl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/parser_8h__dep__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/parser_8h__dep__incl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/parser_8h__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/parser_8h__incl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_a.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_b.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_c.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_d.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/all_e.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/classes_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/classes_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/enums_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/enumvalues_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/enumvalues_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/enumvalues_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/enumvalues_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/files_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/files_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/files_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/files_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/functions_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/functions_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/functions_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/functions_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/functions_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/functions_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/functions_6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/functions_7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/functions_8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/functions_9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/functions_a.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/functions_b.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/functions_c.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/functions_d.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/mag_sel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/nomatches.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/search_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/search_m.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/search_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/variables_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/variables_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/variables_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/variables_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/variables_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/variables_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/search/variables_6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/splitbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/stack_8c.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/stack_8c__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/stack_8c__incl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/stack_8h.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/stack_8h__dep__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/stack_8h__dep__incl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/stack_8h__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/stack_8h__incl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/stack_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/structStack-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/structStack.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/structStackElem-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/structStackElem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/structStackElem__coll__graph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/structStackElem__coll__graph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/structStack__coll__graph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/structStack__coll__graph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/sync_off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/sync_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/tab_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/tab_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/tab_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/tab_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/unionelemdata-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/html/unionelemdata.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/annotated.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/doxygen.sty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/files.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/longtable_doxygen.sty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/main_8c.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/main_8c__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/operadores_8c__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/operadores_8h__dep__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/operadores_8h__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/parser_8c__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/parser_8h__dep__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/parser_8h__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/refman.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/stack_8c.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/stack_8c__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/stack_8h.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/stack_8h__dep__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/stack_8h__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/structStack.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/structStackElem.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/structStackElem__coll__graph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/structStack__coll__graph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/tabu_doxygen.sty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/latex/unionelemdata.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/xml/combine.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/xml/compound.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/xml/index.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/xml/main_8c.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/xml/stack_8h.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/xml/structStack.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/xml/structStackElem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/xml/unionelemdata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1rf2gc447KNAuclYKeqLOXOLCPb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../1º ANO/2º Semestre/PI/Ficha3" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e8584246-ba94-41c5-add2-d3aea7952578" name="Default Changelist" comment="" />
+      <created>1619352936981</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619352936981</updated>
+      <workItem from="1619352938984" duration="27000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

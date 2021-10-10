@@ -1,0 +1,712 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="parser_8h" kind="file" language="C++">
+    <compoundname>parser.h</compoundname>
+    <includes refid="operadores_8h" local="yes">operadores.h</includes>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="operadores_8c" local="yes">operadores.c</includedby>
+    <includedby refid="parser_8c" local="yes">parser.c</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>stdarg.h</label>
+      </node>
+      <node id="8">
+        <label>assert.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+      </node>
+      <node id="1">
+        <label>parser.h</label>
+        <link refid="parser_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>operadores.h</label>
+        <link refid="operadores_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stack.h</label>
+        <link refid="stack_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>math.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>parser.c</label>
+        <link refid="parser_8c"/>
+      </node>
+      <node id="3">
+        <label>operadores.c</label>
+        <link refid="operadores_8c"/>
+      </node>
+      <node id="1">
+        <label>parser.h</label>
+        <link refid="parser_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="parser_8h_1a907d68b8a9fa3f3915bd0046742a644c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operadores_mat</definition>
+        <argsstring>(struct Stack *s, char token)</argsstring>
+        <name>operadores_mat</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Função que invoca, consoante o token, as operações matemáticas simples ou as operações de strings/arrays correspondentes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operador </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.h" line="18" column="6" bodyfile="parser.c" bodystart="14" bodyend="34" declfile="parser.h" declline="18" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="parser_8h_1affd547e9fa660911727c94c7aebfea7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operadores_bitwise</definition>
+        <argsstring>(struct Stack *s, char token)</argsstring>
+        <name>operadores_bitwise</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Função que invoca, consoante o token, as operações bitwise ou as operações de strings/arrays correspondentes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operador </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.h" line="26" column="6" bodyfile="parser.c" bodystart="42" bodyend="54" declfile="parser.h" declline="26" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="parser_8h_1a2dca2083d0ba740587d10ae2582ad2cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operadores_conversoes</definition>
+        <argsstring>(struct Stack *s, char token)</argsstring>
+        <name>operadores_conversoes</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Função que invoca, consoante o token, as operações de conversão. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operador </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.h" line="33" column="6" bodyfile="parser.c" bodystart="61" bodyend="73" declfile="parser.h" declline="33" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="parser_8h_1a68322240f800224edf384849dc5652f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operadores_stack</definition>
+        <argsstring>(struct Stack *s, char token)</argsstring>
+        <name>operadores_stack</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Função que invoca, consoante o token, as operações relativas à manipulação da <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operador </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.h" line="40" column="6" bodyfile="parser.c" bodystart="80" bodyend="95" declfile="parser.h" declline="40" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="parser_8h_1a53f92c5b097b31a0392199fe0aace517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operadores_e</definition>
+        <argsstring>(struct Stack *s, char token)</argsstring>
+        <name>operadores_e</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Função que invoca, consoante o char a seguir ao &quot;e&quot;, as operações lógicas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operador </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.h" line="47" column="6" bodyfile="parser.c" bodystart="102" bodyend="114" declfile="parser.h" declline="47" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="parser_8h_1a03ba1edabe8e7f2b913914deca949f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operadores_logica</definition>
+        <argsstring>(struct Stack *s, char *token)</argsstring>
+        <name>operadores_logica</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Função que invoca, consoante o token, as operações lógicas ou as operações de strings/arrays correspondentes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String com o operador </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.h" line="55" column="6" bodyfile="parser.c" bodystart="122" bodyend="139" declfile="parser.h" declline="55" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="parser_8h_1aa70f72eb5b38e4563ef5e870d085f3b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operadores_variaveis</definition>
+        <argsstring>(struct Stack *s, char *token)</argsstring>
+        <name>operadores_variaveis</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Função que invoca, consoante o token, as respetivas operações das variáveis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String com o operador </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.h" line="62" column="6" bodyfile="parser.c" bodystart="146" bodyend="158" declfile="parser.h" declline="62" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="parser_8h_1ab48e440ed588a2448917d8ef48a3a6fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operadores_arrstr</definition>
+        <argsstring>(struct Stack *s, char *token)</argsstring>
+        <name>operadores_arrstr</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Função que invoca, consoante o token, as novas operações relativas a arrays/strings do guião 4. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String com o operador </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.h" line="69" column="6" bodyfile="parser.c" bodystart="165" bodyend="187" declfile="parser.h" declline="69" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="parser_8h_1a63dfb464396e2a5342f4f7112e54d9b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operacoes</definition>
+        <argsstring>(struct Stack *s, char *token)</argsstring>
+        <name>operacoes</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Função que invoca, consoante o token, a função geral do respetivo tipo de operação. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String com o operador </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.h" line="76" column="6" bodyfile="parser.c" bodystart="194" bodyend="225" declfile="parser.h" declline="76" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="parser_8h_1a62ab7a3317e32cd3c142511e45e7770d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* get_token</definition>
+        <argsstring>(char **line, char *delim)</argsstring>
+        <name>get_token</name>
+        <param>
+          <type>char **</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>delim</declname>
+        </param>
+        <briefdescription>
+<para>Função auxiliar que devolve o token até ao delimitador dado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linha </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Delimitador </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Token </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.h" line="84" column="6" bodyfile="parser.c" bodystart="233" bodyend="243" declfile="parser.h" declline="84" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="parser_8h_1ab90d46a3f4f1ce8629a1f11bfdb73c3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* get_token_arr</definition>
+        <argsstring>(char **line)</argsstring>
+        <name>get_token_arr</name>
+        <param>
+          <type>char **</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>Função auxiliar que tem o mesmo efeito que a get_token, mas dedicada a arrays, analisando quantos arrays podem existir dentro desse array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linha returns Token </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.h" line="92" column="6" bodyfile="parser.c" bodystart="251" bodyend="272" declfile="parser.h" declline="92" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="parser_8h_1a6f51a18b750da2fccf4774f2492f5262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void numberoroperation</definition>
+        <argsstring>(struct Stack *s, char *token)</argsstring>
+        <name>numberoroperation</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Função que coloca na <ref refid="structStack" kindref="compound">Stack</ref> os números recebidos no token ou invoca as operações, recorrendo à função auxiliar &quot;operacoes&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Token </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.h" line="100" column="6" bodyfile="parser.c" bodystart="280" bodyend="291" declfile="parser.h" declline="100" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="parser_8h_1a730a800d2b6375959fb867e585f547b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+        <definition>struct Stack* copiavars</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>copiavars</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que copia as variéveis da <ref refid="structStack" kindref="compound">Stack</ref> para o Array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devolve o Array com as variáveis já introduzidas. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.h" line="107" column="12" bodyfile="parser.c" bodystart="298" bodyend="306" declfile="parser.h" declline="107" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="parser_8h_1ac001406a82dfd9148c8bf14b5a625d5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copiavars2</definition>
+        <argsstring>(struct Stack *s, struct Stack *arr)</argsstring>
+        <name>copiavars2</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+<para>Função que copia as variéveis do Array para a <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.h" line="114" column="6" bodyfile="parser.c" bodystart="313" bodyend="318" declfile="parser.h" declline="114" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="parser_8h_1abf0f4bc99e93ac12cf903ffeda25a7ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void parse</definition>
+        <argsstring>(struct Stack *s, char *line)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>Função principal que analisa a linha recebida no input e faz o seu parse. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linha </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.h" line="121" column="6" bodyfile="parser.c" bodystart="325" bodyend="358" declfile="parser.h" declline="121" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Ficheiro com as funções relativas ao parse. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LIPROJETO_PARSER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIPROJETO_PARSER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="operadores_8h" kindref="compound">operadores.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="parser_8h_1a907d68b8a9fa3f3915bd0046742a644c" kindref="member">operadores_mat</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>token);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="parser_8h_1affd547e9fa660911727c94c7aebfea7b" kindref="member">operadores_bitwise</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>token);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="parser_8h_1a2dca2083d0ba740587d10ae2582ad2cf" kindref="member">operadores_conversoes</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>token);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="parser_8h_1a68322240f800224edf384849dc5652f5" kindref="member">operadores_stack</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>token);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="parser_8h_1a53f92c5b097b31a0392199fe0aace517" kindref="member">operadores_e</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>token);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="parser_8h_1a03ba1edabe8e7f2b913914deca949f28" kindref="member">operadores_logica</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*token);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="parser_8h_1aa70f72eb5b38e4563ef5e870d085f3b7" kindref="member">operadores_variaveis</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*token);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="parser_8h_1ab48e440ed588a2448917d8ef48a3a6fe" kindref="member">operadores_arrstr</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*token);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="parser_8h_1a63dfb464396e2a5342f4f7112e54d9b7" kindref="member">operacoes</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*token);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="parser_8h_1a62ab7a3317e32cd3c142511e45e7770d" kindref="member">get_token</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**line,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*delim);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="parser_8h_1ab90d46a3f4f1ce8629a1f11bfdb73c3c" kindref="member">get_token_arr</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**line);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="parser_8h_1a6f51a18b750da2fccf4774f2492f5262" kindref="member">numberoroperation</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*token);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structStack" kindref="compound">Stack</ref><sp/>*<ref refid="parser_8h_1a730a800d2b6375959fb867e585f547b0" kindref="member">copiavars</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="parser_8h_1ac001406a82dfd9148c8bf14b5a625d5c" kindref="member">copiavars2</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*arr);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="parser_8h_1abf0f4bc99e93ac12cf903ffeda25a7ee" kindref="member">parse</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*line);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//LIPROJETO_PARSER_H</highlight></codeline>
+    </programlisting>
+    <location file="parser.h"/>
+  </compounddef>
+</doxygen>

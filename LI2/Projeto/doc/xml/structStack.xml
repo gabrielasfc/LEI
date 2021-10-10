@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structStack" kind="struct" language="C++" prot="public">
+    <compoundname>Stack</compoundname>
+    <includes refid="stack_8h" local="no">stack.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structStack_1a7b167082a4c6b68566501eaa2423cb3d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Stack::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Tamanho da <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stack.h" line="48" column="9" bodyfile="stack.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structStack_1ad8f5335a3114718423c00ba1d874f30d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structStackElem" kindref="compound">StackElem</ref> *</type>
+        <definition>struct StackElem* Stack::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <briefdescription>
+<para>Array com os elementos da <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stack.h" line="49" column="20" bodyfile="stack.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structStack_1afa6bf13f663f849621770edc7653f96f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structStackElem" kindref="compound">StackElem</ref> *</type>
+        <definition>struct StackElem* Stack::vars</definition>
+        <argsstring></argsstring>
+        <name>vars</name>
+        <briefdescription>
+<para>Array com as variáveis. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stack.h" line="50" column="20" bodyfile="stack.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Tipo de dados da <ref refid="structStack" kindref="compound">Stack</ref>, com o seu tamanho, elementos e variáveis. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Stack</label>
+        <link refid="structStack"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>vars</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>StackElem</label>
+        <link refid="structStackElem"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>valor</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>elemdata</label>
+        <link refid="unionelemdata"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="stack.h" line="47" column="12" bodyfile="stack.h" bodystart="47" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structStack_1ad8f5335a3114718423c00ba1d874f30d" prot="public" virt="non-virtual"><scope>Stack</scope><name>p</name></member>
+      <member refid="structStack_1a7b167082a4c6b68566501eaa2423cb3d" prot="public" virt="non-virtual"><scope>Stack</scope><name>size</name></member>
+      <member refid="structStack_1afa6bf13f663f849621770edc7653f96f" prot="public" virt="non-virtual"><scope>Stack</scope><name>vars</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

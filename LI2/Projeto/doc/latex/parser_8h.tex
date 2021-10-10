@@ -1,0 +1,322 @@
+\hypertarget{parser_8h}{}\doxysection{parser.\+h File Reference}
+\label{parser_8h}\index{parser.h@{parser.h}}
+
+
+Ficheiro com as funções relativas ao parse.  
+
+
+{\ttfamily \#include \char`\"{}operadores.\+h\char`\"{}}\newline
+Include dependency graph for parser.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{parser_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{parser_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{parser_8h_a907d68b8a9fa3f3915bd0046742a644c}{operadores\+\_\+mat}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, char token)
+\begin{DoxyCompactList}\small\item\em Função que invoca, consoante o token, as operações matemáticas simples ou as operações de strings/arrays correspondentes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{parser_8h_affd547e9fa660911727c94c7aebfea7b}{operadores\+\_\+bitwise}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, char token)
+\begin{DoxyCompactList}\small\item\em Função que invoca, consoante o token, as operações bitwise ou as operações de strings/arrays correspondentes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{parser_8h_a2dca2083d0ba740587d10ae2582ad2cf}{operadores\+\_\+conversoes}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, char token)
+\begin{DoxyCompactList}\small\item\em Função que invoca, consoante o token, as operações de conversão. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{parser_8h_a68322240f800224edf384849dc5652f5}{operadores\+\_\+stack}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, char token)
+\begin{DoxyCompactList}\small\item\em Função que invoca, consoante o token, as operações relativas à manipulação da \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{parser_8h_a53f92c5b097b31a0392199fe0aace517}{operadores\+\_\+e}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, char token)
+\begin{DoxyCompactList}\small\item\em Função que invoca, consoante o char a seguir ao \char`\"{}e\char`\"{}, as operações lógicas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{parser_8h_a03ba1edabe8e7f2b913914deca949f28}{operadores\+\_\+logica}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, char $\ast$token)
+\begin{DoxyCompactList}\small\item\em Função que invoca, consoante o token, as operações lógicas ou as operações de strings/arrays correspondentes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{parser_8h_aa70f72eb5b38e4563ef5e870d085f3b7}{operadores\+\_\+variaveis}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, char $\ast$token)
+\begin{DoxyCompactList}\small\item\em Função que invoca, consoante o token, as respetivas operações das variáveis. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{parser_8h_ab48e440ed588a2448917d8ef48a3a6fe}{operadores\+\_\+arrstr}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, char $\ast$token)
+\begin{DoxyCompactList}\small\item\em Função que invoca, consoante o token, as novas operações relativas a arrays/strings do guião 4. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{parser_8h_a63dfb464396e2a5342f4f7112e54d9b7}{operacoes}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, char $\ast$token)
+\begin{DoxyCompactList}\small\item\em Função que invoca, consoante o token, a função geral do respetivo tipo de operação. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{parser_8h_a62ab7a3317e32cd3c142511e45e7770d}{get\+\_\+token}} (char $\ast$$\ast$line, char $\ast$delim)
+\begin{DoxyCompactList}\small\item\em Função auxiliar que devolve o token até ao delimitador dado. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{parser_8h_ab90d46a3f4f1ce8629a1f11bfdb73c3c}{get\+\_\+token\+\_\+arr}} (char $\ast$$\ast$line)
+\begin{DoxyCompactList}\small\item\em Função auxiliar que tem o mesmo efeito que a get\+\_\+token, mas dedicada a arrays, analisando quantos arrays podem existir dentro desse array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{parser_8h_a6f51a18b750da2fccf4774f2492f5262}{numberoroperation}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, char $\ast$token)
+\begin{DoxyCompactList}\small\item\em Função que coloca na \mbox{\hyperlink{structStack}{Stack}} os números recebidos no token ou invoca as operações, recorrendo à função auxiliar \char`\"{}operacoes\char`\"{}. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structStack}{Stack}} $\ast$ \mbox{\hyperlink{parser_8h_a730a800d2b6375959fb867e585f547b0}{copiavars}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que copia as variéveis da \mbox{\hyperlink{structStack}{Stack}} para o Array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{parser_8h_ac001406a82dfd9148c8bf14b5a625d5c}{copiavars2}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, struct \mbox{\hyperlink{structStack}{Stack}} $\ast$arr)
+\begin{DoxyCompactList}\small\item\em Função que copia as variéveis do Array para a \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{parser_8h_abf0f4bc99e93ac12cf903ffeda25a7ee}{parse}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, char $\ast$line)
+\begin{DoxyCompactList}\small\item\em Função principal que analisa a linha recebida no input e faz o seu parse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ficheiro com as funções relativas ao parse. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{parser_8h_a730a800d2b6375959fb867e585f547b0}\label{parser_8h_a730a800d2b6375959fb867e585f547b0}} 
+\index{parser.h@{parser.h}!copiavars@{copiavars}}
+\index{copiavars@{copiavars}!parser.h@{parser.h}}
+\doxysubsubsection{\texorpdfstring{copiavars()}{copiavars()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structStack}{Stack}}$\ast$ copiavars (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que copia as variéveis da \mbox{\hyperlink{structStack}{Stack}} para o Array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve o Array com as variáveis já introduzidas. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parser_8h_ac001406a82dfd9148c8bf14b5a625d5c}\label{parser_8h_ac001406a82dfd9148c8bf14b5a625d5c}} 
+\index{parser.h@{parser.h}!copiavars2@{copiavars2}}
+\index{copiavars2@{copiavars2}!parser.h@{parser.h}}
+\doxysubsubsection{\texorpdfstring{copiavars2()}{copiavars2()}}
+{\footnotesize\ttfamily void copiavars2 (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{arr }\end{DoxyParamCaption})}
+
+
+
+Função que copia as variéveis do Array para a \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em arr} & Array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{parser_8h_a62ab7a3317e32cd3c142511e45e7770d}\label{parser_8h_a62ab7a3317e32cd3c142511e45e7770d}} 
+\index{parser.h@{parser.h}!get\_token@{get\_token}}
+\index{get\_token@{get\_token}!parser.h@{parser.h}}
+\doxysubsubsection{\texorpdfstring{get\_token()}{get\_token()}}
+{\footnotesize\ttfamily char$\ast$ get\+\_\+token (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{line,  }\item[{char $\ast$}]{delim }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar que devolve o token até ao delimitador dado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & Linha \\
+\hline
+{\em delim} & Delimitador \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Token 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parser_8h_ab90d46a3f4f1ce8629a1f11bfdb73c3c}\label{parser_8h_ab90d46a3f4f1ce8629a1f11bfdb73c3c}} 
+\index{parser.h@{parser.h}!get\_token\_arr@{get\_token\_arr}}
+\index{get\_token\_arr@{get\_token\_arr}!parser.h@{parser.h}}
+\doxysubsubsection{\texorpdfstring{get\_token\_arr()}{get\_token\_arr()}}
+{\footnotesize\ttfamily char$\ast$ get\+\_\+token\+\_\+arr (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{line }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar que tem o mesmo efeito que a get\+\_\+token, mas dedicada a arrays, analisando quantos arrays podem existir dentro desse array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & Linha returns Token \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{parser_8h_a6f51a18b750da2fccf4774f2492f5262}\label{parser_8h_a6f51a18b750da2fccf4774f2492f5262}} 
+\index{parser.h@{parser.h}!numberoroperation@{numberoroperation}}
+\index{numberoroperation@{numberoroperation}!parser.h@{parser.h}}
+\doxysubsubsection{\texorpdfstring{numberoroperation()}{numberoroperation()}}
+{\footnotesize\ttfamily void numberoroperation (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{char $\ast$}]{token }\end{DoxyParamCaption})}
+
+
+
+Função que coloca na \mbox{\hyperlink{structStack}{Stack}} os números recebidos no token ou invoca as operações, recorrendo à função auxiliar \char`\"{}operacoes\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em Token} & Token \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{parser_8h_a63dfb464396e2a5342f4f7112e54d9b7}\label{parser_8h_a63dfb464396e2a5342f4f7112e54d9b7}} 
+\index{parser.h@{parser.h}!operacoes@{operacoes}}
+\index{operacoes@{operacoes}!parser.h@{parser.h}}
+\doxysubsubsection{\texorpdfstring{operacoes()}{operacoes()}}
+{\footnotesize\ttfamily void operacoes (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{char $\ast$}]{token }\end{DoxyParamCaption})}
+
+
+
+Função que invoca, consoante o token, a função geral do respetivo tipo de operação. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em token} & String com o operador \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{parser_8h_ab48e440ed588a2448917d8ef48a3a6fe}\label{parser_8h_ab48e440ed588a2448917d8ef48a3a6fe}} 
+\index{parser.h@{parser.h}!operadores\_arrstr@{operadores\_arrstr}}
+\index{operadores\_arrstr@{operadores\_arrstr}!parser.h@{parser.h}}
+\doxysubsubsection{\texorpdfstring{operadores\_arrstr()}{operadores\_arrstr()}}
+{\footnotesize\ttfamily void operadores\+\_\+arrstr (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{char $\ast$}]{token }\end{DoxyParamCaption})}
+
+
+
+Função que invoca, consoante o token, as novas operações relativas a arrays/strings do guião 4. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em token} & String com o operador \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{parser_8h_affd547e9fa660911727c94c7aebfea7b}\label{parser_8h_affd547e9fa660911727c94c7aebfea7b}} 
+\index{parser.h@{parser.h}!operadores\_bitwise@{operadores\_bitwise}}
+\index{operadores\_bitwise@{operadores\_bitwise}!parser.h@{parser.h}}
+\doxysubsubsection{\texorpdfstring{operadores\_bitwise()}{operadores\_bitwise()}}
+{\footnotesize\ttfamily void operadores\+\_\+bitwise (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{char}]{token }\end{DoxyParamCaption})}
+
+
+
+Função que invoca, consoante o token, as operações bitwise ou as operações de strings/arrays correspondentes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em token} & Operador \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{parser_8h_a2dca2083d0ba740587d10ae2582ad2cf}\label{parser_8h_a2dca2083d0ba740587d10ae2582ad2cf}} 
+\index{parser.h@{parser.h}!operadores\_conversoes@{operadores\_conversoes}}
+\index{operadores\_conversoes@{operadores\_conversoes}!parser.h@{parser.h}}
+\doxysubsubsection{\texorpdfstring{operadores\_conversoes()}{operadores\_conversoes()}}
+{\footnotesize\ttfamily void operadores\+\_\+conversoes (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{char}]{token }\end{DoxyParamCaption})}
+
+
+
+Função que invoca, consoante o token, as operações de conversão. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em token} & Operador \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{parser_8h_a53f92c5b097b31a0392199fe0aace517}\label{parser_8h_a53f92c5b097b31a0392199fe0aace517}} 
+\index{parser.h@{parser.h}!operadores\_e@{operadores\_e}}
+\index{operadores\_e@{operadores\_e}!parser.h@{parser.h}}
+\doxysubsubsection{\texorpdfstring{operadores\_e()}{operadores\_e()}}
+{\footnotesize\ttfamily void operadores\+\_\+e (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{char}]{token }\end{DoxyParamCaption})}
+
+
+
+Função que invoca, consoante o char a seguir ao \char`\"{}e\char`\"{}, as operações lógicas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em token} & Operador \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{parser_8h_a03ba1edabe8e7f2b913914deca949f28}\label{parser_8h_a03ba1edabe8e7f2b913914deca949f28}} 
+\index{parser.h@{parser.h}!operadores\_logica@{operadores\_logica}}
+\index{operadores\_logica@{operadores\_logica}!parser.h@{parser.h}}
+\doxysubsubsection{\texorpdfstring{operadores\_logica()}{operadores\_logica()}}
+{\footnotesize\ttfamily void operadores\+\_\+logica (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{char $\ast$}]{token }\end{DoxyParamCaption})}
+
+
+
+Função que invoca, consoante o token, as operações lógicas ou as operações de strings/arrays correspondentes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em token} & String com o operador \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{parser_8h_a907d68b8a9fa3f3915bd0046742a644c}\label{parser_8h_a907d68b8a9fa3f3915bd0046742a644c}} 
+\index{parser.h@{parser.h}!operadores\_mat@{operadores\_mat}}
+\index{operadores\_mat@{operadores\_mat}!parser.h@{parser.h}}
+\doxysubsubsection{\texorpdfstring{operadores\_mat()}{operadores\_mat()}}
+{\footnotesize\ttfamily void operadores\+\_\+mat (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{char}]{token }\end{DoxyParamCaption})}
+
+
+
+Função que invoca, consoante o token, as operações matemáticas simples ou as operações de strings/arrays correspondentes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em token} & Operador \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{parser_8h_a68322240f800224edf384849dc5652f5}\label{parser_8h_a68322240f800224edf384849dc5652f5}} 
+\index{parser.h@{parser.h}!operadores\_stack@{operadores\_stack}}
+\index{operadores\_stack@{operadores\_stack}!parser.h@{parser.h}}
+\doxysubsubsection{\texorpdfstring{operadores\_stack()}{operadores\_stack()}}
+{\footnotesize\ttfamily void operadores\+\_\+stack (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{char}]{token }\end{DoxyParamCaption})}
+
+
+
+Função que invoca, consoante o token, as operações relativas à manipulação da \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em token} & Operador \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{parser_8h_aa70f72eb5b38e4563ef5e870d085f3b7}\label{parser_8h_aa70f72eb5b38e4563ef5e870d085f3b7}} 
+\index{parser.h@{parser.h}!operadores\_variaveis@{operadores\_variaveis}}
+\index{operadores\_variaveis@{operadores\_variaveis}!parser.h@{parser.h}}
+\doxysubsubsection{\texorpdfstring{operadores\_variaveis()}{operadores\_variaveis()}}
+{\footnotesize\ttfamily void operadores\+\_\+variaveis (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{char $\ast$}]{token }\end{DoxyParamCaption})}
+
+
+
+Função que invoca, consoante o token, as respetivas operações das variáveis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em token} & String com o operador \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{parser_8h_abf0f4bc99e93ac12cf903ffeda25a7ee}\label{parser_8h_abf0f4bc99e93ac12cf903ffeda25a7ee}} 
+\index{parser.h@{parser.h}!parse@{parse}}
+\index{parse@{parse}!parser.h@{parser.h}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily void parse (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{char $\ast$}]{line }\end{DoxyParamCaption})}
+
+
+
+Função principal que analisa a linha recebida no input e faz o seu parse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em line} & Linha \\
+\hline
+\end{DoxyParams}

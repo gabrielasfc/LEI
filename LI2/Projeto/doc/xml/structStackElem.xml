@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structStackElem" kind="struct" language="C++" prot="public">
+    <compoundname>StackElem</compoundname>
+    <includes refid="stack_8h" local="no">stack.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structStackElem_1ab54c9d07fbdb0abf73d6b0c4cbf9998f" prot="public" static="no" mutable="no">
+        <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+        <definition>elemtype StackElem::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Tipo do elemento. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stack.h" line="40" column="14" bodyfile="stack.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structStackElem_1a3d93198a8582978fd2164269d2fd730e" prot="public" static="no" mutable="no">
+        <type><ref refid="unionelemdata" kindref="compound">elemdata</ref></type>
+        <definition>elemdata StackElem::valor</definition>
+        <argsstring></argsstring>
+        <name>valor</name>
+        <briefdescription>
+<para>Valor do elemento. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stack.h" line="41" column="14" bodyfile="stack.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Estrutura que devolve o tipo de um dado elemento e o seu valor. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Stack</label>
+        <link refid="structStack"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>vars</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>StackElem</label>
+        <link refid="structStackElem"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>valor</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>elemdata</label>
+        <link refid="unionelemdata"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="stack.h" line="39" column="16" bodyfile="stack.h" bodystart="39" bodyend="42"/>
+    <listofallmembers>
+      <member refid="structStackElem_1ab54c9d07fbdb0abf73d6b0c4cbf9998f" prot="public" virt="non-virtual"><scope>StackElem</scope><name>type</name></member>
+      <member refid="structStackElem_1a3d93198a8582978fd2164269d2fd730e" prot="public" virt="non-virtual"><scope>StackElem</scope><name>valor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

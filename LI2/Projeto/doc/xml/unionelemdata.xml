@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="unionelemdata" kind="union" language="C++" prot="public">
+    <compoundname>elemdata</compoundname>
+    <includes refid="stack_8h" local="no">stack.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionelemdata_1a4ff579ae5f7317e0462c44a8d874087b" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long elemdata::l</definition>
+        <argsstring></argsstring>
+        <name>l</name>
+        <briefdescription>
+<para>A memória da union será ocupada por um long. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stack.h" line="29" column="10" bodyfile="stack.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionelemdata_1a5a559641102f69ae74aa6dc6bf148e45" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elemdata::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <briefdescription>
+<para>A memória da union será ocupada por um double. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stack.h" line="30" column="12" bodyfile="stack.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionelemdata_1a15c16f8f4294147216a15cd369bba5d1" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* elemdata::str</definition>
+        <argsstring></argsstring>
+        <name>str</name>
+        <briefdescription>
+<para>A memória da union será ocupada por uma string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stack.h" line="31" column="10" bodyfile="stack.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionelemdata_1a57aba5a4f1f9d784dc63e5a2f0ac22f9" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char elemdata::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <briefdescription>
+<para>A memória da union será ocupada por um char. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stack.h" line="32" column="10" bodyfile="stack.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionelemdata_1ab01a6d6a52c693602cfc22f185851383" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+        <definition>struct Stack* elemdata::arr</definition>
+        <argsstring></argsstring>
+        <name>arr</name>
+        <briefdescription>
+<para>A memória da union será ocupada por um array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stack.h" line="33" column="16" bodyfile="stack.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Define qual o datatype do elemento e guarda a variável com o valor no respetivo membro da union. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Stack</label>
+        <link refid="structStack"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>vars</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>StackElem</label>
+        <link refid="structStackElem"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>valor</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>elemdata</label>
+        <link refid="unionelemdata"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="stack.h" line="28" column="15" bodyfile="stack.h" bodystart="28" bodyend="34"/>
+    <listofallmembers>
+      <member refid="unionelemdata_1ab01a6d6a52c693602cfc22f185851383" prot="public" virt="non-virtual"><scope>elemdata</scope><name>arr</name></member>
+      <member refid="unionelemdata_1a57aba5a4f1f9d784dc63e5a2f0ac22f9" prot="public" virt="non-virtual"><scope>elemdata</scope><name>c</name></member>
+      <member refid="unionelemdata_1a5a559641102f69ae74aa6dc6bf148e45" prot="public" virt="non-virtual"><scope>elemdata</scope><name>d</name></member>
+      <member refid="unionelemdata_1a4ff579ae5f7317e0462c44a8d874087b" prot="public" virt="non-virtual"><scope>elemdata</scope><name>l</name></member>
+      <member refid="unionelemdata_1a15c16f8f4294147216a15cd369bba5d1" prot="public" virt="non-virtual"><scope>elemdata</scope><name>str</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

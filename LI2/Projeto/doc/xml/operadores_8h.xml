@@ -1,0 +1,2395 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="operadores_8h" kind="file" language="C++">
+    <compoundname>operadores.h</compoundname>
+    <includes local="no">math.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="stack_8h" local="yes">stack.h</includes>
+    <includedby refid="parser_8h" local="yes">parser.h</includedby>
+    <includedby refid="operadores_8c" local="yes">operadores.c</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>stdarg.h</label>
+      </node>
+      <node id="7">
+        <label>assert.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="4">
+        <label>string.h</label>
+      </node>
+      <node id="1">
+        <label>operadores.h</label>
+        <link refid="operadores_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stack.h</label>
+        <link refid="stack_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>math.h</label>
+      </node>
+      <node id="6">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>parser.c</label>
+        <link refid="parser_8c"/>
+      </node>
+      <node id="4">
+        <label>operadores.c</label>
+        <link refid="operadores_8c"/>
+      </node>
+      <node id="2">
+        <label>parser.h</label>
+        <link refid="parser_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>operadores.h</label>
+        <link refid="operadores_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="operadores_8h_1a1fd952a5bb720cef346533dcb8c36e33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int isBothLong</definition>
+        <argsstring>(elemtype x, elemtype y)</argsstring>
+        <name>isBothLong</name>
+        <param>
+          <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Função auxiliar que verifica se os 2 elementos são do tipo Long. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo do elemento </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo do elemento </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 se os 2 elementos forem do tipo Long, 0 caso contrário. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="22" column="5" bodyfile="operadores.c" bodystart="15" bodyend="17" declfile="operadores.h" declline="22" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a75f46d4c7cd93ec76c83c0cd2bf303fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int isBothDouble</definition>
+        <argsstring>(elemtype x, elemtype y)</argsstring>
+        <name>isBothDouble</name>
+        <param>
+          <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Função auxiliar que verifica se os 2 elementos são do tipo Double. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo do elemento </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo do elemento </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 se os 2 elementos forem do tipo Double, 0 caso contrário. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="30" column="5" bodyfile="operadores.c" bodystart="25" bodyend="27" declfile="operadores.h" declline="30" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1afb5e1520c8faa97a2f0c034abde4a021" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int isBothString</definition>
+        <argsstring>(elemtype x, elemtype y)</argsstring>
+        <name>isBothString</name>
+        <param>
+          <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Função auxiliar que verifica se os dois elementos são do tipo String. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo do elemento </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo do elemento </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 se os dois elementos forem do tipo String, 0 caso contrário. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="38" column="5" bodyfile="operadores.c" bodystart="35" bodyend="37" declfile="operadores.h" declline="38" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1ab7c77a9ab1c5488c65dababa98241055" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int isBothArray</definition>
+        <argsstring>(elemtype x, elemtype y)</argsstring>
+        <name>isBothArray</name>
+        <param>
+          <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Função auxiliar que verifica se os dois elementos são do tipo Array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo do elemento </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo do elemento </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 se os dois elementos forem do tipo Array, 0 caso contrário. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="46" column="5" bodyfile="operadores.c" bodystart="45" bodyend="47" declfile="operadores.h" declline="46" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1af98d546af0b1a0ce0e5822b8881198ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int isLong</definition>
+        <argsstring>(elemtype x)</argsstring>
+        <name>isLong</name>
+        <param>
+          <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Função auxiliar que verifica se um elemento é do tipo Long. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo do elemento </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 se o elemento for do tipo Long, 0 caso contrário. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="53" column="5" bodyfile="operadores.c" bodystart="54" bodyend="56" declfile="operadores.h" declline="53" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a8d9511790980cf10613b71acf884ee25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int isDouble</definition>
+        <argsstring>(elemtype x)</argsstring>
+        <name>isDouble</name>
+        <param>
+          <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Função auxiliar que verifica se um elemento é do tipo Double. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo do elemento </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 se o elemento for do tipo Double, 0 caso contrário. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="60" column="5" bodyfile="operadores.c" bodystart="63" bodyend="65" declfile="operadores.h" declline="60" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1afc94089887ed536a3f2b1a51ae96b59e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int isString</definition>
+        <argsstring>(elemtype x)</argsstring>
+        <name>isString</name>
+        <param>
+          <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Função auxiliar que verifica um elemento é do tipo String. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo do elemento </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 se o elemento for do tipo String, 0 caso contrário. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="67" column="5" bodyfile="operadores.c" bodystart="72" bodyend="74" declfile="operadores.h" declline="67" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a3659a31d5a992a6117cbbefed6e5c0d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int isArray</definition>
+        <argsstring>(elemtype x)</argsstring>
+        <name>isArray</name>
+        <param>
+          <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Função auxiliar que verifica um elemento é do tipo Array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo do elemento </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 se o elemento for do tipo Array, 0 caso contrário. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="74" column="5" bodyfile="operadores.c" bodystart="81" bodyend="83" declfile="operadores.h" declline="74" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a2b19c806ab2b8a56ce87875a4a41b082" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int isAnyString</definition>
+        <argsstring>(elemtype x, elemtype y)</argsstring>
+        <name>isAnyString</name>
+        <param>
+          <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Função auxiliar que verifica se algum dos elementos é do tipo String. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo do elemento </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo do elemento </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 se algum dos elementos for do tipo String, 0 caso contrário. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="82" column="5" bodyfile="operadores.c" bodystart="91" bodyend="93" declfile="operadores.h" declline="82" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a6379b1e68eb419242670b5d0153a76bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int isAnyArray</definition>
+        <argsstring>(elemtype x, elemtype y)</argsstring>
+        <name>isAnyArray</name>
+        <param>
+          <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Função auxiliar que verifica se algum dos elementos é do tipo Array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo do elemento </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo do elemento </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 se algum dos elementos for do tipo Array, 0 caso contrário. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="90" column="5" bodyfile="operadores.c" bodystart="101" bodyend="103" declfile="operadores.h" declline="90" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a3771ae9af45733c322719ef939fcf566" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void soma</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>soma</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> e coloca na <ref refid="structStack" kindref="compound">Stack</ref> o resultado da soma dos 2 elementos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="97" column="6" bodyfile="operadores.c" bodystart="110" bodyend="119" declfile="operadores.h" declline="97" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1af5494c26ebf801486c92be86cfbb95a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void subtracao</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>subtracao</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> e coloca na <ref refid="structStack" kindref="compound">Stack</ref> o que se obtém ao subtrair o elemento do topo ao elemento a seguir. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="104" column="6" bodyfile="operadores.c" bodystart="126" bodyend="135" declfile="operadores.h" declline="104" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1aaf5ce3a099e3a41b4bcedc753d47d8fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mult</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>mult</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> e coloca na <ref refid="structStack" kindref="compound">Stack</ref> o resultado da multiplicação dos 2 primeiros elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="111" column="6" bodyfile="operadores.c" bodystart="142" bodyend="151" declfile="operadores.h" declline="111" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a103b13816055f2f65f846c32605aa129" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void divisao</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>divisao</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> e coloca na <ref refid="structStack" kindref="compound">Stack</ref> o resultado da divisão do 2º elemento do topo pelo elemento do topo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="118" column="6" bodyfile="operadores.c" bodystart="158" bodyend="167" declfile="operadores.h" declline="118" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a5d37c34f7318feb0f0d5fb6e4a5a21e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void parentesesAberto</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>parentesesAberto</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que decrementa 1 valor ao elemento do topo da <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="124" column="6" bodyfile="operadores.c" bodystart="173" bodyend="185" declfile="operadores.h" declline="124" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a3da097a9c94248db35377a229205d5d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void parentesesFechado</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>parentesesFechado</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que incrementa 1 valor ao elemento do topo da <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="130" column="6" bodyfile="operadores.c" bodystart="191" bodyend="203" declfile="operadores.h" declline="130" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1aff383c03881eb0407ce934e8c33adb1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void exponenciacao</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>exponenciacao</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> e coloca na <ref refid="structStack" kindref="compound">Stack</ref> a potência que tem como base o topo da <ref refid="structStack" kindref="compound">Stack</ref> e como expoente o elemento a seguir. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="137" column="6" bodyfile="operadores.c" bodystart="210" bodyend="219" declfile="operadores.h" declline="137" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1aed297eef4051bc95a11d1408bde48238" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void modulo</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>modulo</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> e coloca o resto da divisão inteira do 2º elemento pelo 1º elemento do topo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="144" column="6" bodyfile="operadores.c" bodystart="226" bodyend="230" declfile="operadores.h" declline="144" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a30b9c79458fd1a5c313f48c7c990d2c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void conjuncao</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>conjuncao</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Operador bitwise que retira o topo da <ref refid="structStack" kindref="compound">Stack</ref> e coloca na <ref refid="structStack" kindref="compound">Stack</ref> o valor 1 quando ambos os bits forem 1 e 0 caso contrário. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Exemplo: 2 3 &amp; <verbatim>     2 -&gt; 10
+
+     3 -&gt; 11
+
+     Output -&gt; 10
+</verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="159" column="6" bodyfile="operadores.c" bodystart="245" bodyend="249" declfile="operadores.h" declline="159" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1af333b0dc11a6563b36673fbd824e1eed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void disjuncao</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>disjuncao</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Operador bitwise que retira o topo da <ref refid="structStack" kindref="compound">Stack</ref> e coloca na <ref refid="structStack" kindref="compound">Stack</ref> o valor 1 quando um dos bits for 1 e 0 caso contrário. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Exemplo: 2 4 | <verbatim>     2 -&gt; 010
+
+     4 -&gt; 100
+
+     Output -&gt; 110
+</verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="174" column="6" bodyfile="operadores.c" bodystart="264" bodyend="268" declfile="operadores.h" declline="174" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1ae89906dbcfabf36d7a83df698281b7ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xor</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>xor</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Operador bitwise que retira o topo da <ref refid="structStack" kindref="compound">Stack</ref> e coloca na <ref refid="structStack" kindref="compound">Stack</ref> o valor 1 quando os bits comparados forem diferentes e 0 caso contrário. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="181" column="6" bodyfile="operadores.c" bodystart="275" bodyend="279" declfile="operadores.h" declline="181" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a452b559406b24eb5e0bad8a7ebb75689" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void not</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>not</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Operador bitwise que retira o topo da <ref refid="structStack" kindref="compound">Stack</ref> e colocar na <ref refid="structStack" kindref="compound">Stack</ref> o seu valor representado em Complemento2. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="187" column="6" bodyfile="operadores.c" bodystart="285" bodyend="288" declfile="operadores.h" declline="187" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1ad46df72e4a7511723f62f74f5e87e713" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arroba</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>arroba</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que troca os três elementos do topo da stack entre si. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>  Exemplos: Input  -&gt; 123
+
+            Output -&gt; 231
+
+            Input  -&gt; 465
+
+            Output -&gt; 654
+</verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="201" column="6" bodyfile="operadores.c" bodystart="302" bodyend="312" declfile="operadores.h" declline="201" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1ac0c33cc0c6f3d01fc31f246b71651c6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void switchtop</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>switchtop</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que troca os dois elementos do topo da stack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="207" column="6" bodyfile="operadores.c" bodystart="318" bodyend="325" declfile="operadores.h" declline="207" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a142a934e57412a833a6b08fbfbc291ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void underscore</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>underscore</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>O objetivo desta função é duplicar o topo da stack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="213" column="6" bodyfile="operadores.c" bodystart="331" bodyend="335" declfile="operadores.h" declline="213" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1ad9fc6c9a04ced2a131b63b0cfb8f707c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tpindex</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>tpindex</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que tem como objetivo procurar ao longo da stack o número de índice &apos;n&apos; e repeti-lo no fim da stack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="220" column="6" bodyfile="operadores.c" bodystart="342" bodyend="356" declfile="operadores.h" declline="220" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a704dcd33553ec31c73e53c0cb55cbf36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void leitura</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>leitura</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que lê uma linha e a coloca no topo da <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="226" column="6" bodyfile="operadores.c" bodystart="362" bodyend="366" declfile="operadores.h" declline="226" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1ae8be44908928a369e607ca3a1f3dc86a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trsint</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>trsint</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que transforma um elemento de qualquer tipo para o tipo long. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="232" column="6" bodyfile="operadores.c" bodystart="372" bodyend="384" declfile="operadores.h" declline="232" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a0e1198aa9a9e36ec3db11fcc5971e14c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trsdouble</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>trsdouble</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que transforma um elemento de qualquer tipo para o tipo double. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="238" column="6" bodyfile="operadores.c" bodystart="390" bodyend="402" declfile="operadores.h" declline="238" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a525f0b257f5ebc946ee663b9ee379967" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trschar</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>trschar</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que transforma um elemento de qualquer tipo para o tipo char. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="244" column="6" bodyfile="operadores.c" bodystart="408" bodyend="418" declfile="operadores.h" declline="244" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a8f1f8db494502485256e7afe1827b698" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void igual</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>igual</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> e se forem iguais coloca 1 na stack ou 0 caso contrário. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="252" column="6" bodyfile="operadores.c" bodystart="425" bodyend="434" declfile="operadores.h" declline="252" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a44fca0432c8da0e08c623edd76afa9b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void maior</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>maior</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que devolve 1 se o 2º elemento for maior que o do topo da <ref refid="structStack" kindref="compound">Stack</ref> ou 0, caso contrário. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="258" column="6" bodyfile="operadores.c" bodystart="440" bodyend="449" declfile="operadores.h" declline="258" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a00ba42de048a9f70b31d92dcd28f8594" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void menor</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>menor</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que devolve 1 se o 2º elemento for menor que o do topo da <ref refid="structStack" kindref="compound">Stack</ref> ou 0, caso contrário. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="264" column="6" bodyfile="operadores.c" bodystart="455" bodyend="464" declfile="operadores.h" declline="264" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a92b2a6049936bd24c5410fd1a541288d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void invertevl</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>invertevl</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira o elemento do topo da <ref refid="structStack" kindref="compound">Stack</ref> e coloca na <ref refid="structStack" kindref="compound">Stack</ref> o resultado do seu valor lógico invertido. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="270" column="6" bodyfile="operadores.c" bodystart="471" bodyend="475" declfile="operadores.h" declline="270" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a30590305d071041a944db7dc41c64f05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double elemDouble</definition>
+        <argsstring>(elemtype t, elemdata v)</argsstring>
+        <name>elemDouble</name>
+        <param>
+          <type><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="unionelemdata" kindref="compound">elemdata</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Função auxiliar que recebe o tipo e o data de um elemento e devolve o data em Double. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo do elemento </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data do elemento </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Valor do elemento no tipo Double. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="278" column="8" bodyfile="operadores.c" bodystart="483" bodyend="491" declfile="operadores.h" declline="278" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a56672f95bcd0c9bf1ec45dc942cd7385" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void econjuncao</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>econjuncao</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> e coloca o valor do 1º elemento caso ambos sejam verdadeiros ou 0, caso contrário. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="286" column="6" bodyfile="operadores.c" bodystart="499" bodyend="506" declfile="operadores.h" declline="286" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a95619495de1c17828bc4da5686fd8fd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void edisjuncao</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>edisjuncao</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> e: Coloca 0 na <ref refid="structStack" kindref="compound">Stack</ref> se os 2 elementos forem falsos, o 2º elemento caso sejam ambos verdadeiros ou o elemento de valor lógico 1 caso algum deles seja falso. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="295" column="6" bodyfile="operadores.c" bodystart="515" bodyend="522" declfile="operadores.h" declline="295" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a57a716b637a8f163767ff908b3d7395e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void emaior</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>emaior</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> e coloca o elemento maior na <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="301" column="6" bodyfile="operadores.c" bodystart="528" bodyend="546" declfile="operadores.h" declline="301" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a68bb2456be4665bde8c6216d7416d46d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void emenor</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>emenor</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> e coloca o elemento menor na <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="307" column="6" bodyfile="operadores.c" bodystart="552" bodyend="570" declfile="operadores.h" declline="307" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1abd2f3cb10e53d365dfed6bb55a84046c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ifthenelse</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>ifthenelse</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira os 3 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> e: Se o 3º elemento do topo for verdadeiro, volta a colocar o 2º elemento na <ref refid="structStack" kindref="compound">Stack</ref>. Caso contrário, volta a colocar o elemento do topo na <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="315" column="6" bodyfile="operadores.c" bodystart="578" bodyend="596" declfile="operadores.h" declline="315" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a2b52c6822cc7f3f0bdf57e91d8137471" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pushvar</definition>
+        <argsstring>(struct Stack *s, char var)</argsstring>
+        <name>pushvar</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Função que coloca a variável na <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variável </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="322" column="6" bodyfile="operadores.c" bodystart="603" bodyend="610" declfile="operadores.h" declline="322" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a919c7e29ea742c20ddfc86e10b57d744" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copiatopo</definition>
+        <argsstring>(struct Stack *s, char var)</argsstring>
+        <name>copiatopo</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Função que altera o valor e o tipo da variável para os do topo da <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variável </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="329" column="6" bodyfile="operadores.c" bodystart="617" bodyend="625" declfile="operadores.h" declline="329" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a6b7c0292afd2eebc26df67afb88b57c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy</definition>
+        <argsstring>(struct Stack *s, char var)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Função que altera o valor e o tipo da variável para os do topo da <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variável </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="336" column="6" bodyfile="operadores.c" bodystart="632" bodyend="651" declfile="operadores.h" declline="336" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a728e28daeafd78ff8613b7abb0ae85a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void virgula</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>virgula</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira o elemento do topo da <ref refid="structStack" kindref="compound">Stack</ref> e: Caso seja uma string ou um array, coloca o seu comprimento na <ref refid="structStack" kindref="compound">Stack</ref>; Caso seja um número, coloca na <ref refid="structStack" kindref="compound">Stack</ref> um array inicializado a 0 com todos os inteiros até n, sendo n o elemento do topo da <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="345" column="6" bodyfile="operadores.c" bodystart="660" bodyend="687" declfile="operadores.h" declline="345" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1abf56cca59f9e3f0e1d78d65ac8f1fdb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trsstring</definition>
+        <argsstring>(char x, char *s)</argsstring>
+        <name>trsstring</name>
+        <param>
+          <type>char</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função auxiliar que transforma um char numa String apenas com esse char. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Char </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="352" column="6" bodyfile="operadores.c" bodystart="694" bodyend="697" declfile="operadores.h" declline="352" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a3acfb58d6af645eccb73eb44b32ad26e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void concat_arrays</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>concat_arrays</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> e: Caso sejam os 2 arrays, concatena os arrays; Caso o elemento do topo seja um array, adiciona o 2º elemento da <ref refid="structStack" kindref="compound">Stack</ref> ao início do array e coloca o array resultante na <ref refid="structStack" kindref="compound">Stack</ref>; Caso o 2º elemento do topo seja um array, adiciona o elemento do topo ao fim do array e coloca o array resultante na <ref refid="structStack" kindref="compound">Stack</ref>;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="361" column="6" bodyfile="operadores.c" bodystart="706" bodyend="739" declfile="operadores.h" declline="361" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1af7afd6312bc83f0590fcff2a80bf7fc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void concat_strings</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>concat_strings</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> e: Caso sejam os 2 strings, concatena as strings; Caso o elemento do topo seja uma string, adiciona o 2º elemento da <ref refid="structStack" kindref="compound">Stack</ref> ao início da string e coloca a string resultante na <ref refid="structStack" kindref="compound">Stack</ref>; Caso o 2º elemento do topo seja uma string, adiciona o elemento do topo ao fim da string e coloca a string resultante na <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="370" column="6" bodyfile="operadores.c" bodystart="748" bodyend="768" declfile="operadores.h" declline="370" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a52f1c920ef9994bddd2f57b7f74ef3d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void concat</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>concat</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que invoca o respetivo concat de strings ou arrays. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="376" column="6" bodyfile="operadores.c" bodystart="774" bodyend="779" declfile="operadores.h" declline="376" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a17f75f7c1d176990256b2490e927bb3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operador_mais</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>operador_mais</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função geral do operador &apos;+&apos; que invoca as operações consoante o tipo dos elementos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> e coloca na <ref refid="structStack" kindref="compound">Stack</ref> o array/string resultante da concatenação.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Função que retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> e coloca na <ref refid="structStack" kindref="compound">Stack</ref> o array/string resultante da concatenação.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="382" column="6" bodyfile="operadores.c" bodystart="785" bodyend="790" declfile="operadores.h" declline="382" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a5bee35b55a8a98e898a1209ec12e24b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void til</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>til</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira da <ref refid="structStack" kindref="compound">Stack</ref> o elemento do topo da <ref refid="structStack" kindref="compound">Stack(Array)</ref> e coloca na <ref refid="structStack" kindref="compound">Stack</ref> todos os seus elementos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="394" column="6" bodyfile="operadores.c" bodystart="871" bodyend="881" declfile="operadores.h" declline="394" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1ab1ca19c9cfca13b6154795774515a685" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operador_til</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>operador_til</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função geral do operador &apos;~&apos; que invoca as operações consoante o tipo dos elementos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="400" column="6" bodyfile="operadores.c" bodystart="887" bodyend="894" declfile="operadores.h" declline="400" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1aa5bb8725a3146e64903bc1457c759c42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void take_last</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>take_last</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira o elemento do topo da <ref refid="structStack" kindref="compound">Stack</ref> (array/string) e retira-lhe o último elemento (se for array, o do topo) e coloca-o na <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="407" column="6" bodyfile="operadores.c" bodystart="797" bodyend="817" declfile="operadores.h" declline="407" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a3ddd42dca346ba1a2d95a938767af3a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operador_pFechado</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>operador_pFechado</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função geral do operador &apos;)&apos; que invoca as operações consoante o tipo dos elementos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="413" column="6" bodyfile="operadores.c" bodystart="823" bodyend="827" declfile="operadores.h" declline="413" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1aa15c3fe091c136802ebf9142d1a869a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void take_fst</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>take_fst</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira o elemento do topo da <ref refid="structStack" kindref="compound">Stack</ref> (array/string) e retira-lhe o 1º elemento (se for array, o do fundo) o e coloca-o na <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="420" column="6" bodyfile="operadores.c" bodystart="834" bodyend="855" declfile="operadores.h" declline="420" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1ae9e503653973e0ff2a8a5fe204086e2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operador_pAberto</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>operador_pAberto</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função geral do operador &apos;(&apos; que invoca as operações consoante o tipo dos elementos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="426" column="6" bodyfile="operadores.c" bodystart="861" bodyend="865" declfile="operadores.h" declline="426" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a9b6d42d712bd87e546a4d6443cf6c56a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void procura_substr</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>procura_substr</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira os 2 primeiros elementos da <ref refid="structStack" kindref="compound">Stack</ref> (Strings) e coloca na <ref refid="structStack" kindref="compound">Stack</ref> o índice na String (2º elemento do topo) onde se inicia a Substring (elemento do topo) ou -1 caso não exista Substring. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="434" column="6" bodyfile="operadores.c" bodystart="902" bodyend="910" declfile="operadores.h" declline="434" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1ad8cfb2a4efd7a48b443d0676cb09457c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operador_cardinal</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>operador_cardinal</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função geral do operador &apos;#&apos; que invoca as operações consoante o tipo dos elementos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="440" column="6" bodyfile="operadores.c" bodystart="916" bodyend="923" declfile="operadores.h" declline="440" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a7e512a8653e38e8bf2605865e3388558" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lermtlinhas</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>lermtlinhas</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que lê todo o input de uma string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="446" column="6" bodyfile="operadores.c" bodystart="929" bodyend="936" declfile="operadores.h" declline="446" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a64c42d9e0f2efda6df0689b2bfe97b0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void procura_por_indice</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>procura_por_indice</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref>, onde o do topo é o índice e o 2º um array/string. Procura o elemento do índice dado na string/array e coloca-o na <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="453" column="6" bodyfile="operadores.c" bodystart="943" bodyend="951" declfile="operadores.h" declline="453" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1ab56dfd4d71f552575a47d3153aee03f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operador_igual</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>operador_igual</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função geral do operador &apos;=&apos; que invoca as operações consoante o tipo dos elementos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="459" column="6" bodyfile="operadores.c" bodystart="957" bodyend="963" declfile="operadores.h" declline="459" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a3685206f30bdc1c0bade8be43d4717e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void concat_xvezes</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>concat_xvezes</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> e concatena recursivamente o array/string do 2º elemento do topo da <ref refid="structStack" kindref="compound">Stack</ref> n vezes, onde n é o elemento do topo da <ref refid="structStack" kindref="compound">Stack</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="466" column="6" bodyfile="operadores.c" bodystart="971" bodyend="995" declfile="operadores.h" declline="466" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1aa759f27f5ba1d908b146ea0fc0ac2a78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operador_asterisco</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>operador_asterisco</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função geral do operador &apos;*&apos; que invoca as operações consoante o tipo dos elementos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="472" column="6" bodyfile="operadores.c" bodystart="1001" bodyend="1006" declfile="operadores.h" declline="472" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a6d303d615486f011f9b1e5e191512833" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sepstr_substr</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>sepstr_substr</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref> (strings) e, sendo o elemento do topo a substring, separa o 2º elemento do topo (string) por essa substring-. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="479" column="6" bodyfile="operadores.c" bodystart="1013" bodyend="1022" declfile="operadores.h" declline="479" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a076d88e40e29e20954d90fd3ca48fc75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operador_barra</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>operador_barra</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função geral do operador &apos;/&apos; que invoca as operações consoante o tipo dos elementos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="485" column="6" bodyfile="operadores.c" bodystart="1028" bodyend="1033" declfile="operadores.h" declline="485" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a73991313de0e39d2503779617d9c7b0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sepstr_whitespc</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>sepstr_whitespc</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira o elemento do topo da <ref refid="structStack" kindref="compound">Stack</ref> (string) e separa essa string pela ocorrência de whitespaces. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="491" column="6" bodyfile="operadores.c" bodystart="1039" bodyend="1047" declfile="operadores.h" declline="491" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1af8ee9f99ed680a12412bf856d8fb1159" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sepstr_newlns</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>sepstr_newlns</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira o elemento do topo da <ref refid="structStack" kindref="compound">Stack</ref> (string) e separa essa string pela ocorrência de newlines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="497" column="6" bodyfile="operadores.c" bodystart="1053" bodyend="1061" declfile="operadores.h" declline="497" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1ac2bc84393637b80e017dbb221e135727" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void buscaInicio</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>buscaInicio</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref>, onde n é o elemento do topo e o 2º elemento do topo o array/string, e coloca na <ref refid="structStack" kindref="compound">Stack</ref> os n elementos do início do array/string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="504" column="6" bodyfile="operadores.c" bodystart="1068" bodyend="1091" declfile="operadores.h" declline="504" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a8ce6283f3d492fd2b5b458c06e8f37b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operador_menor</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>operador_menor</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função geral do operador &apos;&lt;&apos; que invoca as operações consoante o tipo dos elementos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="510" column="6" bodyfile="operadores.c" bodystart="1097" bodyend="1103" declfile="operadores.h" declline="510" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a201d8d8ca1094bd80b880c4e50385f77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void buscaFim</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>buscaFim</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função que retira os 2 elementos do topo da <ref refid="structStack" kindref="compound">Stack</ref>, onde n é o elemento do topo e o 2º elemento do topo o array/string, e coloca na <ref refid="structStack" kindref="compound">Stack</ref> os n elementos do fim do array/string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="517" column="6" bodyfile="operadores.c" bodystart="1110" bodyend="1135" declfile="operadores.h" declline="517" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="operadores_8h_1a0ca13a586172e028c332b8caf9b9aa63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operador_maior</definition>
+        <argsstring>(struct Stack *s)</argsstring>
+        <name>operador_maior</name>
+        <param>
+          <type>struct <ref refid="structStack" kindref="compound">Stack</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Função geral do operador &apos;&gt;&apos; que invoca as operações consoante o tipo dos elementos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structStack" kindref="compound">Stack</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="operadores.h" line="523" column="6" bodyfile="operadores.c" bodystart="1141" bodyend="1147" declfile="operadores.h" declline="523" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Ficheiro com as funções relativas aos operadores. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>LIPROJETO_OPERADORES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIPROJETO_OPERADORES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stack_8h" kindref="compound">stack.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a1fd952a5bb720cef346533dcb8c36e33" kindref="member">isBothLong</ref>(<ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref><sp/>x,<sp/><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref><sp/>y);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a75f46d4c7cd93ec76c83c0cd2bf303fe" kindref="member">isBothDouble</ref>(<ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref><sp/>x,<sp/><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref><sp/>y);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1afb5e1520c8faa97a2f0c034abde4a021" kindref="member">isBothString</ref>(<ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref><sp/>x,<sp/><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref><sp/>y);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1ab7c77a9ab1c5488c65dababa98241055" kindref="member">isBothArray</ref>(<ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref><sp/>x,<sp/><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref><sp/>y);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1af98d546af0b1a0ce0e5822b8881198ba" kindref="member">isLong</ref>(<ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref><sp/>x);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a8d9511790980cf10613b71acf884ee25" kindref="member">isDouble</ref>(<ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref><sp/>x);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1afc94089887ed536a3f2b1a51ae96b59e" kindref="member">isString</ref>(<ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref><sp/>x);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a3659a31d5a992a6117cbbefed6e5c0d5" kindref="member">isArray</ref>(<ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref><sp/>x);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a2b19c806ab2b8a56ce87875a4a41b082" kindref="member">isAnyString</ref>(<ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref><sp/>x,<sp/><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref><sp/>y);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a6379b1e68eb419242670b5d0153a76bb" kindref="member">isAnyArray</ref>(<ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref><sp/>x,<sp/><ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref><sp/>y);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a3771ae9af45733c322719ef939fcf566" kindref="member">soma</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1af5494c26ebf801486c92be86cfbb95a9" kindref="member">subtracao</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1aaf5ce3a099e3a41b4bcedc753d47d8fc" kindref="member">mult</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a103b13816055f2f65f846c32605aa129" kindref="member">divisao</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a5d37c34f7318feb0f0d5fb6e4a5a21e0" kindref="member">parentesesAberto</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a3da097a9c94248db35377a229205d5d7" kindref="member">parentesesFechado</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1aff383c03881eb0407ce934e8c33adb1c" kindref="member">exponenciacao</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1aed297eef4051bc95a11d1408bde48238" kindref="member">modulo</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a30b9c79458fd1a5c313f48c7c990d2c1" kindref="member">conjuncao</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1af333b0dc11a6563b36673fbd824e1eed" kindref="member">disjuncao</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1ae89906dbcfabf36d7a83df698281b7ad" kindref="member">xor</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a452b559406b24eb5e0bad8a7ebb75689" kindref="member">not</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1ad46df72e4a7511723f62f74f5e87e713" kindref="member">arroba</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1ac0c33cc0c6f3d01fc31f246b71651c6e" kindref="member">switchtop</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a142a934e57412a833a6b08fbfbc291ae" kindref="member">underscore</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1ad9fc6c9a04ced2a131b63b0cfb8f707c" kindref="member">tpindex</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a704dcd33553ec31c73e53c0cb55cbf36" kindref="member">leitura</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1ae8be44908928a369e607ca3a1f3dc86a" kindref="member">trsint</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a0e1198aa9a9e36ec3db11fcc5971e14c" kindref="member">trsdouble</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a525f0b257f5ebc946ee663b9ee379967" kindref="member">trschar</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a8f1f8db494502485256e7afe1827b698" kindref="member">igual</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a44fca0432c8da0e08c623edd76afa9b4" kindref="member">maior</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a00ba42de048a9f70b31d92dcd28f8594" kindref="member">menor</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a92b2a6049936bd24c5410fd1a541288d" kindref="member">invertevl</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a30590305d071041a944db7dc41c64f05" kindref="member">elemDouble</ref>(<ref refid="stack_8h_1a299c4209e8a53e5a64af604da1921c44" kindref="member">elemtype</ref><sp/>t,<sp/><ref refid="unionelemdata" kindref="compound">elemdata</ref><sp/>v);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a56672f95bcd0c9bf1ec45dc942cd7385" kindref="member">econjuncao</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a95619495de1c17828bc4da5686fd8fd2" kindref="member">edisjuncao</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a57a716b637a8f163767ff908b3d7395e" kindref="member">emaior</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a68bb2456be4665bde8c6216d7416d46d" kindref="member">emenor</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1abd2f3cb10e53d365dfed6bb55a84046c" kindref="member">ifthenelse</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a2b52c6822cc7f3f0bdf57e91d8137471" kindref="member">pushvar</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>var);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a919c7e29ea742c20ddfc86e10b57d744" kindref="member">copiatopo</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>var);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a6b7c0292afd2eebc26df67afb88b57c7" kindref="member">copy</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>var);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a728e28daeafd78ff8613b7abb0ae85a0" kindref="member">virgula</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1abf56cca59f9e3f0e1d78d65ac8f1fdb8" kindref="member">trsstring</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a3acfb58d6af645eccb73eb44b32ad26e" kindref="member">concat_arrays</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1af7afd6312bc83f0590fcff2a80bf7fc1" kindref="member">concat_strings</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a52f1c920ef9994bddd2f57b7f74ef3d6" kindref="member">concat</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a17f75f7c1d176990256b2490e927bb3a" kindref="member">operador_mais</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a17f75f7c1d176990256b2490e927bb3a" kindref="member">operador_mais</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a5bee35b55a8a98e898a1209ec12e24b1" kindref="member">til</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1ab1ca19c9cfca13b6154795774515a685" kindref="member">operador_til</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1aa5bb8725a3146e64903bc1457c759c42" kindref="member">take_last</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a3ddd42dca346ba1a2d95a938767af3a8" kindref="member">operador_pFechado</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1aa15c3fe091c136802ebf9142d1a869a5" kindref="member">take_fst</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1ae9e503653973e0ff2a8a5fe204086e2c" kindref="member">operador_pAberto</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a9b6d42d712bd87e546a4d6443cf6c56a" kindref="member">procura_substr</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight></codeline>
+<codeline lineno="440"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1ad8cfb2a4efd7a48b443d0676cb09457c" kindref="member">operador_cardinal</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a7e512a8653e38e8bf2605865e3388558" kindref="member">lermtlinhas</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a64c42d9e0f2efda6df0689b2bfe97b0a" kindref="member">procura_por_indice</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="459"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1ab56dfd4d71f552575a47d3153aee03f0" kindref="member">operador_igual</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight></codeline>
+<codeline lineno="466"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a3685206f30bdc1c0bade8be43d4717e6" kindref="member">concat_xvezes</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1aa759f27f5ba1d908b146ea0fc0ac2a78" kindref="member">operador_asterisco</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="479"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a6d303d615486f011f9b1e5e191512833" kindref="member">sepstr_substr</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="485"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a076d88e40e29e20954d90fd3ca48fc75" kindref="member">operador_barra</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight></codeline>
+<codeline lineno="491"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a73991313de0e39d2503779617d9c7b0b" kindref="member">sepstr_whitespc</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight></codeline>
+<codeline lineno="497"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1af8ee9f99ed680a12412bf856d8fb1159" kindref="member">sepstr_newlns</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"></highlight></codeline>
+<codeline lineno="504"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1ac2bc84393637b80e017dbb221e135727" kindref="member">buscaInicio</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"></highlight></codeline>
+<codeline lineno="510"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a8ce6283f3d492fd2b5b458c06e8f37b8" kindref="member">operador_menor</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a201d8d8ca1094bd80b880c4e50385f77" kindref="member">buscaFim</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"></highlight></codeline>
+<codeline lineno="523"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="operadores_8h_1a0ca13a586172e028c332b8caf9b9aa63" kindref="member">operador_maior</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structStack" kindref="compound">Stack</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"></highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//LIPROJETO_OPERADORES_H</highlight></codeline>
+    </programlisting>
+    <location file="operadores.h"/>
+  </compounddef>
+</doxygen>

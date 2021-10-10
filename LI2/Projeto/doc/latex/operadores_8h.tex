@@ -1,0 +1,1312 @@
+\hypertarget{operadores_8h}{}\doxysection{operadores.\+h File Reference}
+\label{operadores_8h}\index{operadores.h@{operadores.h}}
+
+
+Ficheiro com as funções relativas aos operadores.  
+
+
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}stack.\+h\char`\"{}}\newline
+Include dependency graph for operadores.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{operadores_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{operadores_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{operadores_8h_a1fd952a5bb720cef346533dcb8c36e33}{is\+Both\+Long}} (\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} x, \mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} y)
+\begin{DoxyCompactList}\small\item\em Função auxiliar que verifica se os 2 elementos são do tipo Long. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{operadores_8h_a75f46d4c7cd93ec76c83c0cd2bf303fe}{is\+Both\+Double}} (\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} x, \mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} y)
+\begin{DoxyCompactList}\small\item\em Função auxiliar que verifica se os 2 elementos são do tipo Double. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{operadores_8h_afb5e1520c8faa97a2f0c034abde4a021}{is\+Both\+String}} (\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} x, \mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} y)
+\begin{DoxyCompactList}\small\item\em Função auxiliar que verifica se os dois elementos são do tipo String. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{operadores_8h_ab7c77a9ab1c5488c65dababa98241055}{is\+Both\+Array}} (\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} x, \mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} y)
+\begin{DoxyCompactList}\small\item\em Função auxiliar que verifica se os dois elementos são do tipo Array. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{operadores_8h_af98d546af0b1a0ce0e5822b8881198ba}{is\+Long}} (\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} x)
+\begin{DoxyCompactList}\small\item\em Função auxiliar que verifica se um elemento é do tipo Long. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{operadores_8h_a8d9511790980cf10613b71acf884ee25}{is\+Double}} (\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} x)
+\begin{DoxyCompactList}\small\item\em Função auxiliar que verifica se um elemento é do tipo Double. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{operadores_8h_afc94089887ed536a3f2b1a51ae96b59e}{is\+String}} (\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} x)
+\begin{DoxyCompactList}\small\item\em Função auxiliar que verifica um elemento é do tipo String. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{operadores_8h_a3659a31d5a992a6117cbbefed6e5c0d5}{is\+Array}} (\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} x)
+\begin{DoxyCompactList}\small\item\em Função auxiliar que verifica um elemento é do tipo Array. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{operadores_8h_a2b19c806ab2b8a56ce87875a4a41b082}{is\+Any\+String}} (\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} x, \mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} y)
+\begin{DoxyCompactList}\small\item\em Função auxiliar que verifica se algum dos elementos é do tipo String. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{operadores_8h_a6379b1e68eb419242670b5d0153a76bb}{is\+Any\+Array}} (\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} x, \mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} y)
+\begin{DoxyCompactList}\small\item\em Função auxiliar que verifica se algum dos elementos é do tipo Array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a3771ae9af45733c322719ef939fcf566}{soma}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o resultado da soma dos 2 elementos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_af5494c26ebf801486c92be86cfbb95a9}{subtracao}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o que se obtém ao subtrair o elemento do topo ao elemento a seguir. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_aaf5ce3a099e3a41b4bcedc753d47d8fc}{mult}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o resultado da multiplicação dos 2 primeiros elementos do topo da \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a103b13816055f2f65f846c32605aa129}{divisao}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o resultado da divisão do 2º elemento do topo pelo elemento do topo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a5d37c34f7318feb0f0d5fb6e4a5a21e0}{parenteses\+Aberto}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que decrementa 1 valor ao elemento do topo da \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a3da097a9c94248db35377a229205d5d7}{parenteses\+Fechado}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que incrementa 1 valor ao elemento do topo da \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_aff383c03881eb0407ce934e8c33adb1c}{exponenciacao}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} a potência que tem como base o topo da \mbox{\hyperlink{structStack}{Stack}} e como expoente o elemento a seguir. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_aed297eef4051bc95a11d1408bde48238}{modulo}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca o resto da divisão inteira do 2º elemento pelo 1º elemento do topo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a30b9c79458fd1a5c313f48c7c990d2c1}{conjuncao}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Operador bitwise que retira o topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o valor 1 quando ambos os bits forem 1 e 0 caso contrário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_af333b0dc11a6563b36673fbd824e1eed}{disjuncao}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Operador bitwise que retira o topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o valor 1 quando um dos bits for 1 e 0 caso contrário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_ae89906dbcfabf36d7a83df698281b7ad}{xor}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Operador bitwise que retira o topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o valor 1 quando os bits comparados forem diferentes e 0 caso contrário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a452b559406b24eb5e0bad8a7ebb75689}{not}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Operador bitwise que retira o topo da \mbox{\hyperlink{structStack}{Stack}} e colocar na \mbox{\hyperlink{structStack}{Stack}} o seu valor representado em Complemento2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_ad46df72e4a7511723f62f74f5e87e713}{arroba}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que troca os três elementos do topo da stack entre si. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_ac0c33cc0c6f3d01fc31f246b71651c6e}{switchtop}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que troca os dois elementos do topo da stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a142a934e57412a833a6b08fbfbc291ae}{underscore}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em O objetivo desta função é duplicar o topo da stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_ad9fc6c9a04ced2a131b63b0cfb8f707c}{tpindex}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que tem como objetivo procurar ao longo da stack o número de índice \textquotesingle{}n\textquotesingle{} e repeti-\/lo no fim da stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a704dcd33553ec31c73e53c0cb55cbf36}{leitura}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que lê uma linha e a coloca no topo da \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_ae8be44908928a369e607ca3a1f3dc86a}{trsint}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que transforma um elemento de qualquer tipo para o tipo long. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a0e1198aa9a9e36ec3db11fcc5971e14c}{trsdouble}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que transforma um elemento de qualquer tipo para o tipo double. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a525f0b257f5ebc946ee663b9ee379967}{trschar}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que transforma um elemento de qualquer tipo para o tipo char. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a8f1f8db494502485256e7afe1827b698}{igual}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e se forem iguais coloca 1 na stack ou 0 caso contrário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a44fca0432c8da0e08c623edd76afa9b4}{maior}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que devolve 1 se o 2º elemento for maior que o do topo da \mbox{\hyperlink{structStack}{Stack}} ou 0, caso contrário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a00ba42de048a9f70b31d92dcd28f8594}{menor}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que devolve 1 se o 2º elemento for menor que o do topo da \mbox{\hyperlink{structStack}{Stack}} ou 0, caso contrário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a92b2a6049936bd24c5410fd1a541288d}{invertevl}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira o elemento do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o resultado do seu valor lógico invertido. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{operadores_8h_a30590305d071041a944db7dc41c64f05}{elem\+Double}} (\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}} t, \mbox{\hyperlink{unionelemdata}{elemdata}} v)
+\begin{DoxyCompactList}\small\item\em Função auxiliar que recebe o tipo e o data de um elemento e devolve o data em Double. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a56672f95bcd0c9bf1ec45dc942cd7385}{econjuncao}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca o valor do 1º elemento caso ambos sejam verdadeiros ou 0, caso contrário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a95619495de1c17828bc4da5686fd8fd2}{edisjuncao}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e\+: Coloca 0 na \mbox{\hyperlink{structStack}{Stack}} se os 2 elementos forem falsos, o 2º elemento caso sejam ambos verdadeiros ou o elemento de valor lógico 1 caso algum deles seja falso. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a57a716b637a8f163767ff908b3d7395e}{emaior}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca o elemento maior na \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a68bb2456be4665bde8c6216d7416d46d}{emenor}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca o elemento menor na \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_abd2f3cb10e53d365dfed6bb55a84046c}{ifthenelse}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira os 3 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e\+: Se o 3º elemento do topo for verdadeiro, volta a colocar o 2º elemento na \mbox{\hyperlink{structStack}{Stack}}. Caso contrário, volta a colocar o elemento do topo na \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a2b52c6822cc7f3f0bdf57e91d8137471}{pushvar}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, char var)
+\begin{DoxyCompactList}\small\item\em Função que coloca a variável na \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a919c7e29ea742c20ddfc86e10b57d744}{copiatopo}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, char var)
+\begin{DoxyCompactList}\small\item\em Função que altera o valor e o tipo da variável para os do topo da \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a6b7c0292afd2eebc26df67afb88b57c7}{copy}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s, char var)
+\begin{DoxyCompactList}\small\item\em Função que altera o valor e o tipo da variável para os do topo da \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a728e28daeafd78ff8613b7abb0ae85a0}{virgula}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira o elemento do topo da \mbox{\hyperlink{structStack}{Stack}} e\+: Caso seja uma string ou um array, coloca o seu comprimento na \mbox{\hyperlink{structStack}{Stack}}; Caso seja um número, coloca na \mbox{\hyperlink{structStack}{Stack}} um array inicializado a 0 com todos os inteiros até n, sendo n o elemento do topo da \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_abf56cca59f9e3f0e1d78d65ac8f1fdb8}{trsstring}} (char x, char $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função auxiliar que transforma um char numa String apenas com esse char. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a3acfb58d6af645eccb73eb44b32ad26e}{concat\+\_\+arrays}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e\+: Caso sejam os 2 arrays, concatena os arrays; Caso o elemento do topo seja um array, adiciona o 2º elemento da \mbox{\hyperlink{structStack}{Stack}} ao início do array e coloca o array resultante na \mbox{\hyperlink{structStack}{Stack}}; Caso o 2º elemento do topo seja um array, adiciona o elemento do topo ao fim do array e coloca o array resultante na \mbox{\hyperlink{structStack}{Stack}};. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_af7afd6312bc83f0590fcff2a80bf7fc1}{concat\+\_\+strings}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e\+: Caso sejam os 2 strings, concatena as strings; Caso o elemento do topo seja uma string, adiciona o 2º elemento da \mbox{\hyperlink{structStack}{Stack}} ao início da string e coloca a string resultante na \mbox{\hyperlink{structStack}{Stack}}; Caso o 2º elemento do topo seja uma string, adiciona o elemento do topo ao fim da string e coloca a string resultante na \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a52f1c920ef9994bddd2f57b7f74ef3d6}{concat}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que invoca o respetivo concat de strings ou arrays. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a17f75f7c1d176990256b2490e927bb3a}{operador\+\_\+mais}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função geral do operador \textquotesingle{}+\textquotesingle{} que invoca as operações consoante o tipo dos elementos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a5bee35b55a8a98e898a1209ec12e24b1}{til}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira da \mbox{\hyperlink{structStack}{Stack}} o elemento do topo da \mbox{\hyperlink{structStack}{Stack(\+Array)}} e coloca na \mbox{\hyperlink{structStack}{Stack}} todos os seus elementos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_ab1ca19c9cfca13b6154795774515a685}{operador\+\_\+til}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função geral do operador \textquotesingle{}$\sim$\textquotesingle{} que invoca as operações consoante o tipo dos elementos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_aa5bb8725a3146e64903bc1457c759c42}{take\+\_\+last}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira o elemento do topo da \mbox{\hyperlink{structStack}{Stack}} (array/string) e retira-\/lhe o último elemento (se for array, o do topo) e coloca-\/o na \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a3ddd42dca346ba1a2d95a938767af3a8}{operador\+\_\+p\+Fechado}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função geral do operador \textquotesingle{})\textquotesingle{} que invoca as operações consoante o tipo dos elementos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_aa15c3fe091c136802ebf9142d1a869a5}{take\+\_\+fst}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira o elemento do topo da \mbox{\hyperlink{structStack}{Stack}} (array/string) e retira-\/lhe o 1º elemento (se for array, o do fundo) o e coloca-\/o na \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_ae9e503653973e0ff2a8a5fe204086e2c}{operador\+\_\+p\+Aberto}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função geral do operador \textquotesingle{}(\textquotesingle{} que invoca as operações consoante o tipo dos elementos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a9b6d42d712bd87e546a4d6443cf6c56a}{procura\+\_\+substr}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira os 2 primeiros elementos da \mbox{\hyperlink{structStack}{Stack}} (Strings) e coloca na \mbox{\hyperlink{structStack}{Stack}} o índice na String (2º elemento do topo) onde se inicia a Substring (elemento do topo) ou -\/1 caso não exista Substring. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_ad8cfb2a4efd7a48b443d0676cb09457c}{operador\+\_\+cardinal}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função geral do operador \textquotesingle{}\#\textquotesingle{} que invoca as operações consoante o tipo dos elementos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a7e512a8653e38e8bf2605865e3388558}{lermtlinhas}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que lê todo o input de uma string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a64c42d9e0f2efda6df0689b2bfe97b0a}{procura\+\_\+por\+\_\+indice}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}}, onde o do topo é o índice e o 2º um array/string. Procura o elemento do índice dado na string/array e coloca-\/o na \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_ab56dfd4d71f552575a47d3153aee03f0}{operador\+\_\+igual}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função geral do operador \textquotesingle{}=\textquotesingle{} que invoca as operações consoante o tipo dos elementos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a3685206f30bdc1c0bade8be43d4717e6}{concat\+\_\+xvezes}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e concatena recursivamente o array/string do 2º elemento do topo da \mbox{\hyperlink{structStack}{Stack}} n vezes, onde n é o elemento do topo da \mbox{\hyperlink{structStack}{Stack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_aa759f27f5ba1d908b146ea0fc0ac2a78}{operador\+\_\+asterisco}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função geral do operador \textquotesingle{}$\ast$\textquotesingle{} que invoca as operações consoante o tipo dos elementos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a6d303d615486f011f9b1e5e191512833}{sepstr\+\_\+substr}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} (strings) e, sendo o elemento do topo a substring, separa o 2º elemento do topo (string) por essa substring-\/. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a076d88e40e29e20954d90fd3ca48fc75}{operador\+\_\+barra}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função geral do operador \textquotesingle{}/\textquotesingle{} que invoca as operações consoante o tipo dos elementos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a73991313de0e39d2503779617d9c7b0b}{sepstr\+\_\+whitespc}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira o elemento do topo da \mbox{\hyperlink{structStack}{Stack}} (string) e separa essa string pela ocorrência de whitespaces. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_af8ee9f99ed680a12412bf856d8fb1159}{sepstr\+\_\+newlns}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira o elemento do topo da \mbox{\hyperlink{structStack}{Stack}} (string) e separa essa string pela ocorrência de newlines. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_ac2bc84393637b80e017dbb221e135727}{busca\+Inicio}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}}, onde n é o elemento do topo e o 2º elemento do topo o array/string, e coloca na \mbox{\hyperlink{structStack}{Stack}} os n elementos do início do array/string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a8ce6283f3d492fd2b5b458c06e8f37b8}{operador\+\_\+menor}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função geral do operador \textquotesingle{}$<$\textquotesingle{} que invoca as operações consoante o tipo dos elementos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a201d8d8ca1094bd80b880c4e50385f77}{busca\+Fim}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}}, onde n é o elemento do topo e o 2º elemento do topo o array/string, e coloca na \mbox{\hyperlink{structStack}{Stack}} os n elementos do fim do array/string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{operadores_8h_a0ca13a586172e028c332b8caf9b9aa63}{operador\+\_\+maior}} (struct \mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função geral do operador \textquotesingle{}$>$\textquotesingle{} que invoca as operações consoante o tipo dos elementos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ficheiro com as funções relativas aos operadores. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{operadores_8h_ad46df72e4a7511723f62f74f5e87e713}\label{operadores_8h_ad46df72e4a7511723f62f74f5e87e713}} 
+\index{operadores.h@{operadores.h}!arroba@{arroba}}
+\index{arroba@{arroba}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{arroba()}{arroba()}}
+{\footnotesize\ttfamily void arroba (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que troca os três elementos do topo da stack entre si. 
+
+\begin{DoxyVerb}  Exemplos: Input  -> 123
+
+            Output -> 231
+
+            Input  -> 465
+
+            Output -> 654
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a201d8d8ca1094bd80b880c4e50385f77}\label{operadores_8h_a201d8d8ca1094bd80b880c4e50385f77}} 
+\index{operadores.h@{operadores.h}!buscaFim@{buscaFim}}
+\index{buscaFim@{buscaFim}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{buscaFim()}{buscaFim()}}
+{\footnotesize\ttfamily void busca\+Fim (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}}, onde n é o elemento do topo e o 2º elemento do topo o array/string, e coloca na \mbox{\hyperlink{structStack}{Stack}} os n elementos do fim do array/string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_ac2bc84393637b80e017dbb221e135727}\label{operadores_8h_ac2bc84393637b80e017dbb221e135727}} 
+\index{operadores.h@{operadores.h}!buscaInicio@{buscaInicio}}
+\index{buscaInicio@{buscaInicio}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{buscaInicio()}{buscaInicio()}}
+{\footnotesize\ttfamily void busca\+Inicio (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}}, onde n é o elemento do topo e o 2º elemento do topo o array/string, e coloca na \mbox{\hyperlink{structStack}{Stack}} os n elementos do início do array/string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a52f1c920ef9994bddd2f57b7f74ef3d6}\label{operadores_8h_a52f1c920ef9994bddd2f57b7f74ef3d6}} 
+\index{operadores.h@{operadores.h}!concat@{concat}}
+\index{concat@{concat}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{concat()}{concat()}}
+{\footnotesize\ttfamily void concat (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que invoca o respetivo concat de strings ou arrays. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a3acfb58d6af645eccb73eb44b32ad26e}\label{operadores_8h_a3acfb58d6af645eccb73eb44b32ad26e}} 
+\index{operadores.h@{operadores.h}!concat\_arrays@{concat\_arrays}}
+\index{concat\_arrays@{concat\_arrays}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{concat\_arrays()}{concat\_arrays()}}
+{\footnotesize\ttfamily void concat\+\_\+arrays (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e\+: Caso sejam os 2 arrays, concatena os arrays; Caso o elemento do topo seja um array, adiciona o 2º elemento da \mbox{\hyperlink{structStack}{Stack}} ao início do array e coloca o array resultante na \mbox{\hyperlink{structStack}{Stack}}; Caso o 2º elemento do topo seja um array, adiciona o elemento do topo ao fim do array e coloca o array resultante na \mbox{\hyperlink{structStack}{Stack}};. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_af7afd6312bc83f0590fcff2a80bf7fc1}\label{operadores_8h_af7afd6312bc83f0590fcff2a80bf7fc1}} 
+\index{operadores.h@{operadores.h}!concat\_strings@{concat\_strings}}
+\index{concat\_strings@{concat\_strings}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{concat\_strings()}{concat\_strings()}}
+{\footnotesize\ttfamily void concat\+\_\+strings (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e\+: Caso sejam os 2 strings, concatena as strings; Caso o elemento do topo seja uma string, adiciona o 2º elemento da \mbox{\hyperlink{structStack}{Stack}} ao início da string e coloca a string resultante na \mbox{\hyperlink{structStack}{Stack}}; Caso o 2º elemento do topo seja uma string, adiciona o elemento do topo ao fim da string e coloca a string resultante na \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a3685206f30bdc1c0bade8be43d4717e6}\label{operadores_8h_a3685206f30bdc1c0bade8be43d4717e6}} 
+\index{operadores.h@{operadores.h}!concat\_xvezes@{concat\_xvezes}}
+\index{concat\_xvezes@{concat\_xvezes}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{concat\_xvezes()}{concat\_xvezes()}}
+{\footnotesize\ttfamily void concat\+\_\+xvezes (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e concatena recursivamente o array/string do 2º elemento do topo da \mbox{\hyperlink{structStack}{Stack}} n vezes, onde n é o elemento do topo da \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a30b9c79458fd1a5c313f48c7c990d2c1}\label{operadores_8h_a30b9c79458fd1a5c313f48c7c990d2c1}} 
+\index{operadores.h@{operadores.h}!conjuncao@{conjuncao}}
+\index{conjuncao@{conjuncao}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{conjuncao()}{conjuncao()}}
+{\footnotesize\ttfamily void conjuncao (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Operador bitwise que retira o topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o valor 1 quando ambos os bits forem 1 e 0 caso contrário. 
+
+Exemplo\+: 2 3 \& \begin{DoxyVerb}     2 -> 10
+
+     3 -> 11
+
+     Output -> 10
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a919c7e29ea742c20ddfc86e10b57d744}\label{operadores_8h_a919c7e29ea742c20ddfc86e10b57d744}} 
+\index{operadores.h@{operadores.h}!copiatopo@{copiatopo}}
+\index{copiatopo@{copiatopo}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{copiatopo()}{copiatopo()}}
+{\footnotesize\ttfamily void copiatopo (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{char}]{var }\end{DoxyParamCaption})}
+
+
+
+Função que altera o valor e o tipo da variável para os do topo da \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em var} & Variável \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a6b7c0292afd2eebc26df67afb88b57c7}\label{operadores_8h_a6b7c0292afd2eebc26df67afb88b57c7}} 
+\index{operadores.h@{operadores.h}!copy@{copy}}
+\index{copy@{copy}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily void copy (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{char}]{var }\end{DoxyParamCaption})}
+
+
+
+Função que altera o valor e o tipo da variável para os do topo da \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em var} & Variável \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_af333b0dc11a6563b36673fbd824e1eed}\label{operadores_8h_af333b0dc11a6563b36673fbd824e1eed}} 
+\index{operadores.h@{operadores.h}!disjuncao@{disjuncao}}
+\index{disjuncao@{disjuncao}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{disjuncao()}{disjuncao()}}
+{\footnotesize\ttfamily void disjuncao (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Operador bitwise que retira o topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o valor 1 quando um dos bits for 1 e 0 caso contrário. 
+
+Exemplo\+: 2 4 $\vert$ \begin{DoxyVerb}     2 -> 010
+
+     4 -> 100
+
+     Output -> 110
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a103b13816055f2f65f846c32605aa129}\label{operadores_8h_a103b13816055f2f65f846c32605aa129}} 
+\index{operadores.h@{operadores.h}!divisao@{divisao}}
+\index{divisao@{divisao}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{divisao()}{divisao()}}
+{\footnotesize\ttfamily void divisao (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o resultado da divisão do 2º elemento do topo pelo elemento do topo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a56672f95bcd0c9bf1ec45dc942cd7385}\label{operadores_8h_a56672f95bcd0c9bf1ec45dc942cd7385}} 
+\index{operadores.h@{operadores.h}!econjuncao@{econjuncao}}
+\index{econjuncao@{econjuncao}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{econjuncao()}{econjuncao()}}
+{\footnotesize\ttfamily void econjuncao (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca o valor do 1º elemento caso ambos sejam verdadeiros ou 0, caso contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a95619495de1c17828bc4da5686fd8fd2}\label{operadores_8h_a95619495de1c17828bc4da5686fd8fd2}} 
+\index{operadores.h@{operadores.h}!edisjuncao@{edisjuncao}}
+\index{edisjuncao@{edisjuncao}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{edisjuncao()}{edisjuncao()}}
+{\footnotesize\ttfamily void edisjuncao (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e\+: Coloca 0 na \mbox{\hyperlink{structStack}{Stack}} se os 2 elementos forem falsos, o 2º elemento caso sejam ambos verdadeiros ou o elemento de valor lógico 1 caso algum deles seja falso. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a30590305d071041a944db7dc41c64f05}\label{operadores_8h_a30590305d071041a944db7dc41c64f05}} 
+\index{operadores.h@{operadores.h}!elemDouble@{elemDouble}}
+\index{elemDouble@{elemDouble}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{elemDouble()}{elemDouble()}}
+{\footnotesize\ttfamily double elem\+Double (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{t,  }\item[{\mbox{\hyperlink{unionelemdata}{elemdata}}}]{v }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar que recebe o tipo e o data de um elemento e devolve o data em Double. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Tipo do elemento \\
+\hline
+{\em v} & Data do elemento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor do elemento no tipo Double. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{operadores_8h_a57a716b637a8f163767ff908b3d7395e}\label{operadores_8h_a57a716b637a8f163767ff908b3d7395e}} 
+\index{operadores.h@{operadores.h}!emaior@{emaior}}
+\index{emaior@{emaior}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{emaior()}{emaior()}}
+{\footnotesize\ttfamily void emaior (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca o elemento maior na \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a68bb2456be4665bde8c6216d7416d46d}\label{operadores_8h_a68bb2456be4665bde8c6216d7416d46d}} 
+\index{operadores.h@{operadores.h}!emenor@{emenor}}
+\index{emenor@{emenor}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{emenor()}{emenor()}}
+{\footnotesize\ttfamily void emenor (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca o elemento menor na \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_aff383c03881eb0407ce934e8c33adb1c}\label{operadores_8h_aff383c03881eb0407ce934e8c33adb1c}} 
+\index{operadores.h@{operadores.h}!exponenciacao@{exponenciacao}}
+\index{exponenciacao@{exponenciacao}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{exponenciacao()}{exponenciacao()}}
+{\footnotesize\ttfamily void exponenciacao (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} a potência que tem como base o topo da \mbox{\hyperlink{structStack}{Stack}} e como expoente o elemento a seguir. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_abd2f3cb10e53d365dfed6bb55a84046c}\label{operadores_8h_abd2f3cb10e53d365dfed6bb55a84046c}} 
+\index{operadores.h@{operadores.h}!ifthenelse@{ifthenelse}}
+\index{ifthenelse@{ifthenelse}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{ifthenelse()}{ifthenelse()}}
+{\footnotesize\ttfamily void ifthenelse (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira os 3 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e\+: Se o 3º elemento do topo for verdadeiro, volta a colocar o 2º elemento na \mbox{\hyperlink{structStack}{Stack}}. Caso contrário, volta a colocar o elemento do topo na \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a8f1f8db494502485256e7afe1827b698}\label{operadores_8h_a8f1f8db494502485256e7afe1827b698}} 
+\index{operadores.h@{operadores.h}!igual@{igual}}
+\index{igual@{igual}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{igual()}{igual()}}
+{\footnotesize\ttfamily void igual (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e se forem iguais coloca 1 na stack ou 0 caso contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a92b2a6049936bd24c5410fd1a541288d}\label{operadores_8h_a92b2a6049936bd24c5410fd1a541288d}} 
+\index{operadores.h@{operadores.h}!invertevl@{invertevl}}
+\index{invertevl@{invertevl}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{invertevl()}{invertevl()}}
+{\footnotesize\ttfamily void invertevl (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira o elemento do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o resultado do seu valor lógico invertido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a6379b1e68eb419242670b5d0153a76bb}\label{operadores_8h_a6379b1e68eb419242670b5d0153a76bb}} 
+\index{operadores.h@{operadores.h}!isAnyArray@{isAnyArray}}
+\index{isAnyArray@{isAnyArray}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{isAnyArray()}{isAnyArray()}}
+{\footnotesize\ttfamily int is\+Any\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{x,  }\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar que verifica se algum dos elementos é do tipo Array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Tipo do elemento \\
+\hline
+{\em y} & Tipo do elemento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se algum dos elementos for do tipo Array, 0 caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{operadores_8h_a2b19c806ab2b8a56ce87875a4a41b082}\label{operadores_8h_a2b19c806ab2b8a56ce87875a4a41b082}} 
+\index{operadores.h@{operadores.h}!isAnyString@{isAnyString}}
+\index{isAnyString@{isAnyString}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{isAnyString()}{isAnyString()}}
+{\footnotesize\ttfamily int is\+Any\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{x,  }\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar que verifica se algum dos elementos é do tipo String. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Tipo do elemento \\
+\hline
+{\em y} & Tipo do elemento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se algum dos elementos for do tipo String, 0 caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{operadores_8h_a3659a31d5a992a6117cbbefed6e5c0d5}\label{operadores_8h_a3659a31d5a992a6117cbbefed6e5c0d5}} 
+\index{operadores.h@{operadores.h}!isArray@{isArray}}
+\index{isArray@{isArray}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{isArray()}{isArray()}}
+{\footnotesize\ttfamily int is\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{x }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar que verifica um elemento é do tipo Array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Tipo do elemento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se o elemento for do tipo Array, 0 caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{operadores_8h_ab7c77a9ab1c5488c65dababa98241055}\label{operadores_8h_ab7c77a9ab1c5488c65dababa98241055}} 
+\index{operadores.h@{operadores.h}!isBothArray@{isBothArray}}
+\index{isBothArray@{isBothArray}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{isBothArray()}{isBothArray()}}
+{\footnotesize\ttfamily int is\+Both\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{x,  }\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar que verifica se os dois elementos são do tipo Array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Tipo do elemento \\
+\hline
+{\em y} & Tipo do elemento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se os dois elementos forem do tipo Array, 0 caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{operadores_8h_a75f46d4c7cd93ec76c83c0cd2bf303fe}\label{operadores_8h_a75f46d4c7cd93ec76c83c0cd2bf303fe}} 
+\index{operadores.h@{operadores.h}!isBothDouble@{isBothDouble}}
+\index{isBothDouble@{isBothDouble}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{isBothDouble()}{isBothDouble()}}
+{\footnotesize\ttfamily int is\+Both\+Double (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{x,  }\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar que verifica se os 2 elementos são do tipo Double. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Tipo do elemento \\
+\hline
+{\em y} & Tipo do elemento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se os 2 elementos forem do tipo Double, 0 caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{operadores_8h_a1fd952a5bb720cef346533dcb8c36e33}\label{operadores_8h_a1fd952a5bb720cef346533dcb8c36e33}} 
+\index{operadores.h@{operadores.h}!isBothLong@{isBothLong}}
+\index{isBothLong@{isBothLong}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{isBothLong()}{isBothLong()}}
+{\footnotesize\ttfamily int is\+Both\+Long (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{x,  }\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar que verifica se os 2 elementos são do tipo Long. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Tipo do elemento \\
+\hline
+{\em y} & Tipo do elemento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se os 2 elementos forem do tipo Long, 0 caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{operadores_8h_afb5e1520c8faa97a2f0c034abde4a021}\label{operadores_8h_afb5e1520c8faa97a2f0c034abde4a021}} 
+\index{operadores.h@{operadores.h}!isBothString@{isBothString}}
+\index{isBothString@{isBothString}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{isBothString()}{isBothString()}}
+{\footnotesize\ttfamily int is\+Both\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{x,  }\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar que verifica se os dois elementos são do tipo String. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Tipo do elemento \\
+\hline
+{\em y} & Tipo do elemento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se os dois elementos forem do tipo String, 0 caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{operadores_8h_a8d9511790980cf10613b71acf884ee25}\label{operadores_8h_a8d9511790980cf10613b71acf884ee25}} 
+\index{operadores.h@{operadores.h}!isDouble@{isDouble}}
+\index{isDouble@{isDouble}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{isDouble()}{isDouble()}}
+{\footnotesize\ttfamily int is\+Double (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{x }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar que verifica se um elemento é do tipo Double. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Tipo do elemento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se o elemento for do tipo Double, 0 caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{operadores_8h_af98d546af0b1a0ce0e5822b8881198ba}\label{operadores_8h_af98d546af0b1a0ce0e5822b8881198ba}} 
+\index{operadores.h@{operadores.h}!isLong@{isLong}}
+\index{isLong@{isLong}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{isLong()}{isLong()}}
+{\footnotesize\ttfamily int is\+Long (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{x }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar que verifica se um elemento é do tipo Long. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Tipo do elemento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se o elemento for do tipo Long, 0 caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{operadores_8h_afc94089887ed536a3f2b1a51ae96b59e}\label{operadores_8h_afc94089887ed536a3f2b1a51ae96b59e}} 
+\index{operadores.h@{operadores.h}!isString@{isString}}
+\index{isString@{isString}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{isString()}{isString()}}
+{\footnotesize\ttfamily int is\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stack_8h_a299c4209e8a53e5a64af604da1921c44}{elemtype}}}]{x }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar que verifica um elemento é do tipo String. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Tipo do elemento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se o elemento for do tipo String, 0 caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{operadores_8h_a704dcd33553ec31c73e53c0cb55cbf36}\label{operadores_8h_a704dcd33553ec31c73e53c0cb55cbf36}} 
+\index{operadores.h@{operadores.h}!leitura@{leitura}}
+\index{leitura@{leitura}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{leitura()}{leitura()}}
+{\footnotesize\ttfamily void leitura (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que lê uma linha e a coloca no topo da \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a7e512a8653e38e8bf2605865e3388558}\label{operadores_8h_a7e512a8653e38e8bf2605865e3388558}} 
+\index{operadores.h@{operadores.h}!lermtlinhas@{lermtlinhas}}
+\index{lermtlinhas@{lermtlinhas}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{lermtlinhas()}{lermtlinhas()}}
+{\footnotesize\ttfamily void lermtlinhas (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que lê todo o input de uma string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a44fca0432c8da0e08c623edd76afa9b4}\label{operadores_8h_a44fca0432c8da0e08c623edd76afa9b4}} 
+\index{operadores.h@{operadores.h}!maior@{maior}}
+\index{maior@{maior}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{maior()}{maior()}}
+{\footnotesize\ttfamily void maior (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que devolve 1 se o 2º elemento for maior que o do topo da \mbox{\hyperlink{structStack}{Stack}} ou 0, caso contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a00ba42de048a9f70b31d92dcd28f8594}\label{operadores_8h_a00ba42de048a9f70b31d92dcd28f8594}} 
+\index{operadores.h@{operadores.h}!menor@{menor}}
+\index{menor@{menor}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{menor()}{menor()}}
+{\footnotesize\ttfamily void menor (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que devolve 1 se o 2º elemento for menor que o do topo da \mbox{\hyperlink{structStack}{Stack}} ou 0, caso contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_aed297eef4051bc95a11d1408bde48238}\label{operadores_8h_aed297eef4051bc95a11d1408bde48238}} 
+\index{operadores.h@{operadores.h}!modulo@{modulo}}
+\index{modulo@{modulo}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{modulo()}{modulo()}}
+{\footnotesize\ttfamily void modulo (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca o resto da divisão inteira do 2º elemento pelo 1º elemento do topo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_aaf5ce3a099e3a41b4bcedc753d47d8fc}\label{operadores_8h_aaf5ce3a099e3a41b4bcedc753d47d8fc}} 
+\index{operadores.h@{operadores.h}!mult@{mult}}
+\index{mult@{mult}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{mult()}{mult()}}
+{\footnotesize\ttfamily void mult (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o resultado da multiplicação dos 2 primeiros elementos do topo da \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a452b559406b24eb5e0bad8a7ebb75689}\label{operadores_8h_a452b559406b24eb5e0bad8a7ebb75689}} 
+\index{operadores.h@{operadores.h}!not@{not}}
+\index{not@{not}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{not()}{not()}}
+{\footnotesize\ttfamily void not (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Operador bitwise que retira o topo da \mbox{\hyperlink{structStack}{Stack}} e colocar na \mbox{\hyperlink{structStack}{Stack}} o seu valor representado em Complemento2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_aa759f27f5ba1d908b146ea0fc0ac2a78}\label{operadores_8h_aa759f27f5ba1d908b146ea0fc0ac2a78}} 
+\index{operadores.h@{operadores.h}!operador\_asterisco@{operador\_asterisco}}
+\index{operador\_asterisco@{operador\_asterisco}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{operador\_asterisco()}{operador\_asterisco()}}
+{\footnotesize\ttfamily void operador\+\_\+asterisco (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função geral do operador \textquotesingle{}$\ast$\textquotesingle{} que invoca as operações consoante o tipo dos elementos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a076d88e40e29e20954d90fd3ca48fc75}\label{operadores_8h_a076d88e40e29e20954d90fd3ca48fc75}} 
+\index{operadores.h@{operadores.h}!operador\_barra@{operador\_barra}}
+\index{operador\_barra@{operador\_barra}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{operador\_barra()}{operador\_barra()}}
+{\footnotesize\ttfamily void operador\+\_\+barra (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função geral do operador \textquotesingle{}/\textquotesingle{} que invoca as operações consoante o tipo dos elementos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_ad8cfb2a4efd7a48b443d0676cb09457c}\label{operadores_8h_ad8cfb2a4efd7a48b443d0676cb09457c}} 
+\index{operadores.h@{operadores.h}!operador\_cardinal@{operador\_cardinal}}
+\index{operador\_cardinal@{operador\_cardinal}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{operador\_cardinal()}{operador\_cardinal()}}
+{\footnotesize\ttfamily void operador\+\_\+cardinal (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função geral do operador \textquotesingle{}\#\textquotesingle{} que invoca as operações consoante o tipo dos elementos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_ab56dfd4d71f552575a47d3153aee03f0}\label{operadores_8h_ab56dfd4d71f552575a47d3153aee03f0}} 
+\index{operadores.h@{operadores.h}!operador\_igual@{operador\_igual}}
+\index{operador\_igual@{operador\_igual}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{operador\_igual()}{operador\_igual()}}
+{\footnotesize\ttfamily void operador\+\_\+igual (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função geral do operador \textquotesingle{}=\textquotesingle{} que invoca as operações consoante o tipo dos elementos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a0ca13a586172e028c332b8caf9b9aa63}\label{operadores_8h_a0ca13a586172e028c332b8caf9b9aa63}} 
+\index{operadores.h@{operadores.h}!operador\_maior@{operador\_maior}}
+\index{operador\_maior@{operador\_maior}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{operador\_maior()}{operador\_maior()}}
+{\footnotesize\ttfamily void operador\+\_\+maior (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função geral do operador \textquotesingle{}$>$\textquotesingle{} que invoca as operações consoante o tipo dos elementos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a17f75f7c1d176990256b2490e927bb3a}\label{operadores_8h_a17f75f7c1d176990256b2490e927bb3a}} 
+\index{operadores.h@{operadores.h}!operador\_mais@{operador\_mais}}
+\index{operador\_mais@{operador\_mais}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{operador\_mais()}{operador\_mais()}}
+{\footnotesize\ttfamily void operador\+\_\+mais (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função geral do operador \textquotesingle{}+\textquotesingle{} que invoca as operações consoante o tipo dos elementos. 
+
+Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o array/string resultante da concatenação.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}}\\
+\hline
+\end{DoxyParams}
+Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o array/string resultante da concatenação.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a8ce6283f3d492fd2b5b458c06e8f37b8}\label{operadores_8h_a8ce6283f3d492fd2b5b458c06e8f37b8}} 
+\index{operadores.h@{operadores.h}!operador\_menor@{operador\_menor}}
+\index{operador\_menor@{operador\_menor}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{operador\_menor()}{operador\_menor()}}
+{\footnotesize\ttfamily void operador\+\_\+menor (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função geral do operador \textquotesingle{}$<$\textquotesingle{} que invoca as operações consoante o tipo dos elementos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_ae9e503653973e0ff2a8a5fe204086e2c}\label{operadores_8h_ae9e503653973e0ff2a8a5fe204086e2c}} 
+\index{operadores.h@{operadores.h}!operador\_pAberto@{operador\_pAberto}}
+\index{operador\_pAberto@{operador\_pAberto}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{operador\_pAberto()}{operador\_pAberto()}}
+{\footnotesize\ttfamily void operador\+\_\+p\+Aberto (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função geral do operador \textquotesingle{}(\textquotesingle{} que invoca as operações consoante o tipo dos elementos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a3ddd42dca346ba1a2d95a938767af3a8}\label{operadores_8h_a3ddd42dca346ba1a2d95a938767af3a8}} 
+\index{operadores.h@{operadores.h}!operador\_pFechado@{operador\_pFechado}}
+\index{operador\_pFechado@{operador\_pFechado}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{operador\_pFechado()}{operador\_pFechado()}}
+{\footnotesize\ttfamily void operador\+\_\+p\+Fechado (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função geral do operador \textquotesingle{})\textquotesingle{} que invoca as operações consoante o tipo dos elementos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_ab1ca19c9cfca13b6154795774515a685}\label{operadores_8h_ab1ca19c9cfca13b6154795774515a685}} 
+\index{operadores.h@{operadores.h}!operador\_til@{operador\_til}}
+\index{operador\_til@{operador\_til}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{operador\_til()}{operador\_til()}}
+{\footnotesize\ttfamily void operador\+\_\+til (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função geral do operador \textquotesingle{}$\sim$\textquotesingle{} que invoca as operações consoante o tipo dos elementos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a5d37c34f7318feb0f0d5fb6e4a5a21e0}\label{operadores_8h_a5d37c34f7318feb0f0d5fb6e4a5a21e0}} 
+\index{operadores.h@{operadores.h}!parentesesAberto@{parentesesAberto}}
+\index{parentesesAberto@{parentesesAberto}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{parentesesAberto()}{parentesesAberto()}}
+{\footnotesize\ttfamily void parenteses\+Aberto (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que decrementa 1 valor ao elemento do topo da \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a3da097a9c94248db35377a229205d5d7}\label{operadores_8h_a3da097a9c94248db35377a229205d5d7}} 
+\index{operadores.h@{operadores.h}!parentesesFechado@{parentesesFechado}}
+\index{parentesesFechado@{parentesesFechado}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{parentesesFechado()}{parentesesFechado()}}
+{\footnotesize\ttfamily void parenteses\+Fechado (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que incrementa 1 valor ao elemento do topo da \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a64c42d9e0f2efda6df0689b2bfe97b0a}\label{operadores_8h_a64c42d9e0f2efda6df0689b2bfe97b0a}} 
+\index{operadores.h@{operadores.h}!procura\_por\_indice@{procura\_por\_indice}}
+\index{procura\_por\_indice@{procura\_por\_indice}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{procura\_por\_indice()}{procura\_por\_indice()}}
+{\footnotesize\ttfamily void procura\+\_\+por\+\_\+indice (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}}, onde o do topo é o índice e o 2º um array/string. Procura o elemento do índice dado na string/array e coloca-\/o na \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a9b6d42d712bd87e546a4d6443cf6c56a}\label{operadores_8h_a9b6d42d712bd87e546a4d6443cf6c56a}} 
+\index{operadores.h@{operadores.h}!procura\_substr@{procura\_substr}}
+\index{procura\_substr@{procura\_substr}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{procura\_substr()}{procura\_substr()}}
+{\footnotesize\ttfamily void procura\+\_\+substr (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira os 2 primeiros elementos da \mbox{\hyperlink{structStack}{Stack}} (Strings) e coloca na \mbox{\hyperlink{structStack}{Stack}} o índice na String (2º elemento do topo) onde se inicia a Substring (elemento do topo) ou -\/1 caso não exista Substring. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a2b52c6822cc7f3f0bdf57e91d8137471}\label{operadores_8h_a2b52c6822cc7f3f0bdf57e91d8137471}} 
+\index{operadores.h@{operadores.h}!pushvar@{pushvar}}
+\index{pushvar@{pushvar}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{pushvar()}{pushvar()}}
+{\footnotesize\ttfamily void pushvar (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{char}]{var }\end{DoxyParamCaption})}
+
+
+
+Função que coloca a variável na \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+{\em var} & Variável \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_af8ee9f99ed680a12412bf856d8fb1159}\label{operadores_8h_af8ee9f99ed680a12412bf856d8fb1159}} 
+\index{operadores.h@{operadores.h}!sepstr\_newlns@{sepstr\_newlns}}
+\index{sepstr\_newlns@{sepstr\_newlns}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{sepstr\_newlns()}{sepstr\_newlns()}}
+{\footnotesize\ttfamily void sepstr\+\_\+newlns (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira o elemento do topo da \mbox{\hyperlink{structStack}{Stack}} (string) e separa essa string pela ocorrência de newlines. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a6d303d615486f011f9b1e5e191512833}\label{operadores_8h_a6d303d615486f011f9b1e5e191512833}} 
+\index{operadores.h@{operadores.h}!sepstr\_substr@{sepstr\_substr}}
+\index{sepstr\_substr@{sepstr\_substr}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{sepstr\_substr()}{sepstr\_substr()}}
+{\footnotesize\ttfamily void sepstr\+\_\+substr (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} (strings) e, sendo o elemento do topo a substring, separa o 2º elemento do topo (string) por essa substring-\/. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a73991313de0e39d2503779617d9c7b0b}\label{operadores_8h_a73991313de0e39d2503779617d9c7b0b}} 
+\index{operadores.h@{operadores.h}!sepstr\_whitespc@{sepstr\_whitespc}}
+\index{sepstr\_whitespc@{sepstr\_whitespc}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{sepstr\_whitespc()}{sepstr\_whitespc()}}
+{\footnotesize\ttfamily void sepstr\+\_\+whitespc (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira o elemento do topo da \mbox{\hyperlink{structStack}{Stack}} (string) e separa essa string pela ocorrência de whitespaces. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a3771ae9af45733c322719ef939fcf566}\label{operadores_8h_a3771ae9af45733c322719ef939fcf566}} 
+\index{operadores.h@{operadores.h}!soma@{soma}}
+\index{soma@{soma}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{soma()}{soma()}}
+{\footnotesize\ttfamily void soma (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o resultado da soma dos 2 elementos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_af5494c26ebf801486c92be86cfbb95a9}\label{operadores_8h_af5494c26ebf801486c92be86cfbb95a9}} 
+\index{operadores.h@{operadores.h}!subtracao@{subtracao}}
+\index{subtracao@{subtracao}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{subtracao()}{subtracao()}}
+{\footnotesize\ttfamily void subtracao (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira os 2 elementos do topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o que se obtém ao subtrair o elemento do topo ao elemento a seguir. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_ac0c33cc0c6f3d01fc31f246b71651c6e}\label{operadores_8h_ac0c33cc0c6f3d01fc31f246b71651c6e}} 
+\index{operadores.h@{operadores.h}!switchtop@{switchtop}}
+\index{switchtop@{switchtop}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{switchtop()}{switchtop()}}
+{\footnotesize\ttfamily void switchtop (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que troca os dois elementos do topo da stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_aa15c3fe091c136802ebf9142d1a869a5}\label{operadores_8h_aa15c3fe091c136802ebf9142d1a869a5}} 
+\index{operadores.h@{operadores.h}!take\_fst@{take\_fst}}
+\index{take\_fst@{take\_fst}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{take\_fst()}{take\_fst()}}
+{\footnotesize\ttfamily void take\+\_\+fst (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira o elemento do topo da \mbox{\hyperlink{structStack}{Stack}} (array/string) e retira-\/lhe o 1º elemento (se for array, o do fundo) o e coloca-\/o na \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_aa5bb8725a3146e64903bc1457c759c42}\label{operadores_8h_aa5bb8725a3146e64903bc1457c759c42}} 
+\index{operadores.h@{operadores.h}!take\_last@{take\_last}}
+\index{take\_last@{take\_last}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{take\_last()}{take\_last()}}
+{\footnotesize\ttfamily void take\+\_\+last (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira o elemento do topo da \mbox{\hyperlink{structStack}{Stack}} (array/string) e retira-\/lhe o último elemento (se for array, o do topo) e coloca-\/o na \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a5bee35b55a8a98e898a1209ec12e24b1}\label{operadores_8h_a5bee35b55a8a98e898a1209ec12e24b1}} 
+\index{operadores.h@{operadores.h}!til@{til}}
+\index{til@{til}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{til()}{til()}}
+{\footnotesize\ttfamily void til (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira da \mbox{\hyperlink{structStack}{Stack}} o elemento do topo da \mbox{\hyperlink{structStack}{Stack(\+Array)}} e coloca na \mbox{\hyperlink{structStack}{Stack}} todos os seus elementos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_ad9fc6c9a04ced2a131b63b0cfb8f707c}\label{operadores_8h_ad9fc6c9a04ced2a131b63b0cfb8f707c}} 
+\index{operadores.h@{operadores.h}!tpindex@{tpindex}}
+\index{tpindex@{tpindex}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{tpindex()}{tpindex()}}
+{\footnotesize\ttfamily void tpindex (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que tem como objetivo procurar ao longo da stack o número de índice \textquotesingle{}n\textquotesingle{} e repeti-\/lo no fim da stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a525f0b257f5ebc946ee663b9ee379967}\label{operadores_8h_a525f0b257f5ebc946ee663b9ee379967}} 
+\index{operadores.h@{operadores.h}!trschar@{trschar}}
+\index{trschar@{trschar}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{trschar()}{trschar()}}
+{\footnotesize\ttfamily void trschar (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que transforma um elemento de qualquer tipo para o tipo char. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a0e1198aa9a9e36ec3db11fcc5971e14c}\label{operadores_8h_a0e1198aa9a9e36ec3db11fcc5971e14c}} 
+\index{operadores.h@{operadores.h}!trsdouble@{trsdouble}}
+\index{trsdouble@{trsdouble}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{trsdouble()}{trsdouble()}}
+{\footnotesize\ttfamily void trsdouble (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que transforma um elemento de qualquer tipo para o tipo double. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_ae8be44908928a369e607ca3a1f3dc86a}\label{operadores_8h_ae8be44908928a369e607ca3a1f3dc86a}} 
+\index{operadores.h@{operadores.h}!trsint@{trsint}}
+\index{trsint@{trsint}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{trsint()}{trsint()}}
+{\footnotesize\ttfamily void trsint (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que transforma um elemento de qualquer tipo para o tipo long. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_abf56cca59f9e3f0e1d78d65ac8f1fdb8}\label{operadores_8h_abf56cca59f9e3f0e1d78d65ac8f1fdb8}} 
+\index{operadores.h@{operadores.h}!trsstring@{trsstring}}
+\index{trsstring@{trsstring}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{trsstring()}{trsstring()}}
+{\footnotesize\ttfamily void trsstring (\begin{DoxyParamCaption}\item[{char}]{x,  }\item[{char $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar que transforma um char numa String apenas com esse char. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Char \\
+\hline
+{\em s} & String \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a142a934e57412a833a6b08fbfbc291ae}\label{operadores_8h_a142a934e57412a833a6b08fbfbc291ae}} 
+\index{operadores.h@{operadores.h}!underscore@{underscore}}
+\index{underscore@{underscore}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{underscore()}{underscore()}}
+{\footnotesize\ttfamily void underscore (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+O objetivo desta função é duplicar o topo da stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_a728e28daeafd78ff8613b7abb0ae85a0}\label{operadores_8h_a728e28daeafd78ff8613b7abb0ae85a0}} 
+\index{operadores.h@{operadores.h}!virgula@{virgula}}
+\index{virgula@{virgula}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{virgula()}{virgula()}}
+{\footnotesize\ttfamily void virgula (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que retira o elemento do topo da \mbox{\hyperlink{structStack}{Stack}} e\+: Caso seja uma string ou um array, coloca o seu comprimento na \mbox{\hyperlink{structStack}{Stack}}; Caso seja um número, coloca na \mbox{\hyperlink{structStack}{Stack}} um array inicializado a 0 com todos os inteiros até n, sendo n o elemento do topo da \mbox{\hyperlink{structStack}{Stack}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operadores_8h_ae89906dbcfabf36d7a83df698281b7ad}\label{operadores_8h_ae89906dbcfabf36d7a83df698281b7ad}} 
+\index{operadores.h@{operadores.h}!xor@{xor}}
+\index{xor@{xor}!operadores.h@{operadores.h}}
+\doxysubsubsection{\texorpdfstring{xor()}{xor()}}
+{\footnotesize\ttfamily void xor (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Operador bitwise que retira o topo da \mbox{\hyperlink{structStack}{Stack}} e coloca na \mbox{\hyperlink{structStack}{Stack}} o valor 1 quando os bits comparados forem diferentes e 0 caso contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{structStack}{Stack}} \\
+\hline
+\end{DoxyParams}
