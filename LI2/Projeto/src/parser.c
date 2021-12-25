@@ -3,7 +3,7 @@
  @brief Ficheiro com as funções relativas ao parse
  */
 
-#include "parser.h"
+#include "../include/parser.h"
 
 /**
  * \brief       Função que invoca, consoante o token, as operações matemáticas simples ou

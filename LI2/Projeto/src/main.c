@@ -3,7 +3,7 @@
  @brief Ficheiro que contém a função principal do programa
  */
 
-#include "parser.h"
+#include "../include/parser.h"
 
 /**
  * \brief   Função main do programa

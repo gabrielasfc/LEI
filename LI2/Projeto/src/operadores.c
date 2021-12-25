@@ -3,8 +3,8 @@
  @brief Ficheiro com as funções relativas aos operadores
  */
 
-#include "operadores.h"
-#include "parser.h"
+#include "../include/operadores.h"
+#include "../include/parser.h"
 
 /**
  * \brief   Função auxiliar que verifica se os 2 elementos são do tipo Long.

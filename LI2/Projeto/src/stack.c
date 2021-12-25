@@ -3,7 +3,7 @@
  @brief Ficheiro com funções relativas à implementação da Stack
  */
 
-#include "stack.h"
+#include "../include/stack.h"
 
 /**
  * \brief   Inicializa-se a Stack com tamanho 0.
