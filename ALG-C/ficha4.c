@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #define NV 100
 
@@ -52,6 +53,14 @@ void inverte(GrafoL in, GrafoL out){
 
 
 //3
+int max(int v[], int N){
+    int max = v[0];
+    for(int i=i; i<N-1; i++){
+        if(v[i] > max) max=v[i];
+    }
+    return max;
+}
+
 //Pior caso = V+E
 //Melhor caso = V
 int inDegree(GrafoL g){
@@ -61,17 +70,8 @@ int inDegree(GrafoL g){
             count[l->dest]++;
         }
     }
-    return max(count, NV);
+    return (max(count, NV));
 }
-
-int max(int v[], int N){
-    int max = v[0];
-    for(int i=i; i<N-1; i++){
-        if(v[i] > max) max=v[i];
-    }
-    return max;
-}
-
 
 //4
 //Pior caso = V+E
@@ -89,7 +89,7 @@ int colorOK(GrafoL g, int cor[]){
 //5
 //Melhor caso = 1 -> procura uma aresta que não existe
 //Pior caso = (V+E)*E
-int procura(GrafoL h[], int orig, int dest){
+int procura(GrafoL h, int orig, int dest){
     for(LAdj l = h[orig]; l != NULL; l = l->prox){
         if(l->dest == dest) return 1;
     }
@@ -112,18 +112,6 @@ int homomorfOK(GrafoL g, GrafoL h, int f[]){
 //array v -> em cada posição coloca 0 ou 1, caso não tenha sido ou tenha sido visitado respetivamente
 //array p -> coloca em cada posição o vértice pai dele (útil para ver o caminho)
 //array l -> coloca em cada posição a iteração em que foi visitado (nível do vértice)
-int DF (GrafoL g, int or, int v[], int p[], int l[]){
-    for(int i=0; i<NV; i++){
-        v[i] = 0;
-        p[i] = -1;
-        l[i] = -1;
-    }
-    p[or] = -1;
-    l[or] = 0;
-    return DFRec (g, or, v, p, l);
-}
-
-
 int DFRec (GrafoL g, int or, int v[], int p[], int l[]){
     int i=1;
     v[or]=-1;
@@ -136,6 +124,18 @@ int DFRec (GrafoL g, int or, int v[], int p[], int l[]){
     }
     v[or] = 1;
     return i;
+}
+
+
+int DF (GrafoL g, int or, int v[], int p[], int l[]){
+    for(int i=0; i<NV; i++){
+        v[i] = 0;
+        p[i] = -1;
+        l[i] = -1;
+    }
+    p[or] = -1;
+    l[or] = 0;
+    return DFRec (g, or, v, p, l);
 }
 
 
@@ -228,7 +228,7 @@ int componentes(GrafoL g, int c[]){
 //3
 int ordTop_DFRec(GrafoL g, int orig, int v[], int ord[], int pos){
     v[orig] = 1;
-    for (LAdj a = g[or]; a != NULL; a = a->prox){
+    for (LAdj a = g[orig]; a != NULL; a = a->prox){
         if (v[a->dest] == 0){
             pos += ordTop_DFRec(g, a->dest, v, ord, pos);
         }
@@ -239,9 +239,9 @@ int ordTop_DFRec(GrafoL g, int orig, int v[], int ord[], int pos){
 
 
 int ordTop(GrafoL g, int ord[]){
-    int v[NV], i=0, int pos=0;
-    for(i = 0; i<NV; i++) v[i] = 0; //inicializa array de visitados a 0
-    for(i = 0; i<NV; i++){
+    int v[NV], pos=0;
+    for(int i = 0; i<NV; i++) v[i] = 0; //inicializa array de visitados a 0
+    for(int j = 0; j<NV; j++){
         if(v[j]==0){
            pos += ordTop_DFRec(g, j, v, ord, pos); 
         }

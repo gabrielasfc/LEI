@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 
@@ -78,7 +79,7 @@ int add(int x, PriorityQueue *q){
 }
 
 
-int remove(PriorityQueue *q, int *rem){
+int remove_q(PriorityQueue *q, int *rem){
     if (q->tamanho == 0) return -1;
     *rem = q->valores[0];
     q->valores[0] = q->valores[q->tamanho-1];
@@ -114,7 +115,7 @@ heapify : (N-1)*(log N - f) ---> N . log N
 
 
 //6
-ordenaHeap(int h[], int N){
+void ordenaHeap(int h[], int N){
     for (int i=N-1; i>0; i--){
         swap(h, 0, i);
         bubbleDown(0, h, i-1);
