@@ -236,8 +236,7 @@ mydelete x (h:t) | x == h = t
 delete_lists :: Eq a => [a] -> [a] -> [a]
 delete_lists l [] = l
 delete_lists [] _ = []
-delete_lists (x:xs) (y:ys) | myelem y (x:xs) = delete_lists xs ys
-                           | otherwise = x : delete_lists xs (y:ys)
+delete_lists l (h:t) = delete_lists (mydelete h l) t
 
 
 --29--
