@@ -74,4 +74,4 @@ main: obj/main.o obj/cat_commits.o obj/cat_repos.o obj/cat_users.o obj/command_i
 ## cc `pkg-config --cflags glib-2.0` hello.c -o hello `pkg-config --libs glib-2.0`
 
 clean:
-	rm -r guiao-3 tests obj/*.o docs/* *.bin *.out *.csv testing/*.txt saida/*
+	rm -r guiao-3 tests obj/*.o docs/html docs/latex *.bin *.out *.csv testing/*.txt saida/*.bin saida/*txt
