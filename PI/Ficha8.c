@@ -157,7 +157,7 @@ int initDeque(Deque *q){
 }
 
 int DisEmpty(Deque q){
-	return (q->front == NULL);
+	return (q.front == NULL);
 }
 
 int pushBack(Deque *q, int x){

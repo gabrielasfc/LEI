@@ -17,6 +17,7 @@ int contaVogais(char *s){
 
 //2
 int retiraVogaisRep(char *s){
+	char *vogais = "aeiouAEIOU";
 	int i, j=0, conta=0;
 	for (i=0; s[i] != '\0'; i++){
 		if (strchr(vogais, s[i]) && s[i]==s[i+1]) conta++;
@@ -25,7 +26,7 @@ int retiraVogaisRep(char *s){
 			j++;
 		}
 	}
-	s[j]='\0'
+	s[j]='\0';
 	return conta;
 }
 
@@ -37,7 +38,7 @@ int duplicaVogais(char *s){
 	char aux [strlen(s) +  contaVogais(s) + 1];
 	int i, j=0, conta=0;
 	for (i=0; s[i] != '\0'; i++){
-		if (strchr(vogais, v[i])){
+		if (strchr(vogais, s[i])){
 			aux[j] = aux[j+1] = s[i]; 
 			j = j+2;
 			conta++;
@@ -113,7 +114,7 @@ void bubbleSort(int v[], int N){
 int partition(int v[], int N, int x){
 	bubbleSort(v, N);
 	int i=0;
-	while (v[i]<= && i<N){
+	while (v[i] <= x && i<N){
 		i++;
 	}
 	return i;

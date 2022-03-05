@@ -201,7 +201,7 @@ int Ddequeue(DQueue q, int *x){
 
 //e
 int Dfront(DQueue q, int *x){
-    if (DisEmpty(q)) return 1;
+    if (DisEmptyQ(q)) return 1;
     else *x = q->values[q->front];
     return 0;
 }

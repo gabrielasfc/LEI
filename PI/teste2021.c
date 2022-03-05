@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 //1
 int tamanho(int n){
 	int r=0, i=0;
@@ -7,19 +10,6 @@ int tamanho(int n){
 		i++;
 	}
 	return i;
-}
-
-int sumhtpo(int n){
-	int r = 0, i=0, t=tamanho(n), v[t]={0};
-	while (n != 1){
-		r += n;
-		v[i] = n;
-		if (n%2 == 0) n = n/2; else n = 1+(3*n);
-		i++;
-	}
-	bubblesort(v, i);
-	if (i<99) return -1;
-	else return v[99];
 }
 
 void swap(int *x, int *y){
@@ -37,14 +27,24 @@ void bubblesort(int v[], int N){
 	}
 }
 
-
-//VERSAO LUIS
-void swap(int *x, int *y){
-    int aux = *x;
-    *x = *y;
-    *y = aux;
+int sumhtpo(int n){
+	int r = 0, i=0, t=0;
+	t = tamanho(n);
+	int v[t];
+	for(; i<t; i++) v[i] = 0;
+	while (n != 1){
+		r += n;
+		v[i] = n;
+		if (n%2 == 0) n = n/2; else n = 1+(3*n);
+		i++;
+	}
+	bubblesort(v, i);
+	if (i<99) return -1;
+	else return v[99];
 }
 
+
+//VERSAO LUIS
 void insereOrd(int v[],int x){
 	for (int i=0; i<100 && x!=0; i++){
     	if (x<v[i] || v[i]==0){
@@ -53,7 +53,7 @@ void insereOrd(int v[],int x){
     }
 }
 
-int sumhtpo(int n){
+int sumhtpo2(int n){
     int r = 0, i=0, v[100]={0};
     while (n != 1){
         r += n;
@@ -84,7 +84,7 @@ int moda(int v[], int N, int *m){
 			max = contavezes(v, N, v[i]);
 			*m = v[i];
 		}
-		else if(contaVezes(v, N, v[i]) == max) return 0;
+		else if(contavezes(v, N, v[i]) == max) return 0;
 	}
 	return max;
 }
@@ -92,6 +92,11 @@ int moda(int v[], int N, int *m){
 
 
 //3
+typedef struct lligada{
+	int valor;
+	struct lligada *prox;
+} *LInt;
+
 int procura(LInt *l, int x){
 	LInt ant = NULL;
 	LInt inicio = *l;
@@ -113,16 +118,17 @@ int procura(LInt *l, int x){
 
 
 //4
-typedef struct nodo {
+typedef struct nodo{
 	int valor;
 	struct nodo *pai, *esq, *dir;
 } *ABin;
 
 int freeAB(ABin a){
+	ABin esq, dir = NULL;
 	if (a==NULL) return 0;
 	else{
-		ABin esq = a->esq;
-		ABin dir = a->dir;
+		esq = a->esq;
+		dir = a->dir;
 		free(a);
 	}
 	return 1+freeAB(esq)+freeAB(dir);

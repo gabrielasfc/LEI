@@ -90,11 +90,11 @@ struct nodo *procura(ABin a, int x){
 int nivel(ABin a, int x){
 	if (a == NULL) return -1;
 	if (x == a->valor) return 1;
-	if (depth(a->esq, x) == -1 && depth(a->dir, x) == -1) return -1;
-	if (depth(a->esq, x) == -1) return (1 + depth(a->dir, x));
-	if (depth(a->dir, x) == -1) return (1 + depth(a->esq, x));
-	if (depth(a->dir, x) > depth(a->esq, x)) return (1 + depth(a->esq, x));
-	else return (1 + depth(a->dir, x));
+	if (nivel(a->esq, x) == -1 && nivel(a->dir, x) == -1) return -1;
+	if (nivel(a->esq, x) == -1) return (1 + nivel(a->dir, x));
+	if (nivel(a->dir, x) == -1) return (1 + nivel(a->esq, x));
+	if (nivel(a->dir, x) > nivel(a->esq, x)) return (1 + nivel(a->esq, x));
+	else return (1 + nivel(a->dir, x));
 }
 
 
