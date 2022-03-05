@@ -71,7 +71,7 @@ int enqueue(Queue *q, int x){
 	if (new == NULL) return -1;
 	else{
 		new->valor = x;
-        new->prox = NULL;
+	    new->prox = NULL;
 		if (q->inicio == NULL){
 			q->inicio = new;
 			q->fim = new;
@@ -122,7 +122,7 @@ int enqueueC(QueueC *q, int x){
 		(*q)->prox = new;
 		*q = new;
 	}
-    return 0;
+	return 0;
 }
 
 
