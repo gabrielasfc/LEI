@@ -8,7 +8,6 @@ public class Exercicio4{
         return temp;
     }
 
-
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         

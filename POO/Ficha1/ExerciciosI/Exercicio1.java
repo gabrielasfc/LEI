@@ -16,7 +16,6 @@ public class Exercicio1{
 
         return (total_dias % 7);
     }
-
     
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);

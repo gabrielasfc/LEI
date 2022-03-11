@@ -19,7 +19,7 @@ public class Exercicio7{
         int dia_nasc = sc.nextInt();
         System.out.println("Introduza o mês de nascimento:");
         int mes_nasc = sc.nextInt();
-        System.out.println("Introduza o ano de nascimento");
+        System.out.println("Introduza o ano de nascimento:");
         int ano_nasc = sc.nextInt();
 
         LocalDateTime nasc = LocalDateTime.of(ano_nasc, mes_nasc, dia_nasc, 0, 0);

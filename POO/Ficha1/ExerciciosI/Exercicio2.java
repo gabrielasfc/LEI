@@ -20,7 +20,6 @@ public class Exercicio2{
         LocalDateTime data = LocalDateTime.of(ano, mes, dia, hora, min, seg);
         return data;
     }
-
     
     public static String soma_datas(LocalDateTime data1, LocalDateTime data2){
         int seg = data2.getSecond();
@@ -50,7 +49,6 @@ public class Exercicio2{
         
         return (dia + "D " + hora + "H " + min + "m " + seg + "s");
     }
-
 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
