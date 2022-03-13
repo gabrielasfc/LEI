@@ -97,7 +97,7 @@ public class Exercicio2{
         float media = 0;
 
         for (int i=0; i < this.nUC; i++){
-            if ((media = mediaUC(i)) > max){
+            if ((media = this.mediaUC(i)) > max){
                 indMax = i;
                 max = media;
             }

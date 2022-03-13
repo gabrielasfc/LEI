@@ -1,11 +1,10 @@
 import java.time.LocalDate;
-import java.util.Arrays;
 
 public class Exercicio3{
 
     private LocalDate[] datas;
-    private int pos;
-    private int size;
+    private int pos; //último elemento
+    private int size; //capacidade
 
     public Exercicio3(){
         this.size = 1;
@@ -15,7 +14,9 @@ public class Exercicio3{
 
     private void inc_size(){
         this.size *= 2;
-        this.datas = Arrays.copyOf(this.datas, this.size);
+        LocalDate[] aux = new LocalDate[this.size];
+        System.arraycopy(this.datas, 0, aux, 0, this.pos);
+        this.datas = aux;
     }
     
     public void insereData(LocalDate data){
@@ -27,7 +28,7 @@ public class Exercicio3{
         LocalDate dataMin = null;
         long min = Long.MAX_VALUE;
 
-        for (int i=0; this.datas[i] != null; i++){
+        for (int i=0; i<pos; i++){
             long dif = Math.abs(this.datas[i].compareTo(data));
             if (dif < min){
                 min = dif;
@@ -40,7 +41,7 @@ public class Exercicio3{
 
     public String toString(){
         String str = "";
-        for (int i=0; this.datas[i] != null; i++) str += "\n" + this.datas[i].toString();
+        for (int i=0; i<pos; i++) str += "\n" + this.datas[i].toString();
         str += "\n";
         return str;
     }
