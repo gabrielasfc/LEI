@@ -2,29 +2,29 @@
 #include <stdio.h>
 #include <sys/wait.h>
 #include <stdlib.h>
+#include <time.h>
 
 
 int procura(int m[10][50], int val){
     int i, j;
-    int status = 0;
+    int status;
 
     for (i=0; i<10; i++){
         int pid = fork();
         if (pid == 0){
             for (j=0; j<50; j++){
                 if (m[i][j] == val){
-                   status = 1;
-                   _exit(status);
+                   _exit(1);
                 }
             }
-            _exit(status);
+            _exit(0);
         }
     }
 
     int ret = 0;
     for (i=0; i<10; i++){
         wait(&status);
-        ret = ret || status;
+        ret = ret || WEXITSTATUS(status);
     }
 
     return ret;

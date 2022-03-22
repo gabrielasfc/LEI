@@ -7,24 +7,23 @@
 
 void procura(int m[10][50], int val, int ret[10]){
     int i, j;
-    int status = 0;
+    int status;
 
     for (i=0; i<10; i++){
         int pid = fork();
         if (pid == 0){
             for (j=0; j<50; j++){
                 if (m[i][j] == val){
-                    status = i;
-                   _exit(status);
+                   _exit(i);
                 }
             }
-            _exit(status);
+            _exit(10);
         }
     }
 
     for (i=0; i<10; i++){
         wait(&status);
-        ret[i] = status;
+        ret[i] = WEXITSTATUS(status);
     }
 }
 
@@ -56,8 +55,8 @@ int main(int argc, char *argv[]){
     int found = 0;
 
     for (i=0; i<10; i++){
-        if (lines_found[i] != 0){
-            printf("Linha %d\n", i);
+        if (lines_found[i] != 10){
+            printf("Linha %d\n", lines_found[i]);
             found = 1;
         }
     }
