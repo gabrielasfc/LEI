@@ -1,2 +1,17 @@
 .vscode/
 commands.txt
+*.o
+*.out
+*.bin
+guiao-1/entrada/.txt
+guiao-1/saida/*.txt
+guiao-2/entrada/.txt
+guiao-2/saida/*.txt
+guiao-3/entrada/.txt
+guiao-3/saida/*.txt
+guiao-1/docs/html/
+guiao-1/docs/latex/
+guiao-2/docs/html/
+guiao-2/docs/latex/
+guiao-3/docs/html/
+guiao-3/docs/latex/
