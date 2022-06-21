@@ -1,8 +1,11 @@
 .vscode/
 commands.txt
 *.o
-*.out
 *.bin
+guiao-1/guiao-1
+guiao-2/guiao-2
+guiao-3/guiao-3
+guiao-3/tests
 guiao-1/entrada/.txt
 guiao-1/saida/*.txt
 guiao-2/entrada/.txt
