@@ -1,0 +1,22 @@
+Trav Dr Vaz Guedes
+Miguel de Sousa Braga
+268388601
+Endesa
+2
+1
+Quarto
+SmartBulb
+WARM
+10
+/
+Sala
+SmartCamera
+1920 x 1080
+1000000
+SmartSpeaker
+10
+RFM
+Philips
+/
+/
+//
