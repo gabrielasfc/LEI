@@ -1,6 +1,0 @@
-2022-05-04 00
-2022-05-04 00, smarthouse, 199, setOn, 6463
-2022-05-04 04, provider, changeFormula, Energia Simples, 3*c
-2022-05-04 04, smarthouse, 198, setAllOn
-2022-05-04 04, smarthouse, 199, setAllOnLocation, Cozinha
-2022-05-04 08, endOfSimulation
