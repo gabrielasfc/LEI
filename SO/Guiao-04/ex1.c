@@ -10,14 +10,11 @@ int main(int argc, char *argv[]){
 
     int stdout_fd = dup(1);
 
-    dup2(ifd, 0);
-    close(ifd);
-
-    dup2(ofd, 1);
-    close(ofd);
-
-    dup2(efd, 5);
-    close(efd);
+    dup2(ifd, 0); close(ifd);
+    dup2(ofd, 1); close(ofd);
+    dup2(efd, 5); close(efd);
 
     write(stdout_fd, "terminei\n", 9);
+
+    return 0;
 }

@@ -11,12 +11,9 @@ int main(int argc, char *argv[]){
 
     int stdout_fd = dup(1);
 
-    int fd_in = dup2(ifd, 0);
-    close(ifd);
-    int fd_out = dup2(ofd, 1);
-    close(ofd);
-    int fd_err = dup2(efd, 5);
-    close(efd);
+    dup2(ifd, 0); close(ifd);
+    dup2(ofd, 1); close(ofd);
+    dup2(efd, 5); close(efd);
 
     if (fork() == 0){
         write(1, "teste", 5);
@@ -30,4 +27,6 @@ int main(int argc, char *argv[]){
         _exit(0);
     }
     wait(NULL);
+
+    return 0;
 }
