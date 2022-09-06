@@ -16,7 +16,7 @@ No âmbito da UC de Laboratórios de Informática II, foi-nos proposta a impleme
 
 #### Stack
 ```
--  ->  Duplicar
+_  ->  Duplicar
 ;  ->  Pop
 \  ->  Trocar os dois elementos do topo da stack
 @  ->  Rodar os 3 elementos no topo da stack
