@@ -48,8 +48,6 @@ int main(int argc, char *argv[]){
     while(!should_exit){
         pause();
     }
-
-    printf("seconds: \n", seconds); 
-    
+     
     return 0;
 }
