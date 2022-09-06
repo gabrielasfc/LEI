@@ -1,7 +1,6 @@
 # Redes de Computadores
 
-Trabalhos práticos realizados no âmbito da unidade curricular de Redes de Computadores
-
+Trabalhos práticos realizados no âmbito da UC de Redes de Computadores
 
 [TP1](https://github.com/gabrielasfc/LEI/blob/master/RC/RC-TP1-Ensaio-PL87.pdf) - Redes Móveis : Evolução para o 5G
 
@@ -12,8 +11,7 @@ Trabalhos práticos realizados no âmbito da unidade curricular de Redes de Comp
 [TP4](https://github.com/gabrielasfc/LEI/blob/master/RC/RC-TP4-PL87.pdf) - Redes sem Fios (Wi-Fi)
 
 
-
-### Contributors:
+## Contributors:
 - Gabriela Cunha [@gabrielasfc](https://github.com/gabrielasfc)
 - Guilherme Varela [@GVarelaa](https://github.com/GVarelaa)
 - Simão Costa [@sica2602](https://github.com/sica2602)
