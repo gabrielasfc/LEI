@@ -13,7 +13,7 @@ Compilar o programa: ```make```
 
 Iniciar o servidor: ```./bin/sdstored etc/sdstored.conf```
 
-Enviar pedido: ```./bin/sdstore proc-file -p <priority> <input-file> <output-file> <transformation-1> ... <transformation-n>```
+Enviar pedido: ```./bin/sdstore proc-file -p <priority> etc/input.txt etc/output.txt <transformation-1> ... <transformation-n>```
 
 
 ## Contributors:
