@@ -10,7 +10,9 @@ entre este e o cliente encontra-se mais detalhada no nosso [relatório](https://
 
 ## Comandos:
 Compilar o programa: ```make```
-Iniciar o servidor: ```./bin/sdstored config/config.txt bin/```
+
+Iniciar o servidor: ```./bin/sdstored etc/sdstored.conf```
+
 Enviar pedido: ```./bin/sdstore proc-file -p <priority> <input-file> <output-file> <transformation-1> ... <transformation-n>```
 
 
