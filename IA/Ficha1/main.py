@@ -32,7 +32,7 @@ def main():
             print(g)
 
         elif opt == 2:
-            print(g.m_graph.keys())
+            print(g.graph.keys())
 
         elif opt == 3:
             print(g.print_edges())

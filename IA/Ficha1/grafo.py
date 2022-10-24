@@ -1,6 +1,5 @@
 import networkx as nx
 import matplotlib.pyplot as plt
-import math
 
 from nodo import Node
 from queue import Queue
@@ -49,7 +48,8 @@ class Graph:
         return None
 
     def get_arc_cost(self, node1, node2):
-        total = math.inf
+        total = 0
+
         adjs = self.graph[node1] #lista de arestas para aquele nodo
         for (node, cost) in adjs:
             if node == node2:
