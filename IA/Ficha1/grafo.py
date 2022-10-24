@@ -143,11 +143,11 @@ class Graph:
 
         #Converter para o formato usado pela biblioteca networkx
         for node in verts:
-            n = node.getName()
+            n = node.get_name()
             g.add_node(n)
             for (adj, cost) in self.graph[n]:
                 l = (n, adj)
-                g.add_edge(n, adj, cost)
+                g.add_edge(n, adj, cost=cost)
 
         #desenhar o grafo
         pos = nx.spring_layout(g)
