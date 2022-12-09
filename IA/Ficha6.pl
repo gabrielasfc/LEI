@@ -40,9 +40,8 @@ avo(A,N) :- filho(N,X) , pai(A,X).
 %xiv Construir a extensão de um predicado capaz de determinar que o indivíduo N é neto do indivíduo A se existir uma prova de que A seja avô de N;
 neto(N,A) :- avo(A,N).
 
-%xv Construir a extensão de um predicado que permita determinar se uma pessoa X descende de
-outra pessoa Y;
-is_desc(X,Y) :- filho(X,Y) ; ((pai(Z,X) , is_desc(Z,Y))).
+%xv Construir a extensão de um predicado que permita determinar se uma pessoa X descende de outra pessoa Y;
+is_desc(X,Y) :- filho(X,Y) ; (pai(Z,X) , is_desc(Z,Y)).
 
 %xvi Construir a extensão de um predicado que permita determinar o grau de descendência entre duas pessoas, X e Y;
 desc(X,Y,1) :- filho(X,Y).
