@@ -1,3 +1,7 @@
+:- discontiguous pai/2.
+:- discontiguous avo/2.
+:- discontiguous neto/2.
+
 %i O João é filho do José
 filho(joao,jose).
 
