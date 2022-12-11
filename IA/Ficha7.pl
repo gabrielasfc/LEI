@@ -10,7 +10,7 @@ sumL([H|T],R) :- sumL(T,S) , R is H+S.
 
 %iii maior valor entre 2 valores
 max(X,Y,X) :- X>Y , !.
-max(X,Y,Y) :- X=<Y.
+max(_,Y,Y).
 
 %iv maior de um conjunto de valores
 aux_max([],Max,Max).
@@ -66,14 +66,14 @@ remove(X,[H|T],R) :- remove(X,T,R1) , R=[H|R1].
 
 
 %xii apaga todas as ocorrências de um dado elemento numa lista
-remove_all(_,[],[]).
+remove_all(_,[],[]) :- !.
 remove_all(X,[X|T],R) :- remove_all(X,T,R) , !.
 remove_all(X,[H|T],R) :- remove_all(X,T,R1) , R=[H|R1].
 
 
 %xiii insere um elemento numa lista, sem o repetir
-add(X,[],R) :- R=[X] , !.
-add(X,[X|T],R) :- R=[X|T] , !.
+add(X,[],[X]) :- !.
+add(X,[X|T],[X|T]) :- !.
 add(X,[H|T],R) :- add(X,T,R1) , R=[H|R1].
 
 
