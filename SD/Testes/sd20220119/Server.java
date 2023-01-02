@@ -15,7 +15,7 @@ class ServerWorker implements Runnable {
 
     public void run() {
         BufferedReader is = new BufferedReader(new InputStreamReader(this.socket.getInputStream()));
-        PrintWriter os = new PrintWriter(socket.getOutputStream();
+        PrintWriter os = new PrintWriter(socket.getOutputStream());
 
         int cabine;
 
