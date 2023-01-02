@@ -32,8 +32,8 @@ public class Votacao implements IVotacao {
     }
 
     public boolean verifica(int identidade) {
+        lock.lock();
         try {
-            lock.lock();
 
             boolean votou = false;
 
@@ -54,8 +54,8 @@ public class Votacao implements IVotacao {
 
 
     public void vota(int escolha) {
+        lock.lock();
         try {
-            lock.lock();
 
             if (this.votos.containsKey(escolha)) {
                 this.votos.put(escolha, this.votos.get(escolha) + 1);
@@ -70,8 +70,8 @@ public class Votacao implements IVotacao {
     }
 
     public void desocupaCabine(int cabine) {
+        lock.lock();
         try {
-            lock.lock();
             this.cabines.put(cabine, true);
             esperarPorCabine.signalAll();
         } finally {
@@ -94,9 +94,8 @@ public class Votacao implements IVotacao {
 
     public int esperaPorCabine() {
         int cabine;
-
+        lock.lock();
         try {
-            lock.lock();
 
             while ((cabine = procuraCabine()) == -1){
                 esperarPorCabine.await();
@@ -109,8 +108,8 @@ public class Votacao implements IVotacao {
     }
 
     public int vencedor() {
+        lock.lock();
         try {
-            lock.lock();
             this.end = true;
 
             while(this.AVotar != 0){
