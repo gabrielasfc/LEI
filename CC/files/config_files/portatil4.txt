@@ -1,0 +1,10 @@
+# DNS Resolver
+taremi.fcp.root DD 10.4.4.1:2000
+taremi.fcp.root DD 10.1.1.3:2000
+taremi.fcp.root DD 10.2.2.3:2000
+cc.ggm.root DD 10.1.1.2:2000
+cc.ggm.root DD 10.4.4.2:2000
+cc.ggm.root DD 10.3.3.2:2000
+
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db

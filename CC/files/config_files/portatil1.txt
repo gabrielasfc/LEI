@@ -1,0 +1,10 @@
+# Primary server for 10.in-addr.reverse domain
+10.in-addr.reverse.root DB dns/files/db_files/reverse_dns/10_in-addr_reverse.db
+10.in-addr.reverse.root LG dns/files/log_files/10_in-addr_reverse.log
+
+# Secondary server for ggm domain
+ggm.root SP 10.2.2.2:2000
+ggm.root LG dns/files/log_files/ggm.log
+
+root ST dns/files/rootservers.db
+all LG dns/files/log_files/all.log

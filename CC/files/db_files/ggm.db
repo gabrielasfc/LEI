@@ -1,0 +1,44 @@
+# DNS database file domain .ggm
+
+@ DEFAULT ggm.root.
+TTL DEFAULT 86400
+
+@ SOASP servidor2.ggm.root. TTL
+@ SOAADMIN admin\.ggm.root. TTL
+@ SOASERIAL 1 TTL
+@ SOAREFRESH 60 TTL
+@ SOARETRY 3600 TTL
+@ SOAEXPIRE 604800 TTL
+
+# Name Servers
+@ NS servidor2 TTL
+@ NS portatil1 TTL 1
+@ NS grilo TTL 2
+
+# cc.ggm subdomain
+cc.@ NS portatil2.cc.@ TTL
+cc NS golfinho.cc TTL
+cc NS cigarra.cc TTL
+
+@ MX ms1.@ TTL 
+@ MX ms2.@ TTL
+
+# Addresses
+servidor2 A 10.2.2.2:2000 TTL
+portatil1 A 10.1.1.1:2000 TTL
+grilo A 10.4.4.1:2000 TTL
+
+portatil2.cc A 10.1.1.2:2000 TTL
+golfinho.cc A 10.3.3.2:2000 TTL
+cigarra.cc A 10.4.4.2:2000 TTL
+
+ms1 A 10.3.3.1:2000 TTL
+ms2 A 10.2.2.3:2000 TTL
+
+maquina1 CNAME servidor2 TTL
+maquina2 CNAME portatil1 TTL
+maquina3 CNAME grilo TTL
+mail1 CNAME ms1 TTL
+mail2 CNAME ms2 TTL
+
+

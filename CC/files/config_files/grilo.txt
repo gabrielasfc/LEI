@@ -1,0 +1,12 @@
+# Primary server for taremi.fcp domain
+taremi.fcp.root DB dns/files/db_files/taremi_fcp.db
+taremi.fcp.root SS 10.1.1.3:2000
+taremi.fcp.root SS 10.2.2.3:2000
+taremi.fcp.root LG dns/files/log_files/taremi_fcp.log
+
+# Secondary server for ggm domain
+ggm.root SP 10.2.2.2:2000
+ggm.root LG dns/files/log_files/ggm.log
+
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db

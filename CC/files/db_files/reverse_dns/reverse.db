@@ -1,0 +1,21 @@
+# DNS database file for reverse domain.
+
+@ DEFAULT reverse.root.
+TTL DEFAULT 86400
+
+# Config data
+@ SOASP golfinho.reverse.root. TTL
+@ SOAADMIN gabs\.ggm.root. TTL
+@ SOASERIAL 1 TTL
+@ SOAREFRESH 14400 TTL
+@ SOARETRY 3600 TTL
+@ SOAEXPIRE 604800 TTL
+
+# Name servers
+@ NS golfinho TTL
+in-addr NS cigarra.in-addr TTL
+
+# Addresses
+golfinho A 10.3.3.2:2000 TTL
+cigarra.in-addr A 10.4.4.2:2000 TTL
+

@@ -1,0 +1,59 @@
+# DNS database file for domain 10.in-addr.reverse
+
+@ DEFAULT 10.in-addr.reverse.root.
+TTL DEFAULT 86400
+
+@ SOASP portatil1.10.in-addr.reverse.root. TTL
+@ SOAADMIN gabs\.ggm.root. TTL
+@ SOASERIAL 1 TTL
+@ SOAREFRESH 14400 TTL
+@ SOARETRY 3600 TTL
+@ SOAEXPIRE 604800 TTL
+
+# Name servers
+@ NS portatil1 TTL
+
+# Addresses
+portatil1 A 10.1.1.1:2000 TTL
+
+# PTR Records
+# 10.1.1
+1.1.1 PTR portatil1.10.in-addr.reverse.root. TTL
+1.1.1 PTR portatil1.ggm.root. TTL
+
+2.1.1 PTR portatil2.cc.ggm.root. TTL
+
+3.1.1 PTR portatil3.taremi.fcp.root. TTL
+
+4.1.1 PTR sr2. TTL
+
+# 10.2.2
+1.2.2 PTR servidor1.root. TTL
+
+2.2.2 PTR servidor2.fcp.root. TTL
+2.2.2 PTR servidor2.ggm.root. TTL
+
+3.2.2 PTR servidor3.taremi.fcp.root. TTL
+3.2.2 PTR ms2.ggm.root. TTL
+
+# 10.3.3
+1.3.3 PTR orca.root. TTL
+1.3.3 PTR ms1.taremi.fcp.root. TTL
+1.3.3 PTR ms1.ggm.root. TTL
+
+2.3.3 PTR golfinho.fcp.root. TTL
+2.3.3 PTR golfinho.reverse.root. TTL
+2.3.3 PTR golfinho.cc.ggm.root. TTL
+
+3.3.3 PTR sr1. TTL
+
+# 10.4.4
+1.4.4 PTR grilo.ggm.root. TTL
+1.4.4 PTR grilo.taremi.fcp.root. TTL
+
+2.4.4 PTR cigarra.cc.ggm.root. TTL
+2.4.4 PTR cigarra.in-addr.reverse.root. TTL
+2.4.4 PTR ms1.cc.ggm.root. TTL
+
+3.4.4 PTR vespa.fcp.root. TTL
+

@@ -1,0 +1,6 @@
+# Secondary server for fcp domain
+taremi.fcp.root SP 10.4.4.1:2000
+taremi.fcp.root LG dns/files/log_files/taremi_fcp.log
+
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db

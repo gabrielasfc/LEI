@@ -1,0 +1,1326 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<scenario name="/home/core/ProjetoCC/core/Topologia.xml">
+  <networks>
+    <network id="8" name="Switch2" type="HUB">
+      <position x="157" y="70" lat="47.578530419961346" lon="-122.1302064675059" alt="2.0"/>
+    </network>
+    <network id="9" name="Switch1" type="HUB">
+      <position x="155" y="478" lat="47.57482166242638" lon="-122.13023341696443" alt="2.0"/>
+    </network>
+    <network id="10" name="Switch4" type="HUB">
+      <position x="816" y="470" lat="47.574894385687294" lon="-122.12132662092237" alt="2.0"/>
+    </network>
+    <network id="11" name="Switch3" type="HUB">
+      <position x="760" y="47" lat="47.57873948425556" lon="-122.12208120576105" alt="2.0"/>
+    </network>
+  </networks>
+  <devices>
+    <device id="1" name="Router1" type="router" class="" image="">
+      <position x="321" y="143" lat="47.57786686254145" lon="-122.12799661190697" alt="2.0"/>
+      <services>
+        <service name="OSPFv2"/>
+        <service name="OSPFv3"/>
+        <service name="zebra"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="2" name="Router2" type="router" class="" image="">
+      <position x="436" y="258" lat="47.576821515300466" lon="-122.12644701804187" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="OSPFv2"/>
+        <service name="OSPFv3"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="3" name="Router3" type="router" class="" image="">
+      <position x="691" y="281" lat="47.57661244334786" lon="-122.12301096208009" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="OSPFv2"/>
+        <service name="OSPFv3"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="4" name="Router4" type="router" class="" image="">
+      <position x="528" y="428" lat="47.57527618115008" lon="-122.12520734294976" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="OSPFv2"/>
+        <service name="OSPFv3"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="5" name="Router5" type="router" class="" image="">
+      <position x="295" y="411" lat="47.575430716617404" lon="-122.12834695486777" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="OSPFv2"/>
+        <service name="OSPFv3"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="6" name="Router6" type="router" class="" image="">
+      <position x="181" y="265" lat="47.57675788479456" lon="-122.12988307400363" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="OSPFv2"/>
+        <service name="OSPFv3"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="7" name="Router7" type="router" class="" image="">
+      <position x="604" y="146" lat="47.57783959287854" lon="-122.1241832635259" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="OSPFv2"/>
+        <service name="OSPFv3"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="12" name="Servidor1" type="host" class="" image="">
+      <position x="45" y="32" lat="47.578875830084634" lon="-122.13171563718322" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="SSH"/>
+        <service name="StaticRoute"/>
+        <service name="UserDefined"/>
+      </services>
+    </device>
+    <device id="13" name="Servidor2" type="host" class="" image="">
+      <position x="33" y="108" lat="47.578185007559306" lon="-122.13187733393436" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="SSH"/>
+        <service name="StaticRoute"/>
+        <service name="UserDefined"/>
+      </services>
+    </device>
+    <device id="14" name="Portatil1" type="PC" class="" image="">
+      <position x="47" y="434" lat="47.57522163911154" lon="-122.13168868772469" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="StaticRoute"/>
+        <service name="UserDefined"/>
+      </services>
+    </device>
+    <device id="15" name="Portatil2" type="PC" class="" image="">
+      <position x="84" y="564" lat="47.57403988099298" lon="-122.13119012274201" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="StaticRoute"/>
+        <service name="UserDefined"/>
+      </services>
+    </device>
+    <device id="16" name="Grilo" type="PC" class="" image="">
+      <position x="887" y="414" lat="47.575403445685716" lon="-122.12036991514478" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="StaticRoute"/>
+        <service name="UserDefined"/>
+      </services>
+    </device>
+    <device id="17" name="Cigarra" type="PC" class="" image="">
+      <position x="850" y="542" lat="47.574239872703195" lon="-122.12086848012748" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="StaticRoute"/>
+        <service name="UserDefined"/>
+      </services>
+    </device>
+    <device id="18" name="Orca" type="host" class="" image="">
+      <position x="909" y="36" lat="47.578839471231596" lon="-122.12007347110104" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="SSH"/>
+        <service name="StaticRoute"/>
+        <service name="UserDefined"/>
+      </services>
+    </device>
+    <device id="19" name="Golfinho" type="host" class="" image="">
+      <position x="897" y="132" lat="47.57796685118394" lon="-122.12023516785217" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="SSH"/>
+        <service name="StaticRoute"/>
+        <service name="UserDefined"/>
+      </services>
+    </device>
+    <device id="20" name="Servidor3" type="host" class="" image="">
+      <position x="110" y="141" lat="47.57788504230883" lon="-122.1308397797812" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="SSH"/>
+        <service name="StaticRoute"/>
+        <service name="UserDefined"/>
+      </services>
+    </device>
+    <device id="21" name="Portatil3" type="PC" class="" image="">
+      <position x="28" y="513" lat="47.57450349697239" lon="-122.13194470758066" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="StaticRoute"/>
+        <service name="UserDefined"/>
+      </services>
+    </device>
+    <device id="23" name="Foca" type="host" class="" image="">
+      <position x="768" y="142" lat="47.57787595242593" lon="-122.12197340792696" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="SSH"/>
+        <service name="StaticRoute"/>
+        <service name="UserDefined"/>
+      </services>
+    </device>
+    <device id="22" name="Vespa" type="PC" class="" image="">
+      <position x="942" y="480" lat="47.57480348159537" lon="-122.1196288050354" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="StaticRoute"/>
+        <service name="UserDefined"/>
+      </services>
+    </device>
+    <device id="24" name="Portatil4" type="PC" class="" image="">
+      <position x="219" y="547" lat="47.57419442010885" lon="-122.12937103429167" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="StaticRoute"/>
+        <service name="UserDefined"/>
+      </services>
+    </device>
+  </devices>
+  <links>
+    <link node1="8" node2="1">
+      <iface2 id="2" name="eth2" mac="00:00:00:aa:00:60" ip4="10.2.2.254" ip4_mask="24" ip6="2001:2:2::254" ip6_mask="64"/>
+      <options delay="100" bandwidth="1000000000" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="8" node2="12">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:64" ip4="10.2.2.1" ip4_mask="24" ip6="2001:2:2::1" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="8" node2="13">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:65" ip4="10.2.2.2" ip4_mask="24" ip6="2001:2:2::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="8" node2="20">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:70" ip4="10.2.2.3" ip4_mask="24" ip6="2001:2:2::3" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="9" node2="5">
+      <iface2 id="3" name="eth3" mac="00:00:00:aa:00:61" ip4="10.1.1.254" ip4_mask="24" ip6="2001:1:1::254" ip6_mask="64"/>
+      <options delay="100" bandwidth="1000000000" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="9" node2="15">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:6a" ip4="10.1.1.2" ip4_mask="24" ip6="2001:1:1::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="9" node2="14">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:6b" ip4="10.1.1.1" ip4_mask="24" ip6="2001:1:1::1" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="9" node2="21">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:71" ip4="10.1.1.3" ip4_mask="24" ip6="2001:1:1::3" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="9" node2="24">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:6a" ip4="10.1.1.4" ip4_mask="24" ip6="2001:1:1::4" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="10" node2="4">
+      <iface2 id="3" name="eth3" mac="00:00:00:aa:00:62" ip4="10.4.4.254" ip4_mask="24" ip6="2001:4:4::254" ip6_mask="64"/>
+      <options delay="100" bandwidth="1000000000" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="10" node2="17">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:68" ip4="10.4.4.2" ip4_mask="24" ip6="2001:4:4::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="10" node2="16">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:69" ip4="10.4.4.1" ip4_mask="24" ip6="2001:4:4::1" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="10" node2="22">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:73" ip4="10.4.4.3" ip4_mask="24" ip6="2001:4:4::3" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="11" node2="7">
+      <iface2 id="2" name="eth2" mac="00:00:00:aa:00:63" ip4="10.3.3.254" ip4_mask="24" ip6="2001:3:3::254" ip6_mask="64"/>
+      <options delay="100" bandwidth="1000000000" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="11" node2="18">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:66" ip4="10.3.3.1" ip4_mask="24" ip6="2001:3:3::1" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="11" node2="19">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:67" ip4="10.3.3.2" ip4_mask="24" ip6="2001:3:3::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="11" node2="23">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:72" ip4="10.3.3.3" ip4_mask="24" ip6="2001:3:3::3" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="1" node2="2">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:50" ip4="10.0.0.1" ip4_mask="24" ip6="2001::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:51" ip4="10.0.0.2" ip4_mask="24" ip6="2001::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="2" node2="7">
+      <iface1 id="1" name="eth1" mac="00:00:00:aa:00:52" ip4="10.0.1.1" ip4_mask="24" ip6="2001:1::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:53" ip4="10.0.1.2" ip4_mask="24" ip6="2001:1::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="7" node2="3">
+      <iface1 id="1" name="eth1" mac="00:00:00:aa:00:54" ip4="10.0.2.1" ip4_mask="24" ip6="2001:2::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:55" ip4="10.0.2.2" ip4_mask="24" ip6="2001:2::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="3" node2="4">
+      <iface1 id="1" name="eth1" mac="00:00:00:aa:00:56" ip4="10.0.3.1" ip4_mask="24" ip6="2001:3::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:57" ip4="10.0.3.2" ip4_mask="24" ip6="2001:3::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="4" node2="5">
+      <iface1 id="1" name="eth1" mac="00:00:00:aa:00:58" ip4="10.0.4.1" ip4_mask="24" ip6="2001:4::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:59" ip4="10.0.4.2" ip4_mask="24" ip6="2001:4::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="5" node2="6">
+      <iface1 id="1" name="eth1" mac="00:00:00:aa:00:5a" ip4="10.0.5.1" ip4_mask="24" ip6="2001:5::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:5b" ip4="10.0.5.2" ip4_mask="24" ip6="2001:5::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="6" node2="1">
+      <iface1 id="1" name="eth1" mac="00:00:00:aa:00:5c" ip4="10.0.6.1" ip4_mask="24" ip6="2001:6::1" ip6_mask="64"/>
+      <iface2 id="1" name="eth1" mac="00:00:00:aa:00:5d" ip4="10.0.6.2" ip4_mask="24" ip6="2001:6::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="4" node2="2">
+      <iface1 id="2" name="eth2" mac="00:00:00:aa:00:5e" ip4="10.0.9.1" ip4_mask="24" ip6="2001:9::1" ip6_mask="64"/>
+      <iface2 id="3" name="eth3" mac="00:00:00:aa:00:5f" ip4="10.0.9.2" ip4_mask="24" ip6="2001:9::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="1" node2="7">
+      <iface1 id="3" name="eth3" mac="00:00:00:aa:00:6c" ip4="10.0.8.1" ip4_mask="24" ip6="2001:8::1" ip6_mask="64"/>
+      <iface2 id="3" name="eth3" mac="00:00:00:aa:00:6d" ip4="10.0.8.2" ip4_mask="24" ip6="2001:8::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="2" node2="5">
+      <iface1 id="2" name="eth2" mac="00:00:00:aa:00:6e" ip4="10.0.10.1" ip4_mask="24" ip6="2001:10::1" ip6_mask="64"/>
+      <iface2 id="2" name="eth2" mac="00:00:00:aa:00:6f" ip4="10.0.10.2" ip4_mask="24" ip6="2001:10::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="6" node2="2">
+      <iface1 id="2" name="eth2" mac="00:00:00:aa:00:74" ip4="10.0.7.1" ip4_mask="24" ip6="2001:7::1" ip6_mask="64"/>
+      <iface2 id="4" name="eth4" mac="00:00:00:aa:00:75" ip4="10.0.7.2" ip4_mask="24" ip6="2001:7::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="2" node2="3">
+      <iface1 id="5" name="eth5" mac="00:00:00:aa:00:76" ip4="10.0.11.1" ip4_mask="24" ip6="2001:11::1" ip6_mask="64"/>
+      <iface2 id="2" name="eth2" mac="00:00:00:aa:00:77" ip4="10.0.11.2" ip4_mask="24" ip6="2001:11::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+  </links>
+  <emane_global_configuration>
+    <emulator/>
+    <core>
+      <configuration name="platform_id_start" value="1"/>
+      <configuration name="nem_id_start" value="1"/>
+      <configuration name="link_enabled" value="1"/>
+      <configuration name="loss_threshold" value="30"/>
+      <configuration name="link_interval" value="1"/>
+      <configuration name="link_timeout" value="4"/>
+    </core>
+  </emane_global_configuration>
+  <service_configurations>
+    <service name="DefaultRoute" node="12">
+      <startups>
+        <startup>bash defaultroute.sh</startup>
+      </startups>
+      <files>
+        <file name="defaultroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by DefaultRoute service (utility.py)
+ip route add default via 10.2.2.254
+ip route add default via 2001:2:2::254
+]]></file>
+      </files>
+    </service>
+    <service name="UserDefined" node="12">
+      <startups>
+        <startup>mkdir /run/resolvconf</startup>
+        <startup>touch /run/resolvconf/resolv.conf</startup>
+        <startup>sh preenche_resolvconf.sh</startup>
+        <startup>mkdir dns</startup>
+        <startup>cp -r /home/core/ProjetoCC/src dns/src</startup>
+        <startup>cp -r /home/core/ProjetoCC/files dns/</startup>
+        <startup>mkdir dns/files/log_files</startup>
+      </startups>
+      <files>
+        <file name="ggm.db"><![CDATA[# DNS database file domain .ggm
+@ DEFAULT ggm.
+TTL DEFAULT 86400
+@ SOASP s1.ggm TTL
+@ SOAADMIN admin\.ggm. TTL
+@ SOASERIAL 1 TTL
+@ SOAREFRESH 60 TTL
+@ SOARETRY 3600 TTL
+@ SOAEXPIRE 604800 TTL
+@ NS sp.ggm. TTL
+@ NS ss1.ggm. TTL 1
+@ NS ss2.ggm. TTL 2
+# Primary server of cc.ggm subdomain
+cc.@ NS sp.cc.@ TTL
+@ MX ms1.@ TTL
+@ MX ms2.@ TTL
+sp A 10.2.2.1:2000 TTL
+ss1 A 10.3.3.1:2000 TTL
+ss2 A 10.4.4.1:2000 TTL
+sp.cc A 10.1.1.2:2000 TTL
+mike A 10.1.1.3 TTL
+gui A 10.4.4.1 TTL
+gabs A 10.3.3.2 TTL
+ms1 A 10.3.3.1 TTL
+ms2 A 10.3.3.3 TTL
+miguel CNAME mike TTL
+guilherme CNAME gui TTL
+gabriela CNAME gabs TTL
+]]></file>
+        <file name="rootservers.db"><![CDATA[# List of root files for topology
+10.2.2.1:2000
+10.3.3.1:2000]]></file>
+        <file name="updateSrc.sh"><![CDATA[cp -r /home/core/ProjetoCC/src/* dns/src]]></file>
+        <file name="run.sh"><![CDATA[python3 dns/src/run_server.py dns/files/config_files/servidor1.txt 2000 5 0 shy]]></file>
+        <file name="root.db"><![CDATA[@ DEFAULT root.
+TTL DEFAULT 86400
+# Config data
+@ SOAADMIN mike\.ggm TTL
+@ SOASERIAL 1 TTL
+# Name servers
+root. NS s1. TTL
+root. NS s2. TTL
+ggm. NS sp.ggm. TTL
+ggm. NS ss1.ggm. TTL
+ggm. NS ss2.ggm. TTL
+fcp. NS sp.fcp. TTL
+fcp. NS ss1.fcp. TTL
+fcp. NS ss2.fcp. TTL
+reverse. NS ns1.reverse. TTL
+# Addresses
+sp.ggm. A 10.2.2.1:2000 TTL
+ss1.ggm. A 10.3.3.1:2000 TTL
+ss2.ggm. A 10.4.4.1:2000 TTL
+sp.fcp. A 10.2.2.2:2000 TTL
+ss1.fcp. A 10.3.3.2:2000 TTL
+ss2.fcp. A 10.4.4.3:2000 TTL
+sp.reverse. A 10.3.3.2:2000 TTL
+s1. A 10.2.2.1:2000 TTL
+s2. A 10.3.3.1:2000 TTL
+]]></file>
+        <file name="preenche_resolvconf.sh"><![CDATA[echo "# -- gerado pela script de arranque..." >> /etc/resolv.conf
+echo "domain cc.pt" >> /etc/resolv.conf
+echo "nameserver 10.2.2.1" >> /etc/resolv.conf
+echo "" >> /etc/resolv.conf ]]></file>
+        <file name="servidor1.txt"><![CDATA[# Configuration file for primary server for ggm domain
+ggm DB dns/files/db_files/ggm.db
+ggm SS 10.3.3.1:2000
+ggm SS 10.4.1.1:2000
+ggm LG dns/files/log_files/ggm.log
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db
+. DB dns/files/db_files/root.db
+. LG dns/files/log_files/root.log
+]]></file>
+      </files>
+    </service>
+    <service name="DefaultRoute" node="13">
+      <startups>
+        <startup>bash defaultroute.sh</startup>
+      </startups>
+      <files>
+        <file name="defaultroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by DefaultRoute service (utility.py)
+ip route add default via 10.2.2.254
+ip route add default via 2001:2:2::254
+]]></file>
+      </files>
+    </service>
+    <service name="UserDefined" node="13">
+      <startups>
+        <startup>mkdir /run/resolvconf</startup>
+        <startup>touch /run/resolvconf/resolv.conf</startup>
+        <startup>sh preenche_resolvconf.sh</startup>
+        <startup>mkdir /run/resolvconf</startup>
+        <startup>touch /run/resolvconf/resolv.conf</startup>
+        <startup>sh preenche_resolvconf.sh</startup>
+        <startup>mkdir dns</startup>
+        <startup>cp -r /home/core/ProjetoCC/src dns/src</startup>
+        <startup>cp -r /home/core/ProjetoCC/files dns/</startup>
+        <startup>mkdir dns/files/log_files</startup>
+      </startups>
+      <files>
+        <file name="rootservers.db"><![CDATA[# List of root files for topology
+10.2.2.1:2000
+10.3.3.1:2000]]></file>
+        <file name="updateSrc.sh"><![CDATA[cp -r /home/core/ProjetoCC/src/* dns/src]]></file>
+        <file name="run.sh"><![CDATA[python3 dns/src/run_server.py dns/files/config_files/servidor2.txt 2000 5 0 shy]]></file>
+        <file name="fcp.db"><![CDATA[# DNS database file for domain .fcp
+@ DEFAULT fcp.
+TTL DEFAULT 86400
+@ SOASP ns1.fcp. TTL
+@ SOAADMIN admin.\fcp. TTL
+@ SOASERIAL 1 TTL
+@ SOAREFRESH 14400 TTL
+@ SOARETRY 3600 TTL
+@ SOAEXPIRE 604800 TTL
+# Name servers
+@ NS ns1.fcp. TTL
+@ NS ns2.fcp. TTL
+@ NS ns3.fcp. TTL
+taremi.@ NS ns1.taremi.fcp. TTL
+# MAIL SERVERS
+@ MX ms1.fcp. TTL
+# Addresses
+ns1 A 10.2.2.2:2000 TTL
+ns2 A 10.3.3.2:2000 TTL
+ns3 A 10.4.4.3:2000 TTL
+ns1.taremi A 10.4.4.1:2000 TTL
+ms1 A 10.2.2.1 TTL
+pdc A 10.4.4.1 TTL
+avb A 10.4.4.2 TTL
+sp CNAME ns1 TTL
+ss1 CNAME ns2 TTL
+ss2 CNAME ns3 TTL
+mail1 CNAME ms1 TTL
+]]></file>
+        <file name="preenche_resolvconf.sh"><![CDATA[echo "# -- gerado pela script de arranque..." >> /etc/resolv.conf
+echo "domain cc.pt" >> /etc/resolv.conf
+echo "nameserver 10.2.2.1" >> /etc/resolv.conf
+echo "" >> /etc/resolv.conf ]]></file>
+        <file name="servidor2.txt"><![CDATA[# Configuration file for server 2
+fcp DB dns/files/db_files/fcp.db
+fcp SS 10.3.3.2:2000
+fcp SS 10.4.4.3:2000
+fcp LG dns/files/log_files/fcp.log
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db]]></file>
+      </files>
+    </service>
+    <service name="StaticRoute" node="14">
+      <startups>
+        <startup>bash staticroute.sh</startup>
+      </startups>
+      <files>
+        <file name="staticroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by StaticRoute service (utility.py)
+#
+# NOTE: this service must be customized to be of any use
+#       Below are samples that you can uncomment and edit.
+#
+#/sbin/ip route add 10.9.8.0/24 via 10.4.4.254
+#/sbin/ip route add 3ffe:4::/64 via 2001:4:4::254
+]]></file>
+      </files>
+    </service>
+    <service name="DefaultRoute" node="14">
+      <startups>
+        <startup>bash defaultroute.sh</startup>
+      </startups>
+      <files>
+        <file name="defaultroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by DefaultRoute service (utility.py)
+ip route add default via 10.1.1.254
+ip route add default via 2001:1:1::254
+]]></file>
+      </files>
+    </service>
+    <service name="UserDefined" node="14">
+      <startups>
+        <startup>mkdir /run/resolvconf</startup>
+        <startup>touch /run/resolvconf/resolv.conf</startup>
+        <startup>sh preenche_resolvconf.sh</startup>
+        <startup>mkdir dns</startup>
+        <startup>mkdir dns/files</startup>
+        <startup>cp -r /home/core/ProjetoCC/src dns/src</startup>
+        <startup>cp -r /home/core/ProjetoCC/files dns/</startup>
+        <startup>mkdir dns/files/log_files</startup>
+      </startups>
+      <files>
+        <file name="rootservers.db"><![CDATA[# List of root files for topology
+10.2.2.1:2000
+10.3.3.1:2000]]></file>
+        <file name="portatil1.txt"><![CDATA[# Configuration file for "portatil1"
+10.in-addr.reverse. DB dns/files/db_files/10_in-addr_reverse.db
+10.in-addr.reverse. LG dns/files/log_files/10_in-addr_reverse.log
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db
+]]></file>
+        <file name="updateSrc.sh"><![CDATA[cp -r /home/core/ProjetoCC/src/* dns/src/]]></file>
+        <file name="runClient.sh"><![CDATA[python3 dns/src/client.py 10.2.2.1:2000 mike.ggm. A ]]></file>
+        <file name="run.sh"><![CDATA[python3 dns/src/run_server.py dns/files/config_files/portatil1.txt 2000 5 0 shy]]></file>
+        <file name="preenche_resolvconf.sh"><![CDATA[echo "# -- gerado pela script de arranque..." >> /etc/resolv.conf
+echo "domain cc.pt" >> /etc/resolv.conf
+echo "nameserver 10.2.2.1" >> /etc/resolv.conf
+echo "" >> /etc/resolv.conf ]]></file>
+        <file name="10_in-addr_reverse.db"><![CDATA[
+# DNS database file for domain 10.in-addr.reverse
+@ DEFAULT 10.in-addr.reverse.
+TTL DEFAULT 86400
+@ SOASP ns1.10.in-addr.reverse. TTL
+@ SOADMIN gabs\.ggm TTL
+@ SOASERIAL 1 TTL
+@ SOAREFRESH 14400 TTL
+@ SOARETRY 3600
+@ SOAEXPIRE 604800 TTL
+# Name servers
+@ NS ns1.10.in-addr.reverse. TTL
+# Addresses
+ns1 A 10.1.1.1:2000 TTL
+# Reverse DNS
+10.2.2.2 PTR sp.fcp.
+10.4.4.3 PTR ss2.fcp.
+10.1.1.2 PTR sp.cc.ggm.
+]]></file>
+      </files>
+    </service>
+    <service name="StaticRoute" node="15">
+      <startups>
+        <startup>bash staticroute.sh</startup>
+      </startups>
+      <files>
+        <file name="staticroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by StaticRoute service (utility.py)
+#
+# NOTE: this service must be customized to be of any use
+#       Below are samples that you can uncomment and edit.
+#
+#/sbin/ip route add 10.9.8.0/24 via 10.4.4.254
+#/sbin/ip route add 3ffe:4::/64 via 2001:4:4::254
+]]></file>
+      </files>
+    </service>
+    <service name="DefaultRoute" node="15">
+      <startups>
+        <startup>bash defaultroute.sh</startup>
+      </startups>
+      <files>
+        <file name="defaultroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by DefaultRoute service (utility.py)
+ip route add default via 10.1.1.254
+ip route add default via 2001:1:1::254
+]]></file>
+      </files>
+    </service>
+    <service name="UserDefined" node="15">
+      <startups>
+        <startup>mkdir /run/resolvconf</startup>
+        <startup>touch /run/resolvconf/resolv.conf</startup>
+        <startup>sh preenche_resolvconf.sh</startup>
+        <startup>mkdir dns</startup>
+        <startup>cp -r /home/core/ProjetoCC/src dns/src</startup>
+        <startup>cp -r /home/core/ProjetoCC/files dns/</startup>
+        <startup>mkdir dns/files/log_files</startup>
+      </startups>
+      <files>
+        <file name="cc_ggm.db"><![CDATA[# DNS database file for domain cc.ggm
+@ DEFAULT cc.ggm.
+TTL DEFAULT 86400
+@ SOASP ns1.cc.ggm. TTL
+@ SOADMIN admin\.cc.ggm. TTL
+@ SOASERIAL 1 TTL
+@ SOAREFRESH 14400 TTL
+@ SOARETRY 3600
+@ SOAEXPIRE 604800 TTL
+# Name servers
+@ NS ns1.cc.ggm. TTL
+@ NS ns2.cc.ggm. TTL
+@ NS ns3.cc.ggm. TTL
+# MAIL SERVERS
+@ MX ms1.@ TTL
+# Addresses
+ns1 A 10.1.1.2:2000 TTL
+ns2 A 10.4.4.2:2000 TTL
+ns3 A 10.3.3.3:2000 TTL
+ms1 A 10.4.4.2 TTL
+tone A 10.1.1.1 TTL
+tunes A 10.1.1.3 TTL
+sp CNAME ns1 TTL
+ss1 CNAME ns2 TTL
+ss2 CNAME ns3 TTL]]></file>
+        <file name="rootservers.db"><![CDATA[# List of root files for topology
+10.2.2.1:2000
+10.3.3.1:2000
+]]></file>
+        <file name="updateSrc.sh"><![CDATA[cp -r /home/core/ProjetoCC/src/* dns/src]]></file>
+        <file name="run.sh"><![CDATA[python3 dns/src/run_server.py dns/files/config_files/portatil2.txt 2000 5 0 shy]]></file>
+        <file name="preenche_resolvconf.sh"><![CDATA[echo "# -- gerado pela script de arranque..." >> /etc/resolv.conf
+echo "domain cc.pt" >> /etc/resolv.conf
+echo "nameserver 10.2.2.1" >> /etc/resolv.conf
+echo "" >> /etc/resolv.conf ]]></file>
+        <file name="portatil2.txt"><![CDATA[# Configuration file for "portatil2"
+# SP cc.ggm
+cc.ggm SS 10.4.4.2:2000
+cc.ggm SS 10.3.3.3:2000
+cc.ggm LG dns/files/log_files/cc_ggm.log
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db
+]]></file>
+      </files>
+    </service>
+    <service name="StaticRoute" node="16">
+      <startups>
+        <startup>bash staticroute.sh</startup>
+      </startups>
+      <files>
+        <file name="staticroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by StaticRoute service (utility.py)
+#
+# NOTE: this service must be customized to be of any use
+#       Below are samples that you can uncomment and edit.
+#
+#/sbin/ip route add 10.9.8.0/24 via 10.3.3.254
+#/sbin/ip route add 3ffe:4::/64 via 2001:3:3::254
+]]></file>
+      </files>
+    </service>
+    <service name="DefaultRoute" node="16">
+      <startups>
+        <startup>bash defaultroute.sh</startup>
+      </startups>
+      <files>
+        <file name="defaultroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by DefaultRoute service (utility.py)
+ip route add default via 10.4.4.254
+ip route add default via 2001:4:4::254
+]]></file>
+      </files>
+    </service>
+    <service name="UserDefined" node="16">
+      <startups>
+        <startup>mkdir /run/resolvconf</startup>
+        <startup>touch /run/resolvconf/resolv.conf</startup>
+        <startup>sh preenche_resolvconf.sh</startup>
+        <startup>mkdir dns</startup>
+        <startup>cp -r /home/core/ProjetoCC/src dns/src</startup>
+        <startup>cp -r /home/core/ProjetoCC/files dns/</startup>
+        <startup>mkdir dns/files/log_files</startup>
+      </startups>
+      <files>
+        <file name="rootservers.db"><![CDATA[# List of root files for topology
+10.2.2.1:2000
+10.3.3.1:2000
+]]></file>
+        <file name="Grilo.txt"><![CDATA[# Configuration file "Grilo"
+# SS ggm
+ggm SP 10.2.2.1:2000
+ggm LG dns/files/log_files/ggm.log
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db
+# SP taremi.fcp
+taremi.fcp SS 10.1.1.3:2000
+taremi.fcp SS 10.2.2.3:2000
+taremi.fcp DB dns/files/db_files/taremi_fcp.db
+taremi.fcp LG dns/files/log_files/taremi_fcp.log
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db
+]]></file>
+        <file name="updateSrc.sh"><![CDATA[cp -r /home/core/ProjetoCC/src/* dns/src]]></file>
+        <file name="run.sh"><![CDATA[python3 dns/src/run_server.py dns/files/config_files/grilo.txt 2000 5 0 shy]]></file>
+        <file name="taremi_fcp.db"><![CDATA[# DNS database file for domain taremi.fcp
+@ DEFAULT .taremi.fcp
+TTL DEFAULT 86400
+@ SOASP ns1.taremi.fcp. TTL
+@ SOAADMIN admin\.taremin.fcp. TTL
+@ SOASERIAL 1 TTL
+@ SOAREFRESH 14400 TTL
+@ SOARETRY 3600 TTL
+@ SOAEXPIRE 604800 TTL
+# Name servers
+@ NS ns1.taremi.fcp. TTL
+@ NS ns2.taremi.fcp. TTL
+@ NS ns3.taremi.fcp. TTL
+# MAIL SERVERS
+@ MX ms1.@ TTL
+# Addresses
+ns1 A 10.4.4.1:2000 TTL
+ns2 A 10.1.1.3:2000 TTL
+ns3 A 10.2.2.3:2000 TTL
+taremi A 10.3.3.3 TTL
+pepe A 10.4.4.3 TTL
+zaidu A 10.3.3.2 TTL
+ms1 A 10.3.3.1 TTL
+sp CNAME ns1 TTL
+ss1 CNAME ns2 TTL
+ss2 CNAME ns3 TTL
+]]></file>
+        <file name="preenche_resolvconf.sh"><![CDATA[echo "# -- gerado pela script de arranque..." >> /etc/resolv.conf
+echo "domain cc.pt" >> /etc/resolv.conf
+echo "nameserver 10.2.2.1" >> /etc/resolv.conf
+echo "" >> /etc/resolv.conf]]></file>
+      </files>
+    </service>
+    <service name="StaticRoute" node="17">
+      <startups>
+        <startup>bash staticroute.sh</startup>
+      </startups>
+      <files>
+        <file name="staticroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by StaticRoute service (utility.py)
+#
+# NOTE: this service must be customized to be of any use
+#       Below are samples that you can uncomment and edit.
+#
+#/sbin/ip route add 10.9.8.0/24 via 10.3.3.254
+#/sbin/ip route add 3ffe:4::/64 via 2001:3:3::254
+]]></file>
+      </files>
+    </service>
+    <service name="DefaultRoute" node="17">
+      <startups>
+        <startup>bash defaultroute.sh</startup>
+      </startups>
+      <files>
+        <file name="defaultroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by DefaultRoute service (utility.py)
+ip route add default via 10.4.4.254
+ip route add default via 2001:4:4::254
+]]></file>
+      </files>
+    </service>
+    <service name="UserDefined" node="17">
+      <startups>
+        <startup>mkdir /run/resolvconf</startup>
+        <startup>touch /run/resolvconf/resolv.conf</startup>
+        <startup>sh preenche_resolvconf.sh</startup>
+        <startup>mkdir dns</startup>
+        <startup>cp -r /home/core/ProjetoCC/src dns/src</startup>
+        <startup>cp -r /home/core/ProjetoCC/files dns/</startup>
+        <startup>mkdir dns/files/log_files</startup>
+      </startups>
+      <files>
+        <file name="Cigarra.txt"><![CDATA[# Configuration file for "Cigarra"
+# SS cc.ggm
+cc.ggm SP 10.1.1.2:2000
+cc.ggm LG dns/files/log_files/cc_ggm.log
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db
+# SP in-addr
+in-addr.reverse LG dns/files/log_files/in-addr_reverse.log
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db]]></file>
+        <file name="rootservers.db"><![CDATA[# List of root files for topology
+10.2.2.1:2000
+10.3.3.1:2000
+]]></file>
+        <file name="in-addr_reverse.db"><![CDATA[# DNS database file for .in-addr.reverse domain primary server
+@ DEFAULT .in-addr.reverse.
+TTL DEFAULT 86400
+# Config data
+@ SOASP ns1.in-addr.reverse. TTL
+@ SOADMIN __gabs\.ggm. TTL
+# Name servers
+@ NS ns1.in-addr.reverse. TTL
+10.in-addr.reverse. NS ns1.10.in-addr.reverse.
+# Addresses
+ns1 A 10.4.4.2:2000 TTL
+ns1.10.in-addr A 10.1.1.1:2000 TTL]]></file>
+        <file name="updateSrc.sh"><![CDATA[cp -r /home/core/ProjetoCC/src/* dns/src]]></file>
+        <file name="run.sh"><![CDATA[python3 dns/src/run_server.py dns/files/config_files/cigarra.txt 2000 5 0 shy]]></file>
+        <file name="preenche_resolvconf.sh"><![CDATA[echo "# -- gerado pela script de arranque..." >> /etc/resolv.conf
+echo "domain cc.pt" >> /etc/resolv.conf
+echo "nameserver 10.2.2.1" >> /etc/resolv.conf
+echo "" >> /etc/resolv.conf ]]></file>
+      </files>
+    </service>
+    <service name="StaticRoute" node="18">
+      <startups>
+        <startup>bash staticroute.sh</startup>
+      </startups>
+      <files>
+        <file name="staticroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by StaticRoute service (utility.py)
+#
+# NOTE: this service must be customized to be of any use
+#       Below are samples that you can uncomment and edit.
+#
+#/sbin/ip route add 10.9.8.0/24 via 10.2.2.254
+#/sbin/ip route add 3ffe:4::/64 via 2001:2:2::254
+]]></file>
+      </files>
+    </service>
+    <service name="DefaultRoute" node="18">
+      <startups>
+        <startup>bash defaultroute.sh</startup>
+      </startups>
+      <files>
+        <file name="defaultroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by DefaultRoute service (utility.py)
+ip route add default via 10.3.3.254
+ip route add default via 2001:3:3::254
+]]></file>
+      </files>
+    </service>
+    <service name="UserDefined" node="18">
+      <startups>
+        <startup>mkdir /run/resolvconf</startup>
+        <startup>touch /run/resolvconf/resolv.conf</startup>
+        <startup>sh preenche_resolvconf.sh</startup>
+        <startup>mkdir dns</startup>
+        <startup>cp -r /home/core/ProjetoCC/src dns/src</startup>
+        <startup>cp -r /home/core/ProjetoCC/files dns/</startup>
+        <startup>mkdir dns/files/log_files</startup>
+      </startups>
+      <files>
+        <file name="rootservers.db"><![CDATA[# List of root files for topology
+10.2.2.1:2000
+10.3.3.1:2000]]></file>
+        <file name="updateSrc.sh"><![CDATA[cp -r /home/core/ProjetoCC/src/* dns/src/]]></file>
+        <file name="run.sh"><![CDATA[python3 dns/src/run_server.py dns/files/config_files/orca.txt 2000 5 0 shy]]></file>
+        <file name="root.db"><![CDATA[@ DEFAULT root.
+TTL DEFAULT 86400
+# Config data
+@ SOAADMIN mike\.ggm TTL
+@ SOASERIAL 1 TTL
+# Name servers
+root. NS s1. TTL
+root. NS s2. TTL
+ggm. NS sp.ggm. TTL
+ggm. NS ss1.ggm. TTL
+ggm. NS ss2.ggm. TTL
+fcp. NS sp.fcp. TTL
+fcp. NS ss1.fcp. TTL
+fcp. NS ss2.fcp. TTL
+reverse. NS ns1.reverse. TTL
+# Addresses
+sp.ggm. A 10.2.2.1:2000 TTL
+ss1.ggm. A 10.3.3.1:2000 TTL
+ss2.ggm. A 10.4.4.1:2000 TTL
+sp.fcp. A 10.2.2.2:2000 TTL
+ss1.fcp. A 10.3.3.2:2000 TTL
+ss2.fcp. A 10.4.4.3:2000 TTL
+sp.reverse. A 10.3.3.2:2000 TTL
+s1. A 10.2.2.1:2000 TTL
+s2. A 10.3.3.1:2000 TTL
+]]></file>
+        <file name="preenche_resolvconf.sh"><![CDATA[echo "# -- gerado pela script de arranque..." >> /etc/resolv.conf
+echo "domain cc.pt" >> /etc/resolv.conf
+echo "nameserver 10.2.2.1" >> /etc/resolv.conf
+echo "" >> /etc/resolv.conf ]]></file>
+        <file name="orca.txt"><![CDATA[# Configuration file for orca server
+ggm SP 10.2.2.1:2000
+ggm LG dns/files/log_files/ggm.log
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db
+. DB dns/files/db_files/root.db
+. LG dns/files/log_files/root.log
+]]></file>
+      </files>
+    </service>
+    <service name="StaticRoute" node="19">
+      <startups>
+        <startup>bash staticroute.sh</startup>
+      </startups>
+      <files>
+        <file name="staticroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by StaticRoute service (utility.py)
+#
+# NOTE: this service must be customized to be of any use
+#       Below are samples that you can uncomment and edit.
+#
+#/sbin/ip route add 10.9.8.0/24 via 10.2.2.1
+#/sbin/ip route add 3ffe:4::/64 via 2001:2:2::1
+]]></file>
+      </files>
+    </service>
+    <service name="DefaultRoute" node="19">
+      <startups>
+        <startup>bash defaultroute.sh</startup>
+      </startups>
+      <files>
+        <file name="defaultroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by DefaultRoute service (utility.py)
+ip route add default via 10.3.3.254
+ip route add default via 2001:3:3::254
+]]></file>
+      </files>
+    </service>
+    <service name="UserDefined" node="19">
+      <startups>
+        <startup>mkdir /run/resolvconf</startup>
+        <startup>touch /run/resolvconf/resolv.conf</startup>
+        <startup>sh preenche_resolvconf.sh</startup>
+        <startup>mkdir dns</startup>
+        <startup>cp -r /home/core/ProjetoCC/src dns/src</startup>
+        <startup>cp -r /home/core/ProjetoCC/files dns/</startup>
+        <startup>mkdir dns/files/log_files</startup>
+      </startups>
+      <files>
+        <file name="rootservers.db"><![CDATA[# List of root files for topology
+10.2.2.1:2000
+10.3.3.1:2000
+]]></file>
+        <file name="reverse.db"><![CDATA[# DNS database file for reverse domain.
+@ DEFAULT .reverse.
+TTL DEFAULT 86400
+# Config data
+@ SOASP ns1.reverse. TTL
+@ SOADMIN gabs\.ggm. TTL
+# Name servers
+@ NS ns1.reverse. TTL
+in-addr.reverse. NS ns1.in-addr.reverse. TTL
+# Addresses
+ns1 A 10.3.3.2:2000 TTL
+ns1.in-addr A 10.4.4.2:2000 TTL]]></file>
+        <file name="Golfinho.txt"><![CDATA[# Configuration file for primary server for "Golfinho"
+# SP reverse
+reverse LG dns/files/log_files/reverse.log
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db
+# SS fcp
+fcp SP 10.2.2.2:2000
+fcp LG dns/files/log_files/fcp.log
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db
+]]></file>
+        <file name="updateSrc.sh"><![CDATA[cp -r /home/core/ProjetoCC/src/* dns/src]]></file>
+        <file name="run.sh"><![CDATA[python3 dns/src/run_server.py dns/files/config_files/golfinho.txt 2000 5 0 shy]]></file>
+        <file name="preenche_resolvconf.sh"><![CDATA[echo "# -- gerado pela script de arranque..." >> /etc/resolv.conf
+echo "domain cc.pt" >> /etc/resolv.conf
+echo "nameserver 10.2.2.1" >> /etc/resolv.conf
+echo "" >> /etc/resolv.conf ]]></file>
+      </files>
+    </service>
+    <service name="DefaultRoute" node="20">
+      <startups>
+        <startup>bash defaultroute.sh</startup>
+      </startups>
+      <files>
+        <file name="defaultroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by DefaultRoute service (utility.py)
+ip route add default via 10.2.2.254
+ip route add default via 2001:2:2::254
+]]></file>
+      </files>
+    </service>
+    <service name="UserDefined" node="20">
+      <startups>
+        <startup>mkdir /run/resolvconf</startup>
+        <startup>touch /run/resolvconf/resolv.conf</startup>
+        <startup>sh preenche_resolvconf.sh</startup>
+        <startup>mkdir /run/resolvconf</startup>
+        <startup>touch /run/resolvconf/resolv.conf</startup>
+        <startup>sh preenche_resolvconf.sh</startup>
+        <startup>mkdir /run/resolvconf</startup>
+        <startup>touch /run/resolvconf/resolv.conf</startup>
+        <startup>sh preenche_resolvconf.sh</startup>
+        <startup>mkdir dns</startup>
+        <startup>cp -r /home/core/ProjetoCC/src dns/src</startup>
+        <startup>cp -r /home/core/ProjetoCC/files dns/</startup>
+        <startup>mkdir dns/files/log_files</startup>
+      </startups>
+      <files>
+        <file name="rootservers.db"><![CDATA[# List of root files for topology
+10.2.2.1:2000
+10.3.3.1:2000
+]]></file>
+        <file name="updateSrc.sh"><![CDATA[cp -r /home/core/ProjetoCC/src/* dns/src]]></file>
+        <file name="servidor3.txt"><![CDATA[# Configuration file for "Servidor3"
+taremi.fcp SP 10.4.4.1:2000
+taremi.fcp LG dns/files/log_files/taremi_fcp.log
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db]]></file>
+        <file name="run.sh"><![CDATA[python3 dns/src/run_server.py dns/files/config_files/servidor3.txt 2000 5 0 shy]]></file>
+        <file name="preenche_resolvconf.sh"><![CDATA[echo "# -- gerado pela script de arranque..." >> /etc/resolv.conf
+echo "domain cc.pt" >> /etc/resolv.conf
+echo "nameserver 10.2.2.1" >> /etc/resolv.conf
+echo "" >> /etc/resolv.conf ]]></file>
+      </files>
+    </service>
+    <service name="DefaultRoute" node="21">
+      <startups>
+        <startup>bash defaultroute.sh</startup>
+      </startups>
+      <files>
+        <file name="defaultroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by DefaultRoute service (utility.py)
+ip route add default via 10.1.1.254
+ip route add default via 2001:1:1::254
+]]></file>
+      </files>
+    </service>
+    <service name="UserDefined" node="21">
+      <startups>
+        <startup>mkdir /run/resolvconf</startup>
+        <startup>touch /run/resolvconf/resolv.conf</startup>
+        <startup>sh preenche_resolvconf.sh</startup>
+        <startup>mkdir dns</startup>
+        <startup>cp -r /home/core/ProjetoCC/src dns/src</startup>
+        <startup>cp -r /home/core/ProjetoCC/files dns/</startup>
+        <startup>mkdir dns/files/log_files</startup>
+      </startups>
+      <files>
+        <file name="rootservers.db"><![CDATA[# List of root files for topology
+10.2.2.1:2000
+10.3.3.1:2000
+]]></file>
+        <file name="updateSrc.sh"><![CDATA[cp -r /home/core/ProjetoCC/src/* dns/src]]></file>
+        <file name="run.sh"><![CDATA[python3 dns/src/run_server.py dns/files/config_files/portatil3.txt 2000 5 0 shy]]></file>
+        <file name="portatil3.txt"><![CDATA[# Configuration file for "Portatil3"
+# SS for taremi.fcp
+taremi.fcp SP 10.4.4.1:2000
+taremi.fcp LG dns/files/log_files/taremi_fcp.log
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db
+]]></file>
+        <file name="preenche_resolvconf.sh"><![CDATA[echo "# -- gerado pela script de arranque..." >> /etc/resolv.conf
+echo "domain cc.pt" >> /etc/resolv.conf
+echo "nameserver 10.2.2.1" >> /etc/resolv.conf
+echo "" >> /etc/resolv.conf ]]></file>
+      </files>
+    </service>
+    <service name="StaticRoute" node="23">
+      <startups>
+        <startup>bash staticroute.sh</startup>
+      </startups>
+      <files>
+        <file name="staticroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by StaticRoute service (utility.py)
+#
+# NOTE: this service must be customized to be of any use
+#       Below are samples that you can uncomment and edit.
+#
+#/sbin/ip route add 10.9.8.0/24 via 10.2.2.254
+#/sbin/ip route add 3ffe:4::/64 via 2001:2:2::254
+]]></file>
+      </files>
+    </service>
+    <service name="DefaultRoute" node="23">
+      <startups>
+        <startup>bash defaultroute.sh</startup>
+      </startups>
+      <files>
+        <file name="defaultroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by DefaultRoute service (utility.py)
+ip route add default via 10.3.3.254
+ip route add default via 2001:3:3::254
+]]></file>
+      </files>
+    </service>
+    <service name="UserDefined" node="23">
+      <startups>
+        <startup>mkdir /run/resolvconf</startup>
+        <startup>touch /run/resolvconf/resolv.conf</startup>
+        <startup>sh preenche_resolvconf.sh</startup>
+        <startup>mkdir dns</startup>
+        <startup>cp -r /home/core/ProjetoCC/src dns/src</startup>
+        <startup>cp -r /home/core/ProjetoCC/files dns/</startup>
+        <startup>mkdir dns/files/log_files</startup>
+      </startups>
+      <files>
+        <file name="preenche_resolvconf.sh"><![CDATA[echo "# -- gerado pela script de arranque..." >> /etc/resolv.conf
+echo "domain cc.pt" >> /etc/resolv.conf
+echo "nameserver 10.2.2.1" >> /etc/resolv.conf
+echo "" >> /etc/resolv.conf ]]></file>
+        <file name="Foca.txt"><![CDATA[# Configuration file for "Foca"
+# SS cc.ggm
+cc.ggm SP 10.1.1.2:2000
+cc.ggm LG dns/files/log_files/cc_ggm.log
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db
+]]></file>
+        <file name="run.sh"><![CDATA[python3 dns/src/run_server.py dns/files/config_files/foca.txt 2000 5 0 shy]]></file>
+        <file name="rootservers.db"><![CDATA[# List of root files for topology
+10.2.2.1:2000
+10.3.3.1:2000
+]]></file>
+      </files>
+    </service>
+    <service name="DefaultRoute" node="22">
+      <startups>
+        <startup>bash defaultroute.sh</startup>
+      </startups>
+      <files>
+        <file name="defaultroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by DefaultRoute service (utility.py)
+ip route add default via 10.4.4.254
+ip route add default via 2001:4:4::254
+]]></file>
+      </files>
+    </service>
+    <service name="UserDefined" node="22">
+      <startups>
+        <startup>mkdir /run/resolvconf</startup>
+        <startup>touch /run/resolvconf/resolv.conf</startup>
+        <startup>sh preenche_resolvconf.sh</startup>
+        <startup>mkdir dns</startup>
+        <startup>cp -r /home/core/ProjetoCC/src dns/src</startup>
+        <startup>cp -r /home/core/ProjetoCC/files dns/</startup>
+        <startup>mkdir dns/files/log_files</startup>
+      </startups>
+      <files>
+        <file name="rootservers.db"><![CDATA[# List of root files for topology
+10.2.2.1:2000
+10.3.3.1:2000
+]]></file>
+        <file name="updateSrc.sh"><![CDATA[cp -r /home/core/ProjetoCC/src/* dns/src]]></file>
+        <file name="run.sh"><![CDATA[python3 dns/src/run_server.py dns/files/config_files/vespa.txt 2000 5 0 shy]]></file>
+        <file name="Vespa.txt"><![CDATA[# Configuration file for "Vespa"
+# SS fcp
+fcp SP 10.2.2.2:2000
+fcp LG dns/files/log_files/fcp.log
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db
+]]></file>
+        <file name="preenche_resolvconf.sh"><![CDATA[echo "# -- gerado pela script de arranque..." >> /etc/resolv.conf
+echo "domain cc.pt" >> /etc/resolv.conf
+echo "nameserver 10.2.2.1" >> /etc/resolv.conf
+echo "" >> /etc/resolv.conf
+]]></file>
+      </files>
+    </service>
+    <service name="StaticRoute" node="24">
+      <startups>
+        <startup>bash staticroute.sh</startup>
+      </startups>
+      <files>
+        <file name="staticroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by StaticRoute service (utility.py)
+#
+# NOTE: this service must be customized to be of any use
+#       Below are samples that you can uncomment and edit.
+#
+#/sbin/ip route add 10.9.8.0/24 via 10.4.4.254
+#/sbin/ip route add 3ffe:4::/64 via 2001:4:4::254
+]]></file>
+      </files>
+    </service>
+    <service name="DefaultRoute" node="24">
+      <startups>
+        <startup>bash defaultroute.sh</startup>
+      </startups>
+      <files>
+        <file name="defaultroute.sh"><![CDATA[#!/bin/sh
+# auto-generated by DefaultRoute service (utility.py)
+ip route add default via 10.1.1.254
+ip route add default via 2001:1:1::254
+]]></file>
+      </files>
+    </service>
+    <service name="UserDefined" node="24">
+      <startups>
+        <startup>mkdir /run/resolvconf</startup>
+        <startup>touch /run/resolvconf/resolv.conf</startup>
+        <startup>sh preenche_resolvconf.sh</startup>
+        <startup>mkdir dns</startup>
+        <startup>cp -r /home/core/ProjetoCC/src dns/src</startup>
+        <startup>cp -r /home/core/ProjetoCC/files dns/</startup>
+        <startup>mkdir dns/files/log_files</startup>
+      </startups>
+      <files>
+        <file name="cc_ggm.db"><![CDATA[# DNS database file for domain cc.ggm
+@ DEFAULT cc.ggm.
+TTL DEFAULT 86400
+@ SOASP ns1.cc.ggm. TTL
+@ SOADMIN admin\.cc.ggm. TTL
+@ SOASERIAL 1 TTL
+@ SOAREFRESH 14400 TTL
+@ SOARETRY 3600
+@ SOAEXPIRE 604800 TTL
+# Name servers
+@ NS ns1.cc.ggm. TTL
+@ NS ns2.cc.ggm. TTL
+@ NS ns3.cc.ggm. TTL
+# MAIL SERVERS
+@ MX ms1.@ TTL
+# Addresses
+ns1 A 10.1.1.2:2000 TTL
+ns2 A 10.4.4.2:2000 TTL
+ns3 A 10.3.3.3:2000 TTL
+ms1 A 10.4.4.2 TTL
+tone A 10.1.1.1 TTL
+tunes A 10.1.1.3 TTL
+sp CNAME ns1 TTL
+ss1 CNAME ns2 TTL
+ss2 CNAME ns3 TTL]]></file>
+        <file name="rootservers.db"><![CDATA[# List of root files for topology
+10.2.2.1:2000
+10.3.3.1:2000
+]]></file>
+        <file name="updateSrc.sh"><![CDATA[cp -r /home/core/ProjetoCC/src/* dns/src]]></file>
+        <file name="run.sh"><![CDATA[python3 dns/src/run_server.py dns/files/config_files/portatil4.txt 2000 5 0 shy]]></file>
+        <file name="preenche_resolvconf.sh"><![CDATA[echo "# -- gerado pela script de arranque..." >> /etc/resolv.conf
+echo "domain cc.pt" >> /etc/resolv.conf
+echo "nameserver 10.2.2.1" >> /etc/resolv.conf
+echo "" >> /etc/resolv.conf ]]></file>
+        <file name="portatil2.txt"><![CDATA[# Configuration file for "portatil2"
+# SP cc.ggm
+cc.ggm SS 10.4.4.2:2000
+cc.ggm SS 10.3.3.3:2000
+cc.ggm LG dns/files/log_files/cc_ggm.log
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db
+]]></file>
+      </files>
+    </service>
+  </service_configurations>
+  <session_origin lat="47.5791667" lon="-122.132322" alt="2.0" scale="150.0"/>
+  <session_options>
+    <configuration name="controlnet" value=""/>
+    <configuration name="controlnet0" value=""/>
+    <configuration name="controlnet1" value=""/>
+    <configuration name="controlnet2" value=""/>
+    <configuration name="controlnet3" value=""/>
+    <configuration name="controlnet_updown_script" value=""/>
+    <configuration name="enablerj45" value="1"/>
+    <configuration name="preservedir" value="0"/>
+    <configuration name="enablesdt" value="0"/>
+    <configuration name="sdturl" value="tcp://127.0.0.1:50000/"/>
+    <configuration name="ovs" value="0"/>
+  </session_options>
+  <session_metadata>
+    <configuration name="annotation a1" value="{iconcoords {141 68 714 481}} {type oval} {label {}} {labelcolor black} {fontfamily {Arial}} {fontsize {12}} {color #cbecff} {width 0} {border black} {canvas c1}"/>
+    <configuration name="annotation a2" value="{iconcoords {370.0 18.0}} {type text} {label {CC-LEI 2022}} {labelcolor black} {fontfamily {Arial}} {fontsize {22}} {effects {bold}} {canvas c1}"/>
+    <configuration name="annotation a3" value="{iconcoords {3.0 5.0 189.0 172.0}} {type rectangle} {label {}} {labelcolor black} {fontfamily {Arial}} {fontsize {12}} {color #ccecd1} {width 0} {border black} {rad 28} {canvas c1}"/>
+    <configuration name="annotation a4" value="{iconcoords {2.0 402.0 250.0 600.0}} {type rectangle} {label {}} {labelcolor black} {fontfamily {Arial}} {fontsize {12}} {color #ccecd1} {width 0} {border black} {rad 25} {canvas c1}"/>
+    <configuration name="annotation a5" value="{iconcoords {706 384 961 569}} {type rectangle} {label {}} {labelcolor black} {fontfamily {Arial}} {fontsize {12}} {color #ccecd1} {width 0} {border black} {rad 25} {canvas c1}"/>
+    <configuration name="annotation a6" value="{iconcoords {704.0 1.0 943.0 180.0}} {type rectangle} {label {}} {labelcolor black} {fontfamily {Arial}} {fontsize {12}} {color #ccecd1} {width 0} {border black} {rad 25} {canvas c1}"/>
+    <configuration name="annotation a7" value="{iconcoords {810.0 364.0}} {type text} {label {LAN4}} {labelcolor #00a900} {fontfamily {Arial}} {fontsize {16}} {effects {bold}} {canvas c1}"/>
+    <configuration name="annotation a8" value="{type text} {iconcoords {54.0 184.0}} {label {}} {canvas c1}"/>
+    <configuration name="annotation a9" value="{type text} {iconcoords {682.0 129.0}} {label {}} {canvas c1}"/>
+    <configuration name="annotation a10" value="{iconcoords {52.0 93.0}} {type text} {label {}} {labelcolor #00a900} {fontfamily {Arial}} {fontsize {12}} {canvas c1}"/>
+    <configuration name="annotation a11" value="{type text} {iconcoords {62.0 96.0}} {label {}} {canvas c1}"/>
+    <configuration name="annotation a12" value="{iconcoords {45.0 381.0}} {type text} {label {taremi}} {labelcolor #00a100} {fontfamily {Arial}} {fontsize {16}} {effects {bold}} {canvas c1}"/>
+    <configuration name="annotation a13" value="{type text} {iconcoords {754.0 165.0}} {label {}} {canvas c1}"/>
+    <configuration name="annotation a14" value="{iconcoords {47.0 195.0}} {type text} {label {fcp}} {labelcolor #009b00} {fontfamily {Arial}} {fontsize {16}} {effects {bold}} {canvas c1}"/>
+    <configuration name="annotation a15" value="{iconcoords {798.0 195.0}} {type text} {label {ggm}} {labelcolor #009c00} {fontfamily {Arial}} {fontsize {16}} {effects {bold}} {canvas c1}"/>
+    <configuration name="annotation a16" value="{iconcoords {336.0 338.0}} {type text} {label {Rede Backbone (Core Network)}} {labelcolor #00a100} {fontfamily {Arial}} {fontsize {12}} {effects {bold}} {canvas c1}"/>
+    <configuration name="annotation a17" value="{type text} {iconcoords {402.0 504.0}} {label {}} {canvas c1}"/>
+    <configuration name="annotation a18" value="{type text} {iconcoords {414.0 273.0}} {label {}} {canvas c1}"/>
+    <configuration name="annotation a19" value="{iconcoords {312.0 508.0}} {type text} {label {Link 1.0 Gbps, 100 microsec (green)}} {labelcolor #009900} {fontfamily {Arial}} {fontsize {10}} {effects {bold}} {canvas c1}"/>
+    <configuration name="annotation a20" value="{iconcoords {312.0 530.0}} {type text} {label {Link 100 Mbps, 5 milisec, loss=5%, dup=10% (cyan)}} {labelcolor #8900b0} {fontfamily {Arial}} {fontsize {10}} {effects {bold}} {canvas c1}"/>
+    <configuration name="annotation a21" value="{type text} {iconcoords {410.0 570.0}} {label {}} {canvas c1}"/>
+    <configuration name="annotation a22" value="{type text} {iconcoords {380.0 608.0}} {label {}} {canvas c1}"/>
+    <configuration name="annotation a23" value="{iconcoords {312.0 552.0}} {type text} {label {Link unlimited (red)}} {labelcolor #d30000} {fontfamily {Arial}} {fontsize {10}} {effects {bold}} {canvas c1}"/>
+    <configuration name="annotation a24" value="{iconcoords {282 489 646 567}} {type rectangle} {label {}} {labelcolor black} {fontfamily {Arial}} {fontsize {12}} {color #ffffff} {width 1} {border #000000} {rad 25} {canvas c1}"/>
+    <configuration name="canvas c1" value="{name {Canvas1}}"/>
+    <configuration name="global_options" value="interface_names=no ip_addresses=yes ipv6_addresses=no node_labels=yes link_labels=yes show_api=no background_images=no annotations=yes grid=yes traffic_start=0"/>
+  </session_metadata>
+  <default_services>
+    <node type="mdr">
+      <service name="zebra"/>
+      <service name="OSPFv3MDR"/>
+      <service name="IPForward"/>
+    </node>
+    <node type="PC">
+      <service name="DefaultRoute"/>
+    </node>
+    <node type="prouter"/>
+    <node type="router">
+      <service name="zebra"/>
+      <service name="OSPFv2"/>
+      <service name="OSPFv3"/>
+      <service name="IPForward"/>
+    </node>
+    <node type="host">
+      <service name="DefaultRoute"/>
+      <service name="SSH"/>
+    </node>
+  </default_services>
+</scenario>

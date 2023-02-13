@@ -1,0 +1,16 @@
+# Primary server for fcp domain
+fcp.root DB dns/files/db_files/fcp.db
+fcp.root SS 10.3.3.2:2000
+fcp.root SS 10.4.4.3:2000
+fcp.root LG dns/files/log_files/fcp.log
+
+# Primary server for reverse domain
+reverse.root DB dns/files/db_files/reverse_dns/reverse.db
+reverse.root LG dns/files/log_files/reverse.log
+
+# Secondary server for cc.ggm domain
+cc.ggm.root SP 10.1.1.2:2000
+cc.ggm.root LG dns/files/log_files/cc_ggm.log
+
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db

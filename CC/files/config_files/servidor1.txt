@@ -1,0 +1,6 @@
+# Root server
+root DB dns/files/db_files/root.db
+root LG dns/files/log_files/root.log
+
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db

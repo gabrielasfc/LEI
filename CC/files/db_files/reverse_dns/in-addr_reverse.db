@@ -1,0 +1,23 @@
+# DNS database file for .in-addr domain.
+
+@ DEFAULT in-addr.reverse.root.
+TTL DEFAULT 86400
+
+# Config data
+
+@ SOASP cigarra.in-addr.reverse.root. TTL
+@ SOAADMIN gabs\.ggm.root. TTL
+@ SOASERIAL 1 TTL
+@ SOAREFRESH 14400 TTL
+@ SOARETRY 3600 TTL
+@ SOAEXPIRE 604800 TTL
+
+# Name servers
+@ NS cigarra TTL
+10 NS portatil1.10 TTL
+
+# Addresses
+
+cigarra A 10.4.4.2:2000 TTL
+portatil1.10 A 10.1.1.1:2000 TTL
+

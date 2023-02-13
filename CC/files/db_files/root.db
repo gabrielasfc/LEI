@@ -1,0 +1,41 @@
+# DNS database file for root server 
+
+@ DEFAULT root.
+TTL DEFAULT 86400
+
+# Config data
+@ SOAADMIN mike\.ggm.root. TTL
+@ SOASERIAL 1 TTL
+
+# Name servers
+@ NS servidor1 TTL
+@ NS orca TTL
+
+ggm NS servidor2.ggm TTL 10
+ggm NS portatil1.ggm TTL 5
+ggm NS grilo.ggm TTL 15
+
+fcp NS servidor2.fcp TTL
+fcp NS golfinho.fcp TTL
+fcp NS vespa.fcp TTL
+
+reverse NS golfinho.reverse TTL
+
+# Addresses
+servidor2.ggm A 10.2.2.2:2000 TTL
+portatil1.ggm A 10.1.1.1:2000 TTL
+grilo.ggm A 10.4.4.1:2000 TTL
+
+servidor2.fcp A 10.2.2.2:2000 TTL
+golfinho.fcp A 10.3.3.2:2000 TTL
+vespa.fcp A 10.4.4.3:2000 TTL
+
+golfinho.reverse A 10.3.3.2:2000 TTL
+
+servidor1 A 10.2.2.1:2000 TTL
+orca A 10.3.3.1:2000 TTL
+
+
+
+
+

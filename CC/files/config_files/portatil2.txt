@@ -1,0 +1,8 @@
+# Primary server for cc.ggm domain
+cc.ggm.root DB dns/files/db_files/cc_ggm.db
+cc.ggm.root SS 10.4.4.2:2000
+cc.ggm.root SS 10.3.3.2:2000
+cc.ggm.root LG dns/files/log_files/cc_ggm.log
+
+all LG dns/files/log_files/all.log
+root ST dns/files/rootservers.db
