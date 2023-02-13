@@ -1,0 +1,15 @@
+X X X X X X X X X X X X X X X X X X X 
+X P P X - - - - - - - - X - - - - - X
+X - - X - - - - - - - - X - - - - - X
+X - - X - - X X X X - - X - - X - - X
+X - - - - - X - - - - - X - - X - - X
+X - - - - - X - - - - - X - - X - - X 
+X X X X X X X - - X X X X - - X - - X
+X - - - - - - - - X - - - - - X - - X
+X - - - - - - - - X - - - - - X - - X
+X - - X X X X X X X X X - - X X - - X 
+X - - - - X - - - - - X - - X X - - X  
+X - - - - X - - - - - X - - X X - - X  
+X X X - - - - - X - - - - - X X - - X
+X X X - - - - - X - - - - - X X F F X
+X X X X X X X X X X X X X X X X X X X
