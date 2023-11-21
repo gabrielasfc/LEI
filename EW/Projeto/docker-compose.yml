@@ -1,0 +1,54 @@
+version: "3"
+services:
+  app:
+    container_name: AcordaosApp
+    build: ./react-interface
+    restart: always
+    ports:
+      - "8073:8073"
+    networks:
+      - Acordaosnet
+
+  api:
+    container_name: Acordaos_API
+    build: ./API
+    restart: always
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017/ProjetoEngWeb
+    ports:
+      - "8071:8071"
+    depends_on:
+      - mongodb
+    networks:
+      - Acordaosnet
+
+  mongodb:
+    container_name: Acordaos-mongodb
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - AcordaosData:/data/db
+    networks:
+      - Acordaosnet
+
+  auth_server:
+    container_name: Acordaos_auth_server
+    build: ./Authentication
+    restart: always
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017/ProjetoEngWeb
+    ports:
+      - "8072:8072"
+    depends_on:
+      - mongodb
+    networks:
+      - Acordaosnet
+
+networks:
+  Acordaosnet:
+    name: Acordaosnet
+    driver: bridge
+volumes:
+  AcordaosData:
