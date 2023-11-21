@@ -1,0 +1,241 @@
+﻿@page "/carrinho"
+@using src.Data.BusinessLogic.SubCompras
+@using src.Data.BusinessLogic.SubFeiras
+@inject SubComprasFacade Facade
+
+<style>
+    body, html {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+    }
+
+    .top-bar {
+        background-color: darkslateblue;
+        border-bottom: solid;
+        border-bottom-color: var(--color-primary);
+        height: 20%;
+    }
+
+    .top-bar h3 {
+        margin-bottom: 1.5em
+    }
+
+    .top-bar h1 {
+        padding-top: 0.5em;
+        font-weight: bolder;
+        font-size: 3em;
+        color: white;
+    }
+
+    .produtos {
+        background-image: radial-gradient( circle farthest-corner at 5.6% 54.5%, rgba(47,71,79,1) 0%, rgba(159,188,198,1) 83.6% );
+        display: grid;
+        grid-template-columns: 20% auto;
+        justify-self: center;
+        align-self: center;
+        font-size: 15px;
+        margin: 50px;
+        height: 20%;
+        border-radius: 10px;
+    }
+
+    .img-container {
+        width: 120px;
+        height: 120px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .feira-square:before {
+        content: "";
+        float: left;
+        padding-top: 10%; /* initial ratio of 1:1*/
+    }
+
+    .right-content {
+        border: solid;
+        width: 90%;
+        height: 90%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .name-product {
+        font-size: 2em;
+    }
+
+    .price_quantity {
+        display: grid;
+        margin-right: 20px;
+        grid-template-columns: 60% 40%;
+        margin-top: 25px;
+    }
+
+    .description {
+        height: 100%;
+    }
+
+    .description h3 {
+        font-size: 1.5em;
+    }
+
+    .name-price-quantity {
+        height: 100%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .top-row {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 35% 50% 15%;
+    }
+
+    .trash {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .primary-btn{
+        background-color: var(--color-blue);
+        border: none;
+        border-radius: 20px;
+        width: 100px;
+        height: 50px;
+        align-self: center;
+        justify-self: center;
+        margin-bottom: 30px;
+    }
+
+    .primary-btn a{
+        text-decoration: none;
+    }
+
+    .primary-btn p {
+        color: white;
+        font-size: 1.3em;
+    }
+
+    .tracking-in-expand {
+        margin-top:50px;
+        -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+
+
+    @@-webkit-keyframes tracking-in-expand {
+        0% {
+            letter-spacing: -0.5em;
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0.6;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @@keyframes tracking-in-expand {
+        0% {
+            letter-spacing: -0.5em;
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0.6;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .btn-grad {
+            background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+            margin-left:50px;
+            margin-top:50px
+    }
+
+    .btn-grad:hover {
+           background-position: right center; /* change the direction of the change here */
+           color: #fff;
+           text-decoration: none;
+    }
+         
+
+</style>
+
+
+<div class="tracking-in-expand">
+    <h1>Carrinho de compras</h1>
+    <h3>Aqui pode ver o seu carrinho de compras</h3>
+</div>
+
+@foreach(var produtoCarrinho in carrinhoUser){
+    <div class="produtos">
+        <div class="img-container">
+            <img style="border-radius:10px;" src=css/images/batata-vermelha-final-1.jpg width="100%" height="100%" />
+        </div>
+
+        <div class="right-content">
+            <div class="top-row">
+                <div class="name-price-quantity">
+                    <div class="name-product">
+                        <p>@produtoCarrinho.Item1.nome</p>
+                    </div>
+                    <div class="price_quantity">
+                        <p style="color:white;"> Preço original: <span style="color: white">@produtoCarrinho.Item1.preço€</span></p>
+                        <p style="color:white;"> Quantidade do Produto: <span style="color: blue">@produtoCarrinho.Item3 </span></p>
+                        <p style="color:white;"> Preço negociado: <span style="color: white">@produtoCarrinho.Item2€</span></p>
+                    </div>
+                </div>
+
+                <div class="description"> 
+                    <h3>Descrição: </h3> 
+                    <p>@produtoCarrinho.Item1.descricao</p>
+                    </div>
+                <div class="trash">
+                    <button style="background-color: transparent" @onclick="disappear"><i class="fa fa-trash" style="color: grey ; font-size: 100px"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+}
+
+<button class="btn-grad">
+    <a style= "text-decoration:none; color:white;" href="/finalizar">Finalizar compra</a>
+</button>
+
+@code {
+    private List<(src.Data.BusinessLogic.SubFeiras.Produto, float, int)> carrinhoUser;
+
+    protected override async Task OnInitializedAsync()
+    {
+        SubComprasFacade sc = new SubComprasFacade();
+        carrinhoUser = (await sc.GetCarrinho(987654321)).ToList();
+        //carrinhoUser = new List<(src.Data.BusinessLogic.SubFeiras.Produto, float, int)>();
+        //carrinhoUser.Add((new Produto("teste1", 1f, 4, "Lorem Ipsum", null, 1f, 1f, 1f, 1f, null, 1), 3.5f, 2));
+        //carrinhoUser.Add((new Produto("teste2", 1f, 4, "Lorem Ipsum asnas", null, 1f, 1f, 1f, 1f, null, 1), 3.5f, 2));
+        //carrinhoUser.Add((new Produto("teste3", 1f, 4, "Lorem Ipsum aoiqwoqw", null, 1f, 1f, 1f, 1f, null, 1), 3.5f, 2));
+    }
+
+    protected void disappear()
+    {
+        
+    }
+}

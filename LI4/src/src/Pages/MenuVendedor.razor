@@ -1,0 +1,39 @@
+﻿@page "/Vendedor"
+
+<br/><br/><br/><br/>
+<h1>Menu do Vendedor</h1>
+
+<div class="grid-container">
+	<button style="border-radius: 15px ; background-color:black ; color:white; margin-right: 500px; margin-left: 500px ;margin-bottom:25px;"><div grid-item><a href="registarFeira">Registar numa feira</a></div></button>
+	<button style="border-radius: 15px ; background-color:black ; color:white; margin-right: 500px; margin-left: 500px ;margin-bottom:25px;"><div grid-item><a href="/Vendedor/AdicionarProduto">Adicionar produto a uma feira</a></div></button>
+	<button style="border-radius: 15px ; background-color:black ; color:white; margin-right: 500px; margin-left: 500px ;margin-bottom:25px;"><div grid-item><a href="/verprodutos">Consultar produtos à venda</a></div></button>
+	<button style="border-radius: 15px ; background-color:black ; color:white; margin-right: 500px; margin-left: 500px ;margin-bottom:25px;"><div grid-item>Consultar Relatório de Vendas</div></button>
+</div>
+
+<style>
+	body, html {
+		height: 100%;
+		width: 100%;
+	}
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		height: 40%;
+		margin-top: 50px;
+	}
+
+	.grid-item {
+		text-align: center;
+	}
+
+	a{
+		text-decoration: none;
+		color: white;
+	}
+</style>
+
+@code {
+
+}

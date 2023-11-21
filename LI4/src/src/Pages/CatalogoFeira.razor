@@ -1,0 +1,317 @@
+﻿@page "/catalogo/{nomeFeira}"
+@using src.Data.BusinessLogic.SubFeiras
+@inject SubFeirasFacade Facade
+
+<style>
+
+    body, html {
+        height: 100%;
+        width: 100%;
+    }
+
+    .title-bar {
+        margin-bottom: 0px;
+        margin-top: 10px;
+        font-size: 2em;
+    }
+
+        .title-bar input {
+            border: solid;
+            border-color: var(--color-blue);
+            border-width: 2px;
+            padding: 5px;
+        }
+
+        .title-bar button {
+            border: none;
+            background-color: white;
+        }
+
+            .title-bar button:hover {
+                cursor: pointer;
+            }
+
+    .produtos {
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .produto-square {
+        justify-self: center;
+        align-self: center;
+        width: 150px;
+        height: 150px;
+        margin-top: -30px;
+    }
+
+        .produto-square:before {
+            content: "";
+            float: left;
+            padding-top: 10%; /* initial ratio of 1:1*/
+        }
+
+        .produto-square button {
+            height: 100%;
+            width: 100%;
+            border: solid;
+            border-width: 8px;
+            border-radius: 4px;
+            border-color: rgba(14,174,87,1);
+        }
+
+        .produto-square button:hover {
+            border-color: rgba(12,116,117,1);
+        }
+
+        .produto-square h1 {
+            margin-top: 2px;
+            font-size: 20px;
+        }
+
+    .produtos-container {
+        height: 63%;
+        grid-template-columns: 15% auto 15%;
+        grid-template-rows: auto;
+        display: @produtosStyle;
+    }
+
+    .icon {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .fa-arrow-left {
+        font-size: 50px;
+        color: rgba(14,174,87,1);
+    }
+
+    .fa-arrow-right {
+        font-size: 50px;
+        color: rgba(12,116,117,1);
+    }
+
+    .filtered-produto-container {
+        display: @filteredStyle;
+        grid-template-columns: auto;
+        margin-top: 5%;
+    }
+
+    .filtered-produto {
+        justify-self: center;
+        align-self: center;
+        width: 300px;
+        height: 300px;
+    }
+
+        .filtered-produto button {
+            border: solid;
+            height: 100%;
+            width: 100%;
+            border-width: 5px;
+        }
+
+        .filtered-produto button:hover {
+            border-color: dimgrey;
+        }
+
+
+    .tracking-in-expand {
+        -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+
+
+    @@-webkit-keyframes tracking-in-expand {
+        0% {
+            letter-spacing: -0.5em;
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0.6;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @@keyframes tracking-in-expand {
+        0% {
+            letter-spacing: -0.5em;
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0.6;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+</style>
+
+<div class="tracking-in-expand">
+    <h1 style="padding-top: 0.5em; font-weight: bolder; font-size: 3em; color: black;">Catálogo da feira</h1>
+    <h3 style="margin-bottom: 1.5em">Apresenta-se o catálogo da feira   <span style="color: darkgoldenrod; margin-left: 10px;">@nomeFeira</span></h3>
+</div>
+
+<div class="title-bar">
+    <input type="text" placeholder="Procurar produto" @bind="@filterValue">
+
+    <button @onclick="applyFilter"><i class="fa fa-search"></i></button>
+</div>
+
+<div class="produtos-container">
+    <div class="icon">
+        <button @onclick="decrementCounter"><i class="fa fa-arrow-left"></i></button>
+    </div>
+    <div class="produtos">
+        <div class="produto-square">
+            @if (@shownProducts[0] != null)
+            {
+                <button><a href="catalogo/@nomeFeira/@shownProducts[0].idProduto"><img src="css/images/batata-vermelha-final-1.jpg" width="100%" height="100%" /></a></button>
+                <h1>@shownProducts[0].nome</h1>
+            }
+        </div>
+        <div class="produto-square">
+            @if (@shownProducts[1] != null)
+            {
+                <button><a href="catalogo/@nomeFeira/@shownProducts[1].idProduto"><img src="css/images/batata-vermelha-final-1.jpg" width="100%" height="100%" /></a></button>
+                <h1>@shownProducts[1].nome</h1>
+            }
+        </div>
+        <div class="produto-square">
+            @if (@shownProducts[2] != null)
+            {
+                <button><a href="catalogo/@nomeFeira/@shownProducts[2].idProduto"><img src="css/images/batata-vermelha-final-1.jpg" width="100%" height="100%" /></a></button>
+                <h1>@shownProducts[2].nome</h1>
+            }
+        </div>
+        <div class="produto-square">
+            @if (@shownProducts[3] != null)
+            {
+                <button><a href="catalogo/@nomeFeira/@shownProducts[3].idProduto"><img src="css/images/batata-vermelha-final-1.jpg" width="100%" height="100%" /></a></button>
+                <h1>@shownProducts[3].nome</h1>
+            }
+        </div>
+        <div class="produto-square">
+            @if (shownProducts[4] != null)
+            {
+                <button><a href="catalogo/@nomeFeira/@shownProducts[4].idProduto"><img src="css/images/batata-vermelha-final-1.jpg" width="100%" height="100%" /></a></button>
+                <h1>@shownProducts[4].nome</h1>
+            }
+
+        </div>
+        <div class="produto-square">
+            @if (shownProducts[5] != null)
+            {
+                <button><a href="catalogo/@nomeFeira/@shownProducts[5].idProduto"><img src="css/images/batata-vermelha-final-1.jpg" width="100%" height="100%" /></a></button>
+                <h1>@shownProducts[5].nome</h1>
+            }
+        </div>
+    </div>
+    <div class="icon">
+        <button @onclick="incrementCounter"><i class="fa fa-arrow-right"></i></button>
+    </div>
+</div>
+<div class="filtered-produto-container">
+    <div class="filtered-produto">
+        <button><a href="catalogo/@nomeFeira/@filteredProduto"><img src="css/images/batata-vermelha-final-1.jpg" width="100%" height="100%" /></a></button>
+        <h1>@filteredProduto</h1>
+    </div>
+</div>
+
+
+
+
+@code {
+    [Parameter]
+    public String nomeFeira{ get; set; }
+    private String? descfeira;
+
+    private List<Produto>? produtos;
+    private List<Produto>? shownProducts;
+    private String filterValue;
+    private string produtosStyle = "grid";
+    private string filteredStyle = "none";
+    private String filteredProduto;
+    private int index;
+
+    protected override async Task OnInitializedAsync()
+    {
+        SubFeirasFacade sf = new SubFeirasFacade();
+        this.index = 0;
+        //this.produtos = new List<Produto>();
+        Console.WriteLine("nome da feira: " + nomeFeira);
+        produtos = (await sf.GetProdutosFeira(nomeFeira)).ToList();
+        shownProducts = new List<Produto>(6);
+        filteredStyle = "none";
+        produtosStyle = "grid";
+        filteredProduto = "";
+        this.updateProdutos();
+    }
+
+    private void decrementCounter(){
+        if (this.index != 0){
+            this.index--;
+        }
+        else if (index == 0)
+        {
+            this.index = (this.produtos.Count-1) / 6;
+        }
+        this.updateProdutos();
+    }
+
+    private void incrementCounter(){
+        if (produtos.Count > (this.index+1)*6){
+            this.index++;
+        }
+        else if ((this.index+1)*6 >= produtos.Count){
+            this.index = 0;
+        }
+        this.updateProdutos();
+    }
+
+    private void updateProdutos()
+    {
+        for (int i = 0; i < 6; i++)
+        {
+            if (index * 6 + i + 1 <= produtos.Count)
+            {
+                Produto f = produtos.ElementAt(index * 6 + i);
+                shownProducts.Insert(i, f);
+            }
+            else shownProducts.Insert(i, null);
+        }
+    }
+
+    public void OnGet(String feira){
+        this.nomeFeira = feira;
+    }
+
+    public void applyFilter(){
+        this.produtosStyle = "none";
+        this.filteredStyle = "grid";
+        //Console.WriteLine("Ola");
+        //filteredFeiras = new List<string>();
+        Boolean foundProduto = false;
+        foreach (Produto produto in produtos)
+        {
+            if (produto.nome == filterValue)
+            {
+                filteredProduto = produto.nome;
+                foundProduto = true;
+            }
+        }
+
+        if (foundProduto == false)
+        {
+            this.produtosStyle = "grid";
+            this.filteredStyle = "none";
+        }
+    }
+}

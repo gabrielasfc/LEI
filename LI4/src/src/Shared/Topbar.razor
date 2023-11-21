@@ -1,0 +1,149 @@
+﻿<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: sans-serif;
+    }
+
+    .logo {
+        color: var(--color-white);
+        font-size: 30px;
+    }
+
+        .logo span {
+            color: var(--color-primary);
+        }
+
+    .menu-bar {
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+        position: relative;
+    }
+
+        .menu-bar ul {
+            list-style: none;
+            display: flex;
+            z-index: 2;
+        }
+
+            .menu-bar ul li {
+                /* width: 120px; */
+                padding: 10px 30px;
+                /* text-align: center; */
+
+                position: relative;
+                z-index: 2;
+            }
+
+                .menu-bar ul li a {
+                    font-size: 20px;
+                    color: var(--color-white);
+                    text-decoration: none;
+                    transition: all 0.3s;
+                    z-index: 2;
+                }
+
+                    .menu-bar ul li a:hover {
+                        color: var(--color-black);
+                    }
+
+    .fas {
+        float: right;
+        margin-left: 10px;
+        padding-top: 3px;
+    }
+
+    /* dropdown menu style */
+    .dropdown-menu {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .dropdown-menu {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        margin-left: 25px;
+        background: rgba(12,116,117,1) 90%;  
+    }
+
+        .menu-bar ul li:hover .dropdown-menu ul {
+            display: block;
+            margin: 10px;
+        }
+
+            .menu-bar ul li:hover .dropdown-menu ul li {
+                width: 150px;
+                padding: 10px;
+            }
+
+    .dropdown-menu ul li:hover {
+        display: block;
+        /*position: absolute;*/
+        /* left: 150px;*/
+        /*top: 0;*/
+    }
+
+    .swirl-in-fwd {
+        -webkit-animation: swirl-in-fwd 0.6s ease-out both;
+        animation: swirl-in-fwd 0.6s ease-out both;
+    }
+
+@@-webkit-keyframes swirl-in-fwd {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+            transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+@@keyframes swirl-in-fwd {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+            transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+
+    
+</style>
+
+<div class="menu-bar">
+    <div class="swirl-in-fwd">
+        <a href="/"><img src="css/images/logo.png" width="150" /></a>
+    </div>
+      <ul>
+                <li><a href="/Registo">Sign Up</a></li>
+                <li><a href="/Login">Sign In</a></li>
+                <li>
+                    <a href="#">Menu Utilizador<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="/Carrinho">Carrinho de compras</a></li>
+                            <li><a href="#">Produtos favoritos</a></li>
+                            <li><a href="#">Alterar detalhes de utilizador</a></li>
+                        </ul>
+                    </div>
+                </li>
+     </ul>
+</div>
+

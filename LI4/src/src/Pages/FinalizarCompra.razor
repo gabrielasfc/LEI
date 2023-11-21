@@ -1,0 +1,242 @@
+﻿@page "/finalizar"
+@using src.Data.BusinessLogic.SubCompras
+@inject SubComprasFacade Facade
+@using src.Data.BusinessLogic
+@inject LogicaNegocio LogicaNegocio
+@inject IJSRuntime js
+
+<style>
+	html, body {
+		height: 100%;
+		width: 100%;
+		background-color: white;
+	}
+
+	.tracking-in-expand {
+		margin: 50px;
+		-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+		animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	}
+
+
+	@@-webkit-keyframes tracking-in-expand {
+		0% {
+			letter-spacing: -0.5em;
+			opacity: 0;
+		}
+
+		40% {
+			opacity: 0.6;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@@keyframes tracking-in-expand {
+		0% {
+			letter-spacing: -0.5em;
+			opacity: 0;
+		}
+
+		40% {
+			opacity: 0.6;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	.btn-grad {
+		background-image: linear-gradient(to right, #348F50 0%, #56B4D3 51%, #348F50 100%);
+		margin: 10px;
+		padding: 15px 45px;
+		text-align: center;
+		text-transform: uppercase;
+		transition: 0.5s;
+		background-size: 200% auto;
+		color: white;
+		box-shadow: 0 0 20px #eee;
+		border-radius: 10px;
+		display: block;
+		margin: auto;
+	}
+
+		.btn-grad:hover {
+			background-position: right center; /* change the direction of the change here */
+			color: #fff;
+			text-decoration: none;
+		}
+
+
+	.payments-container {
+		height: 20%;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		background-color: white;
+	}
+
+	.payment {
+		width: 100px;
+		justify-self: center;
+		align-self: center;
+	}
+
+		.payment:before {
+			content: "";
+			float: left;
+			padding-top: 10%; /* initial ratio of 1:1*/
+		}
+
+	.form-container {
+		background-image: radial-gradient( circle farthest-corner at 5.6% 54.5%, rgba(47,71,79,1) 0%, rgba(159,188,198,1) 83.6% );
+		display: grid;
+		grid-template-columns: 20% auto;
+		justify-self: center;
+		align-self: center;
+		font-size: 15px;
+		margin: 50px;
+		height: 35%;
+		border-radius: 10px;
+	}
+
+	.mbway {
+		margin-top: 30px;
+		visibility: @mbwayVisibility;
+	}
+
+	.mb {
+		visibility: @mbVisibility;
+	}
+
+	.credit-card {
+		margin-top: -120px;
+		visibility: @ccVisibility;
+	}
+
+	.payment-data-container {
+	}
+
+</style>
+
+<div class="tracking-in-expand">
+	<h1>Insira Dados de Faturação</h1>
+</div>
+
+<div class="form-container">
+	<form style="margin-left:1450px;align-self:center;justify-self:center;" id="myform">
+		<label style="color:white" for="fname">Nome:</label><br>
+		<input type="text" id="fname" @bind="@firstName" required /><br /><br />
+		<label style="color:white" for="lname">Apelido:</label><br>
+		<input type="text" id="lname" @bind="@lastName" required><br><br>
+		<label style="color:white" for="telephone">Número de telemóvel:</label><br>
+		<input type="text" id="telephone" @bind="@telephoneNumber" required><br><br>
+		<label style="color:white" for="lname">Morada:</label><br>
+		<input type="text" id="lname" @bind="@address" required><br><br>
+	</form>
+</div>
+
+<div class="payments-container">
+	<div class="payment">
+		<button type="submit" form="myform" @onclick="mbway"><img src="css/images/MBWay.png" width="140%" height="100%" /></button>
+	</div>
+	<div class="payment">
+		<button type="submit" @onclick="mb"><img src="css/images/Multibanco.svg.png" width="100%" height="100%" /></button>
+	</div>
+	<div class="payment">
+		<button type="submit" @onclick="creditCard"><img src="css/images/MasterCard.png" width="100%" height="100%" /></button>
+	</div>
+</div>
+
+<div class="payment-data-container">
+	<div class="mbway" style="display: @mbwayVisibility">
+		<form>
+			<label for="mbwayphone">Número de telefone MBWay</label><br />
+			<input type="text" id="mbwayphone" @bind="@mbwayphone"><br /><br />
+		</form><br />
+		<button class="btn-grad" @onclick="buy">Finalizar compra!</button>
+	</div>
+
+	<div class="mb" style="display: @mbVisibility">
+		<p><span style="font-weight: bold">Entidade: </span>12345</p>
+		<p><span style="font-weight: bold">Referência: </span>123 456 789</p>
+		<p><span style="font-weight: bold">Valor: </span>20€</p><br />
+		<button class="btn-grad" @onclick="buy">Finalizar compra!</button>
+	</div>
+
+	<div class="credit-card" style="display:@ccVisibility">
+		<form id="snd-form">
+			<label for="ccnum">Número do cartão: </label><br />
+			<input type="text" form="snd-form" id="ccnum" @bind="@ccNum" required /><br /><br />
+			<label for="cccode"></label>Security code: <br />
+			<input type="text" form="snd-form" id="cccode" @bind="@ccCode" required /><br /><br />
+			<label for="edate">Expiration date: </label><br />
+			<input type="date" form="snd-form" id="edate" @bind="@expDate" />
+		</form><br />
+		<button class="btn-grad" @onclick="buy">Finalizar compra!</button>
+	</div>
+</div>
+
+
+
+
+
+@code {
+	private String firstName;
+	private String lastName;
+	private String telephoneNumber;
+	private String address;
+
+	private String mbwayphone;
+
+	private String ccNum;
+	private String ccCode;
+	private System.DateTime expDate;
+
+	private String mbwayVisibility;
+	private String mbVisibility;
+	private String ccVisibility;
+
+	protected override async Task OnInitializedAsync()
+	{
+		mbVisibility = "none";
+		mbwayVisibility = "none";
+		ccVisibility = "none";
+	}
+
+	private void mbway()
+	{
+		mbwayVisibility = "block";
+		mbVisibility = "hidden";
+		ccVisibility = "hidden";
+	}
+
+	private void mb()
+	{
+		mbVisibility = "block";
+		mbwayVisibility = "hidden";
+		ccVisibility = "hidden";
+	}
+
+	private void creditCard()
+	{
+		ccVisibility = "block";
+		mbwayVisibility = "hidden";
+		mbVisibility = "hidden";
+	}
+
+	private async void buy()
+	{
+		LogicaNegocio ln = new LogicaNegocio();
+		try
+		{
+			ln.FinalizarCompra(987654321, firstName + lastName, address, telephoneNumber);
+		}
+		catch (Exception e)
+		{
+			await js.InvokeVoidAsync("alert", e.Message);
+		}
+	}
+}

@@ -1,0 +1,310 @@
+﻿@page "/catalogo/{nomeFeira}/{productId}"
+@using src.Data.BusinessLogic.SubFeiras
+@inject SubFeirasFacade Facade
+@using src.Data.BusinessLogic
+@inject LogicaNegocio LogicaNegocio
+
+<style>
+    body, html {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+    }
+
+    .desc {
+        margin: 50px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .desc p {
+        text-align: justify;
+        margin-top: 20px;
+    }
+
+    .popup {
+        margin-top: 0%;
+        border: solid;
+        text-align: center;
+        vertical-align: middle;
+        display:  table-cell;
+        width: 300px;
+        height: 130px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1);
+        visibility : hidden;
+        transition: transform 0.4s;
+    }
+
+    .popup a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .open-popup {
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        z-index: 10;
+        background-color: lightgreen;
+    }
+
+    .options {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .top-bar{
+        background-image: radial-gradient( circle farthest-corner at 5.6% 54.5%,  rgba(47,71,79,1) 0%, rgba(159,188,198,1) 83.6% );      
+        display: grid;
+        grid-template-columns: 30% auto;
+        padding: 25px 50px 25px 100px;
+        height: 50%;
+        border-radius: 25px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+
+        .top-bar img {
+            float: left;
+            border: solid;
+            border-width: 3px;
+            border-color: grey;
+            border-radius: 10%;
+        }
+
+        .top-bar .product-content {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .top-bar h1 {
+            font-weight: bolder;
+            font-size: 4em;
+            color: white;
+
+        }
+
+        .top-bar .button-ctn {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        .top-bar .product-content .button-submit {
+            background-image: linear-gradient(to right, #348F50 0%, #56B4D3 51%, #348F50 100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .top-bar .product-content .button-submit:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+
+
+        #heart {
+            color: palevioletred;
+        }
+
+        #heart:hover {
+            color: red;
+        }
+
+        .top-bar .product-content .price {
+            color: darkgoldenrod;
+        }
+
+        .top-bar .product-content .stock{
+            color: white;
+        }
+
+        .checked {
+            color: orange;
+        }
+        .not-checked{
+            color: white;
+        }
+
+
+        .aval-cliente {
+            display: flex;
+        }
+
+        .first-row {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            margin-bottom: 35px;
+        }
+
+        .first-row p {
+            align-self: center;
+            justify-self: center;
+            font-size: 30px;
+        }
+
+        .aval {
+            margin-left: 30px;
+        }
+
+        .product-content{
+            align-self: center;
+            justify-self: center;
+            display: grid;
+            grid-template-columns: auto auto;
+            height: 80%;
+        }
+
+        .right-content {
+            text-transform: capitalize;
+            height: 90%;
+        }
+
+        .left p {
+            text-align: left;
+            font-size: 1.5em;
+            padding-top: 1em;
+            padding-left: 1em;
+        }
+
+        .heart-btn{
+            display: grid;
+            grid-template-columns: 25% 75%;
+        }
+
+        .heart-btn i button {
+            justify-self: center;
+            align-self: center;
+        }
+
+        .right {
+            padding-top: 30px;
+        }
+
+        .stock-preço {
+            display: grid;
+            grid-template-columns: auto auto;
+            padding-top: 10px;
+        }
+
+        .stock-preço p {
+            align-self: center;
+            justify-self: left;
+        }
+
+        .bottom-row {
+            padding-left: 25%;
+            text-align: left;
+        }
+
+</style>
+
+<div class="top-bar">
+    <img src="css/images/batata-vermelha-final-1.jpg" width="300px" height="300px"/>
+    <div class="right-content">
+        <h1>@p.nome</h1>
+        <div class="product-content">
+            <div class="left">
+                <p style="color: white;">Categoria: <span style="color: white">@p.categoria</span></p>
+                <p style="color: white">Feira: <span style="color: white">@nomeFeira</span></p>
+                <p style="color: white">Vendedor: <span style="color: white">@p.nifVendedor</span></p>
+                @if(p.fatorAceitacao == -1){
+                    <p style="color: white">Produto indisponível para ser negociado</p>
+                }
+                else{
+                    <p style="color: white">Produto disponível para ser negociado</p>
+                }
+            </div>
+            <div class="right">
+                <div class="heart-btn">
+                    <button style="background-color: transparent;border-radius:10px;">
+                        <i id="heart" class="fa fa-heart" style="font-size: 30px; padding: 10px 0 0 30px;"></i>
+                    </button>
+                    <button class="button-submit" @onclick="openPopup">Adicionar ao carrinho</button>
+                </div>
+                <div class="bottom-row">
+                    <div class="stock-preço" style="width: 100%">
+                        <p class="stock">Stock: @p.stock</p>
+                        <p class="price">Preço: @p.preço€</p>
+                    </div>
+                    <p style="margin-top: 5px; color: white;">Avaliação geral: @p.avaliacaoMedia/5</p>
+                    <div class="aval-cliente">
+                        <p style="margin-top: 5px; color: white;">Avaliação do cliente: </p>
+                        <div class="aval">
+                            <span class="fa fa-star checked" style="font-size: 20px"></span>
+                            <span class="fa fa-star checked" style="font-size: 20px"></span>
+                            <span class="fa fa-star checked" style="font-size: 20px"></span>
+                            <span class="fa fa-star not-checked" style="font-size: 20px"></span>
+                            <span class="fa fa-star not-checked" style="font-size: 20px"></span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="desc">
+    <h2 style="text-align: left">Descrição do produto</h2>
+    <p>
+        @p.descricao
+    </p>
+</div>
+
+<div class=@popupState>
+    <br>
+    <h3 style="font:400; font-style:normal ; color: black">Deseja negociar o preço do produto?</h3>
+    <br>
+    <br>
+    <div class="options">
+        <p><a href="/Negociacao/@productId"> Sim </a></p>
+        <p><a href="/catalogo/@nomeFeira/@productId" @onclick="closePopup"> Não </a></p>
+    </div>
+    <br>
+</div>
+
+
+@code {
+    [Parameter]
+    public String? nomeFeira { get; set; }
+    [Parameter]
+    public String productId{ get; set; }
+    private Produto p;
+    private String popupState = "popup";
+
+    protected override async Task OnInitializedAsync()
+    {
+        SubFeirasFacade sf = new SubFeirasFacade();
+        p = await sf.GetProduto(int.Parse(productId));
+    }
+
+    public void OnGet(String productId, String nomeFeira){
+        this.productId = productId;
+        this.nomeFeira = nomeFeira;
+    }
+
+    private void openPopup()
+    {
+        popupState = "popup open-popup";
+    }
+
+    private void closePopup()
+    {
+        LogicaNegocio ln = new LogicaNegocio();
+        ln.AdicionarAoCarrinho(987654321, int.Parse(productId), p.preço, 1);
+        popupState = "popup";
+    }
+}

@@ -1,0 +1,25 @@
+src/.vs
+.vs
+src/.vs
+src/src/bin/
+src/src/obj/
+*.vsidx
+
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/src/.vs/src/FileContentIndex/3eb634d8-c9ed-440c-90d1-559c52bbaebd.vsidx
+/src/.vs/src/FileContentIndex/65475ea9-da06-4c83-b4aa-039567b6e8b9.vsidx
+/src/.vs/src/FileContentIndex/e6f26601-3262-4485-9ef5-a13efa902b05.vsidx
+/src/.vs/src/FileContentIndex/f39e6759-9ef4-47cf-bf16-c4d35312fc8b.vsidx
+/src/src/obj/Debug/net6.0/staticwebassets.pack.json
+/src/.vs/src/FileContentIndex
+/src/src/obj/Debug/net6.0
+/src/.vs/src/DesignTimeBuild
+/src/.vs/src/v17
+/src/src/bin/Debug/net6.0
+/src/src/obj
+/.vs/ProjetoDeMerda/v17/.wsuo
+/src/.vs/src/config
+/database

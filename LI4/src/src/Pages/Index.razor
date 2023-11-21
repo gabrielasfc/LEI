@@ -1,0 +1,45 @@
+﻿@page "/"
+@inject IJSRuntime js 
+
+<PageTitle>Index</PageTitle>
+
+
+<style>
+	body, html {
+		height: 100%;
+	}
+
+	.container{
+		height: 80%;
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+	}
+
+	button {
+		background-color: darkslategray;
+		border: none;
+		border-radius: 20px;
+		width: 200px;
+		height: 100px;
+		align-self: center;
+		justify-self: center;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	h1 {
+		padding: 10px;
+		color: white;
+	}
+</style>
+
+<h1>Esta página é provisória até termos roles...</h1>
+
+<div class="container">
+	<button><a href="/Feiras"><h1>Cliente</h1></a></button>
+	<button><a href="/Vendedor"><h1>Vendedor</h1></a></button>
+	<button><a href="/CriarFeira"><h1>Admin</h1></a></button>
+</div>
+

@@ -1,0 +1,109 @@
+﻿@page "/registarfeira"
+@using src.Data.BusinessLogic.SubFeiras
+@inject SubFeirasFacade Facade
+@inject IJSRuntime js
+
+<style>
+	body, html {
+		height: 100%;
+		width: 100%
+	}
+
+		.tracking-in-expand {
+		margin: 50px;
+		-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+		animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	}
+
+
+	@@-webkit-keyframes tracking-in-expand {
+		0% {
+			letter-spacing: -0.5em;
+			opacity: 0;
+		}
+
+		40% {
+			opacity: 0.6;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@@keyframes tracking-in-expand {
+		0% {
+			letter-spacing: -0.5em;
+			opacity: 0;
+		}
+
+		40% {
+			opacity: 0.6;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	.btn-grad {
+            background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+    .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+     }
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		height: 30%;
+		margin-top: 30px;
+		margin-right: 500px;
+		margin-left: 500px;
+	}
+
+
+</style>
+
+<br/> <br/> <br /> <br /> <br />
+<div class="tracking-in-expand" style="font-size:50"><h1>Registo em uma feira</h1></div>
+
+<div class="grid-container">
+	<input type="text" id="name" placeholder="Insira o nome da feira" @bind="@nomeFeira" style="border-radius:10px ; margin-bottom: 20px; height: 40%" />
+	<input type="text" id="nif" placeholder="Insira o seu NIF" @bind="@nif" style="border-radius:10px; height: 40% " />
+	<button class="btn-grad" @onclick="registerInFeira" >Registar na feira</button>
+</div>
+
+
+@code {
+	private int nif;
+	private string nomeFeira;
+
+	private async void registerInFeira()
+	{
+		SubFeirasFacade f = new SubFeirasFacade();
+		try
+		{
+			f.AddRegistoFeira(nomeFeira, nif);
+		}
+		catch (Exception e)
+		{
+			await js.InvokeVoidAsync("alert", e.Message);
+			return;
+		}
+	}
+}

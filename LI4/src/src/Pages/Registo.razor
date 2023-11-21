@@ -1,0 +1,58 @@
+﻿@page "/Registo"
+@using src.Data.BusinessLogic.SubUsers
+
+<h3>Registo</h3>
+
+<form>
+	<label for="contribuinte">NIF: </label>
+	<input type="text" id="contribuinte" @bind="@nif"/> <br />
+	<label for="pass">Pass: </label>
+	<input type="text" id="pass" @bind="@password"/> <br />
+	
+	<input type="radio" id="html" name="fav_language" @onchange="@(() => selectClient())">
+	<label for="html">Cliente</label><br>
+	<input type="radio" id="css" name="fav_language"  @onchange="@(() => selectSeller())">
+	<label for="css">Vendedor</label><br>
+	
+	<input type="submit" value="Registar" @onclick="registerUser"/>
+</form>
+
+<p style="color: green">Utilizador registado com sucesso</p>
+<p style="color: red">Não foi possível registar</p>
+
+
+<p>Cliente @choice</p>
+
+
+@code {
+	private string nif;
+	private string password;
+	private string choice;
+
+	private void registerUser(){
+		// ...
+		Console.WriteLine(nif);
+		Console.WriteLine(password);
+		Console.WriteLine(choice);
+
+		ISubUtilizadores subUsers = new SubUtilizadoresFacade();
+
+		if(choice.Equals("Cliente"))
+		{
+			subUsers.RegistarCliente("","",password,int.Parse(nif));
+		} else
+		{
+			subUsers.RegistarVendedor("", "", password, int.Parse(nif));
+		}
+
+	}
+
+	private void selectClient(){
+		this.choice = "client";
+	}
+
+	private void selectSeller(){
+		this.choice = "seller";
+	}
+
+}

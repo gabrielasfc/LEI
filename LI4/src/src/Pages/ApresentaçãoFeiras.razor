@@ -1,0 +1,305 @@
+﻿@page "/Feiras"
+@using src.Data.BusinessLogic.SubFeiras
+@inject SubFeirasFacade Facade
+
+<style>
+
+    body, html {
+        height: 100%;
+        width: 100%;
+    }
+
+    .title-bar {
+        margin-bottom: 0px;
+        margin-top: 10px;
+        font-size: 2em;
+    }
+
+        .title-bar input {
+            border: solid;
+            border-color: var(--color-blue);
+            border-width: 2px;
+            padding: 5px;
+        }
+
+        .title-bar button {
+            border: none;
+            background-color: white;
+        }
+
+        .title-bar button:hover{
+            cursor: pointer;
+        }
+
+    .feiras {
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .feira-square {
+        justify-self: center;
+        align-self: center;
+        width: 150px;
+        height: 150px;
+        margin-top: -30px;
+    }
+
+        .feira-square:before {
+            content: "";
+            float: left;
+            padding-top: 10%; /* initial ratio of 1:1*/
+        }
+
+        .feira-square button {
+            height: 100%;
+            width: 100%;
+            border: solid;
+            border-width: 8px;
+            border-radius: 4px;
+            border-color: rgba(14,174,87,1);
+        }
+
+        .feira-square button:hover{
+                border-color: rgba(12,116,117,1);
+        }
+
+        .feira-square h1 {
+            margin-top: 2px;
+            font-size: 20px;
+        }
+
+    .feiras-container {
+        height: 63%;
+        grid-template-columns: 15% auto 15%;
+        grid-template-rows: auto;
+        display: @feirasStyle;
+    }
+
+    .icon {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .icon:hover {
+        color: var(--color-blue);
+    }
+
+    .fa-arrow-left {
+        font-size: 50px;
+        color: rgba(14,174,87,1);
+    }
+
+    .fa-arrow-right {
+        font-size: 50px;
+        color: rgba(12,116,117,1);
+    }
+
+    .filtered-feira-container{
+        display: @filteredStyle;
+        margin-top: 5%;
+        grid-template-columns: auto;
+    }
+
+    .filtered-feira {
+        justify-self: center;
+        align-self: center;
+        width: 300px;
+        height: 300px;
+    }
+
+    .filtered-feira button {
+        height: 100%;
+        width: 100%;
+        border: solid;
+        border-width: 8px;
+        border-radius: 4px;
+        border-color: rgba(14,174,87,1);
+    }
+
+    .filtered-feira button:hover {
+        border-color:  rgba(12,116,117,1);
+    }
+
+    .tracking-in-expand {
+        -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+
+  
+@@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+</style>
+
+<div class="tracking-in-expand">
+    <h1 style="padding-top: 0.5em; font-weight: bolder; font-size: 3em; color: black;">Apresentação das feiras</h1>
+	<h3 style="margin-bottom: 1.5em">Por favor, escolha a feira onde quer entrar</h3>
+</div>
+
+<div class="title-bar">
+    <input type="text" placeholder="Procurar feira" @bind="@filterValue">
+
+    <button @onclick="applyFilter"><i class="fa fa-search"></i></button>
+</div>
+
+<div class="feiras-container">
+    <div class="icon">
+        <button @onclick="decrementCounter"><i class="fa fa-arrow-left"></i></button>
+    </div>
+    <div class="feiras">
+        <div class="feira-square">
+            @if (shownFeiras[0] != null){
+                <button><a href="catalogo/@shownFeiras[0]"><img src="css/images/feira.jpg" width="100%" height="100%" /></a></button>
+                <h1>@shownFeiras[0]</h1>
+            } 
+        </div>
+        <div class="feira-square">
+            @if (shownFeiras[1] != null)
+            {
+                <button><a href="catalogo/@shownFeiras[1]"><img src="css/images/feira.jpg" width="100%" height="100%" /></a></button>
+                <h1>@shownFeiras[1]</h1>
+            }
+        </div>
+        <div class="feira-square">
+            @if (shownFeiras[2] != null)
+            {
+                <button><a href="catalogo/@shownFeiras[2]"><img src="css/images/feira.jpg" width="100%" height="100%" /></a></button>
+                <h1>@shownFeiras[2]</h1>
+            }
+        </div>
+        <div class="feira-square">
+            @if (shownFeiras[3] != null)
+            {
+                <button><a href="catalogo/@shownFeiras[3]"><img src="css/images/feira.jpg" width="100%" height="100%" /></a></button>
+                <h1>@shownFeiras[3]</h1>
+            }
+        </div>
+        <div class="feira-square">
+            @if (shownFeiras[4] != null){
+                <button><a href="catalogo/@shownFeiras[4]"><img src="css/images/feira.jpg" width="100%" height="100%" /></a></button>
+                <h1>@shownFeiras[4]</h1>
+            } 
+            
+        </div>
+        <div class="feira-square">
+            @if (shownFeiras[5] != null)
+            {
+                <button><a href="catalogo/@shownFeiras[5]"><img src="css/images/feira.jpg" width="100%" height="100%" /></a></button>
+                <h1>@shownFeiras[5]</h1>
+            }
+        </div>
+    </div>
+    <div class="icon">
+        <button @onclick="incrementCounter"><i class="fa fa-arrow-right"></i></button>
+    </div>
+</div>
+<div class="filtered-feira-container">
+    <div class="filtered-feira">
+        <button><a href="catalogo/@filteredFeira"><img src="css/images/feira.jpg" width="100%" height="100%" /></a></button>
+        <h1>@filteredFeira</h1>
+    </div>
+</div>
+
+@code {
+    private List<Feira>? feiras;
+    private List<String>? shownFeiras;
+    private String filterValue;
+    private string feirasStyle = "grid";
+    private string filteredStyle = "none";
+    private string filteredFeira;
+    private int index = 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        SubFeirasFacade f = new SubFeirasFacade();
+        //SubUtilizadoresFacade uf = new SubUtilizadoresFacade();
+
+        //f.AddFeira(f1);
+
+        this.index = 0;
+        IEnumerable<Feira> aux = await f.GetFeiras();
+        feiras = aux.ToList();
+        shownFeiras = new List<string>(6);
+        this.updateFeiras();
+    }
+
+    private void updateFeiras(){
+        for(int i=0; i<6; i++){
+            if (index * 6 + i + 1 <= feiras.Count)
+            {
+                Feira f = feiras.ElementAt(index * 6 + i);
+                shownFeiras.Insert(i, f.nomeFeira);
+            }
+            else shownFeiras.Insert(i, null);
+        }
+    }
+
+    private void decrementCounter(){
+        Console.WriteLine(index);
+        if (this.index > 0){
+            this.index--;
+        }
+        else if (index == 0){
+            this.index = (this.feiras.Count-1)/6;
+        }
+        Console.WriteLine(index);
+        this.updateFeiras();
+    }
+
+    private void incrementCounter(){
+        if (feiras.Count > (this.index+1)*6){
+            this.index++;
+        }
+        else if ((this.index + 1) * 6 >= feiras.Count)
+        {
+            this.index = 0;
+        }
+        this.updateFeiras();
+    }
+
+    public void applyFilter()
+    {
+        this.feirasStyle = "none";
+        this.filteredStyle = "grid";
+        //Console.WriteLine("Ola");
+        //filteredFeiras = new List<string>();
+        Boolean foundFeira = false;
+        foreach (Feira feira in feiras)
+        {
+            if (feira.nomeFeira == filterValue)
+            {
+                filteredFeira = feira.nomeFeira;
+                foundFeira = true;
+            }
+        }
+
+        if (foundFeira == false){
+            this.feirasStyle = "grid";
+            this.filteredStyle = "none";
+        }
+    }
+}

@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\BusinessLogic\SubUtilizadores\Utilizador.cs" />
+    <None Remove="Data\BusinessLogic\SubFeiras\Feira.cs~RF46d2f6ea.TMP" />
+    <None Remove="Data\BusinessLogic\SubFeiras\Produto.cs~RF46ef5aec.TMP" />
+    <None Remove="Data\BusinessLogic\SubUtilizadores\Vendedor.cs~RF4731ac27.TMP" />
+    <None Include="wwwroot\css\batata-vermelha-final-1.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\BusinessLogic\SubCompras\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BlazorStrap" Version="5.1.100" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.1" />
+  </ItemGroup>
+
+</Project>

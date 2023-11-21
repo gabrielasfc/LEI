@@ -1,0 +1,248 @@
+﻿@page "/Vendedor/AdicionarProduto"
+@using src.Data.BusinessLogic.SubFeiras
+@inject SubFeirasFacade Facade
+
+<style>
+	body, html{
+		height: 100%;
+	}
+
+	.tracking-in-expand {
+		margin: 50px;
+		-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+		animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	}
+
+
+	@@-webkit-keyframes tracking-in-expand {
+		0% {
+			letter-spacing: -0.5em;
+			opacity: 0;
+		}
+
+		40% {
+			opacity: 0.6;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@@keyframes tracking-in-expand {
+		0% {
+			letter-spacing: -0.5em;
+			opacity: 0;
+		}
+
+		40% {
+			opacity: 0.6;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	.btn-grad {
+            background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+    .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+     }
+
+	.container{
+		margin: 40px;
+	}
+
+		.first-row {
+			height: 10%;
+			display: grid;
+			grid-template-columns: 75% auto;
+			grid-template-rows: auto;
+		}
+
+			.title {
+				border: solid;
+				border-width: 2px;
+				align-self: center;
+				justify-self: center;
+				padding: 10px;
+				width: 100%;
+				margin-bottom: 40px;
+			}
+
+			.title h1{
+				color: grey;
+			}
+
+			.feira{
+				align-self: center;
+				justify-self: center;
+			}
+
+			.feira h3 {
+				color: green;
+			}
+
+	.second-row{
+		display: grid;
+		grid-template-columns: 25% auto;
+		grid-template-rows: auto;
+	}
+
+		.img-container{
+			border: solid;
+			width: 200px;
+			height: 200px;
+			background-color: white;
+			justify-self: center;
+			align-self: center;
+		}
+
+		.form-container input {
+			width: 90%;
+			height: 100%;
+		}
+
+		.form-container span {
+			margin-top: 15px;
+			display: block;
+			height: 30px;
+		}
+
+
+	.btn-add-img{
+		float: left;
+		margin-top: 5px;
+		margin-left: 20px;
+	}
+
+	.desc-container {
+		margin-top: 40px;
+		width: 100%;
+	}
+
+	.desc-container textarea {
+		width: 100%;
+		height: 100%;
+		max-width: 150%;
+	}
+
+	.container-params {
+		margin-top: 25px;
+		width: 100%;
+		height: 300px;
+	}
+
+	.container-params form {
+		height: 85%;
+		width: 100%;
+	}
+
+	.container-params form span {
+		width: 100%;
+	}
+
+	.container-params form span input{
+		margin: 15px 0;
+		width: 100%;
+		height: 25%;
+	}
+
+	.btn-primary{
+		background-color: var(--color-blue);
+		border: none;
+		height: 40px;
+		width: 100px;
+		border-radius: 10px;
+		align-self: center;
+		justify-self: center;
+		margin-top: 20px;
+		float: left;
+	}
+
+
+</style>
+
+<div class="container">
+	<div class="tracking-in-expand" style="font-size:50" ><h1>Adicionar Produto</h1></div>
+
+	<div class="second-row">
+		<div class="img-container"></div>
+		<div class="form-container">
+			<form>
+				<span><input type="text" id="nif" placeholder="Inserir nif do Vendedor" @bind="@nifVendedor"></span>
+
+				<span><input type="text" id="nomeFeira" placeholder="Inserir nome da Feira" @bind="@nomeFeira"></span>
+
+				<!--<label for="nome"><p>Nome: </p></label>-->
+				<span><input type="text" id="nomeProduto" placeholder="Inserir nome do produto" @bind="@nomeProduto"></span>
+				
+				<!--label for="quantidade"><p>Quantidade disponível: </p></label> -->
+				<span><input type="text" id="quantity" placeholder="Inserir quantidade do produto" @bind="@quantity"></span>
+				
+				<!--label for="categoria"><p>Categoria:</p></label>-->
+				<span><input type="text" id="category" placeholder="Inserir categoria do produto" @bind="@category"></span>
+				
+				<!--label for="preço"><p>Preço</p>:</label><br>-->
+				<span><input type="text" id="price" placeholder="Inserir preço do produto" @bind="@price"></span>
+			</form>
+		</div>
+	</div>
+
+	<button class="btn-add-img">Adicionar imagem</button>
+
+	<div class="desc-container">
+		<form>
+			<textarea rows="5" cols="50" name="description" @bind=@description>
+			</textarea>
+		</form>
+	</div>
+
+	<div class="container-params">
+		<h2>Parâmetros de negociação</h2>
+		<form>
+			<span><input type="text" id="ft-tolerancia" name="ft-tolerancia" placeholder="Inserir fator de tolerância" @bind=@fatorTolerancia></span>
+			<span><input type="text" id="ft-aceitacao" name="ft-aceitacao" placeholder="Inserir fator de aceitação" @bind=@fatorAceitaçao></span>
+			<span><input type="text" id="ft-resposta" name="ft-resposta" placeholder="Inserir fator de resposta" @bind=@fatorResposta></span>
+		</form>
+	</div>
+		<button class="btn-grad" @onclick="addProductFeira">Registar Produto na feira</button>
+</div>
+
+@code {
+	private string nomeFeira;
+	private int nifVendedor;
+	private string nomeProduto;
+	private int quantity;
+	private string category;
+	private float price;
+	private string description;
+	private float fatorAceitaçao;
+	private float fatorResposta;
+	private float fatorTolerancia;
+
+	private void addProductFeira()
+	{
+		SubFeirasFacade f = new SubFeirasFacade();
+		Produto p = new Produto(nomeProduto, price, quantity, description, category, 0, fatorAceitaçao, fatorTolerancia, fatorResposta, nomeFeira, nifVendedor);
+		p = f.AddProduto(p);
+	}
+}
+
+
+

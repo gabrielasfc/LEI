@@ -1,0 +1,313 @@
+﻿@page "/Negociacao/{idProduto}"
+@using src.Data.BusinessLogic.SubCompras
+@inject SubComprasFacade Facade
+@using src.Data.BusinessLogic
+@inject LogicaNegocio LogicaNegocio
+@using src.Data.BusinessLogic.SubFeiras
+
+<style>
+	body, html {
+		height: 100%;
+		width: 100%;
+	}
+
+	.container {
+		width: 100%;
+		/*height: 100vh;*/
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.popup{
+		border: solid;
+		width: 300px;
+		background-color: lightgreen;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		border-radius: 6px;
+		transform: translate(-50%, -50%) scale(0.1);
+		visibility: hidden;
+		transition: transform 0.4s;
+	}
+
+	.popup-cancelled {
+		border: solid;
+		width: 300px;
+		background-color: red;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		border-radius: 6px;
+		transform: translate(-50%, -50%) scale(0.1);
+		visibility: hidden;
+		transition: transform 0.4s;
+	}
+
+	.open-popup{
+		visibility: visible;
+		top: 50%;
+		transform: translate(-50%, -50%) scale(1);
+	}
+
+	.popup h2 {
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+
+	.popup h3 {
+		margin-bottom: 50px;
+	}
+
+	.popup button {
+		margin-bottom: 30px;
+		height: 30px;
+		width: 50px;
+		border: solid;
+		border-color: var(--color-primary);
+		border-radius: 30px;
+		border-width: 5px;
+		background-color: transparent;
+	}
+
+	.popup button p{
+		color: var(--color-primary);
+		font-weight: bold;
+		font-size: 1.5em;
+	}
+
+	.negociacao {
+		/*border: solid;*/
+		height: 70%;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+
+	.negociacao .semi {
+	}
+
+	.value-box {
+		margin: 70px 10px 70px 10px;
+		background-color: lightgreen;
+		height: 40px;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		z-index: 1;
+	}
+
+	.open {
+		border: solid;
+		background-color: red;
+		border-radius: 10px;
+	}
+
+	.open p {
+		font-weight: bold;
+		color: white;
+	}
+
+	.semi input {
+		margin-top: -100px;
+		border: solid;
+		border-color: var(--color-blue);
+	}
+
+	.last-row{
+		position: absolute;
+		bottom: 10px;
+		margin-left: 15%;
+	}
+
+	.last-row input {
+		
+	}
+
+	.semi {
+		position: relative;
+	}
+
+	.semi .btn{
+		background-color: var(--color-blue);
+		border-radius: 20px;
+		transform: scale(1.2);
+		margin-left: 20px;
+	}
+
+	.semi .btn p {
+		margin: 4px;
+		color: white;
+	}
+
+	.top-bar {
+		background-color: darkslateblue;
+		border-bottom: solid;
+		border-bottom-color: var(--color-primary);
+		height: 15%;
+	}
+
+		.top-bar h3 {
+			margin-bottom: 1.5em
+		}
+
+		.top-bar h1 {
+			padding-top: 0.3em;
+			font-weight: bolder;
+			font-size: 3em;
+			color: white;
+		}
+
+</style>
+
+<div class="top-bar">
+    <h1>Realizar negociação</h1>
+    <h3>Aqui pode negociar o valor do seu produto</h3>
+</div>
+
+<div class="negociacao">
+	<div class="semi">
+		<h1 style="margin-bottom: 100px;">Cliente</h1>
+		
+		@foreach(var f in clientValues){
+			@if(f != 0){
+				<div class="value-box"><p>@f</p></div>
+			}
+		}
+		
+		<div class="last-row">
+			<input type="text" placeholder="Insira novo valor ..." @bind="@input">
+			<button @onclick="submitValue" class="btn"><p>Negociar</p></button>
+		</div>
+	</div>
+	<div class="semi">
+		<h1 style="margin-bottom: -25px">Vendedor</h1>
+		@foreach(var v in sellerValues){
+			@if(v != 0){
+				<div class="value-box"><p>@v</p></div>
+			}
+		}
+	</div>
+	
+</div>
+
+<div class="container">
+	<div class=@popupState>
+		<h2 style=>Negociação finalizada</h2>
+		<h3>Valor final: @valorfinal €</h3>
+		<button @onclick="closePopup"><a href="/catalogo/@p.nomeFeira/@p.idProduto"></a><p>OK</p></button>
+	</div>
+</div>
+
+<div class="container">
+	<div class=@popupStateCancelled>
+		<h2 style=>Negociação cancelada</h2>
+		<h3 style="margin-top: 40px; margin-bottom: 30px;">O vendedor cancelou as negociações.</h3>
+		<button style="margin-bottom: 30px;" @onclick="closePopup"><a href="/catalogo/@p.nomeFeira/@p.idProduto"><p>OK</p></a></button>
+	</div>
+</div>
+<button @onclick="openPopup" class="open"><p>Open Popup</p></button>
+
+
+@code {
+	[Parameter]
+	public String idProduto { get; set; }
+	private Produto p;
+	private String popupState = "popup";
+	private String popupStateCancelled = "popup popup-cancelled";
+	private List<float> clientValues = new List<float>(3);
+	private List<float> sellerValues = new List<float>(4);
+	private float input;
+	private float valorfinal;
+	private float li;
+	private float ls;
+	private float ta;
+	SubComprasFacade sc;
+	LogicaNegocio ln;
+
+	public void OnGet(String productId)
+	{
+		this.idProduto = productId;
+	}
+
+	protected override async Task OnInitializedAsync()
+	{
+		sc = new SubComprasFacade();
+		SubFeirasFacade sf = new SubFeirasFacade();
+		ln = new LogicaNegocio();
+
+		p = await sf.GetProduto(int.Parse(idProduto));
+		// get produto e obter os limites
+		/* 
+		ls = valor do produto
+		li = ls - ls * ft
+		bool aceita = False
+		valorFinal = ls
+		*/
+		clientValues.Add(0);
+		clientValues.Add(0);
+		clientValues.Add(0);
+		sellerValues.Add(0);
+		sellerValues.Add(0);
+		sellerValues.Add(0);
+		sellerValues.Add(p.preço);
+		ls = p.preço;
+		li = ls - ls * p.fatorTolerancia;
+
+	}
+
+	private void openPopup(){
+		popupState = "popup open-popup";
+	}
+
+	private void closePopup(){
+		popupState = "popup cancelled";
+	}
+
+	private void openPopupCancelled()
+	{
+		popupStateCancelled = "open-popup popup-cancelled";
+	}
+
+
+	private async void submitValue(){
+		var (continua, aceita, resposta, limiteSuperior, limiteInferior) = await ln.GetContraproposta(p.fatorAceitacao, p.fatorTolerancia, p.fatorResposta, ls, li, input);
+		ls = (float)limiteSuperior;
+		li = (float)limiteInferior;
+		if (aceita == true){
+			valorfinal = input;
+			openPopup();
+			sc.AdicionarAoCarrinho(987654321, int.Parse(idProduto), (float)input, 1);
+		} 
+		else {
+			if (continua){
+				if (clientValues.Count == 3)
+				{
+					clientValues[0] = clientValues[1];
+					clientValues[1] = clientValues[2];
+					clientValues[2] = input;
+				}
+				else
+				{
+					clientValues.Add(input);
+				}
+
+				if (sellerValues.Count == 4)
+				{
+					sellerValues[0] = sellerValues[1];
+					sellerValues[1] = sellerValues[2];
+					sellerValues[2] = sellerValues[3];
+					sellerValues[3] = (float)limiteSuperior;
+				}
+			}
+			else {
+				openPopupCancelled();
+			}
+
+		}
+		
+	}
+}

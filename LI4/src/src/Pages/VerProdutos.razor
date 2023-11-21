@@ -1,0 +1,106 @@
+﻿@page "/verprodutos"
+@using src.Data.BusinessLogic.SubFeiras
+@inject SubFeirasFacade Facade
+
+<style>
+
+	body, html {
+		height: 100%;
+		width: 100%;
+	}
+
+	.Produtos {
+		display: grid;
+		grid-template-columns: 20% 20% 20% 20% 20%;
+		margin-bottom: 20px;
+		margin-left: 300px;
+		margin-right: 300px;
+	}
+
+
+	.header {
+		border: double;
+		display: grid;
+		grid-template-columns: 20% 20% 20% 20% 20%;
+		margin-bottom: 20px;
+		margin-top: 10px;
+		margin-left: 300px;
+		margin-right: 300px;
+	}
+
+	.tracking-in-expand {
+		margin: 50px;
+		-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+		animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	}
+
+
+	@@-webkit-keyframes tracking-in-expand {
+		0% {
+			letter-spacing: -0.5em;
+			opacity: 0;
+		}
+
+		40% {
+			opacity: 0.6;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@@keyframes tracking-in-expand {
+		0% {
+			letter-spacing: -0.5em;
+			opacity: 0;
+		}
+
+		40% {
+			opacity: 0.6;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+</style>
+
+<div class="tracking-in-expand" style="font-size:50"><h1>Ver produtos associados a Vendedor</h1></div>
+
+<span><input type="text" id="Nif" placeholder="Inserir NIF do Vendedor" @bind=@nifVendedor></span>
+
+<br/><br/><br/>
+
+<div class="header">
+	<p>Nome do Produto</p>
+	<p>Categoria</p>
+	<p>Preço</p>
+	<p>Stock</p>
+	<p>Feira</p>
+</div>
+			
+@foreach(Produto p in verProdutosVendedor().Result.ToList())
+{
+	<div class="Produtos">
+		<p >@p.nome</p>
+		<p >@p.categoria</p>
+		<p >@p.preço</p>
+		<p >@p.stock</p>
+		<p >@p.nomeFeira</p>
+	</div>
+}
+
+@code {
+	private int nifVendedor;
+
+
+	private async Task<List<Produto>> verProdutosVendedor()
+	{
+		SubFeirasFacade f = new SubFeirasFacade();
+		Task<IEnumerable<Produto>> produtos = f.GetProdutosVendedor(nifVendedor);
+		return produtos.Result.ToList();
+	}
+
+}

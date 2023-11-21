@@ -1,0 +1,57 @@
+﻿@page "/Login"
+@using src.Data.BusinessLogic.SubUsers
+@using src.Data.BusinessLogic
+@using src.Data
+@inject IJSRuntime js
+
+
+
+<h3>Login</h3>
+
+<form>
+	<label for="contribuinte">NIF: </label>
+	<input type="text" id="contribuinte" @bind="model.nif" /> <br />
+	<label for="pass">Pass: </label>
+	<input type="text" id="pass" @bind="@model.password" /> <br />
+
+	<input type="submit" value="Autenticar" @onclick="Authenticate" />
+</form>
+
+<p style="color: green">Utilizador autenticado com sucesso</p>
+<p style="color: red">Não foi possível autenticar</p>
+
+@code {
+	private class Model
+	{
+		public string nif { get; set; }
+		public string password { get; set; }
+	}
+
+	private Model model = new Model();
+
+	private ISubUtilizadores sf = new SubUtilizadoresFacade();
+
+	private async Task Authenticate()
+	{
+		try {
+			int user = await sf.Autenticar(Int32.Parse(model.nif), model.password);
+			if (user == 1)
+			{
+				
+			} 
+			else
+			{
+				
+			}
+
+
+		} catch (Exception e)
+		{
+			await js.InvokeVoidAsync("alert", e.Message);
+			return;
+		}
+		
+	}
+}
+
+
