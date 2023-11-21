@@ -1,0 +1,7 @@
+*.o
+*.3d
+.DS_Store
+src/engine/build/
+src/generator/build/
+src/.vscode
+.idea/

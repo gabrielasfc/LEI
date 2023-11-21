@@ -1,0 +1,612 @@
+<world>
+	<!-- a world can have a camera, a window definition, and a single group -->
+	<window width="512" height="512" />
+	<camera mode="fps">
+		<position x="10" y="10" z="10" />
+		<lookAt x="0" y="0" z="0" />
+		<up x="0" y="1" z="0" />
+		<!-- optional, use these values as default-->
+		<projection fov="60" near="1" far="4000" />
+		<!-- optional, use these values as default-->
+	</camera>
+	<lights>
+		<light type="point" posX="0" posY="0" posZ="0"/>
+	</lights>
+
+	
+	<!-- SOLAR SYSTEM -->
+	<group>
+		<!-- SKYDOME -->
+		<group>
+			<transform>
+				<scale x="-280" y="-280" z="-280"/>
+			</transform>
+			<models>
+				<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+					<texture file="8k_stars_milky_way.jpg"/>
+					<color>
+						<emissive R="50" G="50" B="50"/>
+					</color>
+				</model>
+			</models>
+		</group>
+
+		<!-- SUN -->
+		<group label="Sun">
+			<transform>
+				<rotate time="244.7" x="0" y="1" z="0"/>
+			</transform>
+			<models>
+				<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+					<texture file="8k_sun.jpg"/>
+					<color>
+						<emissive R="255" G="255" B="255"/>
+					</color>
+				</model>
+			</models>
+		</group>
+
+		<!-- BELTS -->
+		<group>
+			<models>
+				<model file="belt1.3d"> <!-- ./generator belt 2000 20 90 5 0 0.1 51 belt1.3d -->
+					<texture file="asteroid.jpg"/>
+				</model>
+				<model file="belt2.3d"> <!-- ./generator belt 10000 375 1275 5 0 0.1 39 belt2.3d -->
+					<texture file="asteroid.jpg"/>
+				</model>
+			</models>
+		</group>
+
+		<!-- COMET -->
+		<group label="Comet">
+			<transform>
+				<translate time="300" align="True" show="true" tesselation="1000">
+					<ellipsepoints n="15" a="300" b="600" xRotationAngle="10" yRotationAngle="45" xCenter="-200" zCenter="300"/>
+				</translate>
+				<rotate angle="90" x="0" y="0" z="1"/>
+				<scale x="0.5" y="0.5" z="0.5"/>
+			</transform>
+			<models>
+				<model file="comet.3d"> <!-- ./generator patch ../../../comet.patch 10 comet.3d-->
+					<texture file="comet.png"/>
+				</model>
+			</models>
+		</group>
+
+		<!-- MERCURY -->
+		<group label="Mercury">
+			<transform>
+				<translate time="4.82" align="True">
+					<ellipsepoints n="15" a="9" b="12"/>
+				</translate>
+				<rotate time="590" x="0" y="1" z="0"/>
+				<scale x="0.017" y="0.017" z="0.017"/>
+			</transform>
+			<models>
+				<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+					<texture file="8k_mercury.jpg"/>
+				</model>
+			</models>
+		</group>
+
+
+		<!-- VENUS -->
+		<group label="Venus">
+			<transform>
+				<translate time="12.33" align="True">
+					<ellipsepoints n="15" a="15.75" b="21"/>
+				</translate>
+				<rotate time="2430" x="0" y="1" z="0"/>
+				<scale x="0.043" y="0.043" z="0.043"/>
+			</transform>
+			<models>
+				<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+					<texture file="8k_venus_surface.jpg"/>
+				</model>
+			</models>
+		</group>
+
+
+		<!-- EARTH'S GROUP -->
+		<group>
+			<transform>
+				<translate time="20" align="True">
+					<ellipsepoints n="15" a="22.5" b="30"/>
+				</translate>
+				<scale x="0.0455" y="0.0455" z="0.0455"/>
+			</transform>
+
+			<!-- EARTH -->
+			<group label="Earth">
+				<transform>
+					<rotate time="10" x="0" y="1" z="0"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="8k_earth_daymap.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- MOON -->
+			<group label="Moon">
+				<transform>
+					<translate time="273.2" align="True" show="False">
+						<ellipsepoints n="15" a="8.44" b="11.25" xRotationAngle="30" yRotationAngle="60"/>
+					</translate>
+					<rotate time="273.2" x="0" y="1" z="0"/>
+					<scale x="0.25" y="0.25" z="0.25"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="8k_moon.jpg"/>
+					</model>
+				</models>
+			</group>
+		</group>
+
+
+		<!-- MARS' GROUP -->
+		<group>
+			<transform>
+				<translate time="37.64" align="True">
+					<ellipsepoints n="15" a="33.75" b="45"/>
+				</translate>
+				<scale x="0.024" y="0.024" z="0.024"/>
+			</transform>
+
+			<!-- MARS -->
+			<group label="Mars">
+				<transform>
+					<rotate time="10.3" x="0" y="1" z="0"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="8k_mars.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- PHOBOS -->
+			<group label="Phobos">
+				<transform>
+					<translate time="3.2" align="True" show="False">
+						<ellipsepoints n="15" a="8" b="10.67" xRotationAngle="20" yRotationAngle="40"/>
+					</translate>
+					<rotate time="3.2" x="0" y="1" z="0"/>
+					<scale x="0.1" y="0.1" z="0.1"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="phobos.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- DEIMOS -->
+			<group label="Deimos">
+				<transform>
+					<translate time="12.6" align="True" show="False">
+						<ellipsepoints n="15" a="20.1" b="26.8" xRotationAngle="50" yRotationAngle="70"/>
+					</translate>
+					<rotate time="12.6" x="0" y="1" z="0"/>
+					<scale x="0.06" y="0.06" z="0.06"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="deimos.jpg"/>
+					</model>
+				</models>
+			</group>
+		</group>
+
+
+		<!-- JUPITER'S GROUP -->
+		<group>
+			<transform>
+				<translate time="237.42" align="True">
+					<ellipsepoints n="15" a="117" b="156"/>
+				</translate>
+				<scale x="0.5" y="0.5" z="0.5"/>
+			</transform>
+
+			<!-- JUPITER -->
+			<group label="Jupiter">
+				<transform>
+					<rotate time="4.1" x="0" y="1" z="0"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="8k_jupiter.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- IO -->
+			<group label="Io">
+				<transform>
+					<translate time="17.7" align="True" show="False">
+						<ellipsepoints n="15" a="8" b="10.67" xRotationAngle="50" yRotationAngle="20"/>
+					</translate>
+					<rotate time="17.7" x="0" y="1" z="0"/>
+					<scale x="0.026" y="0.026" z="0.026"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="io.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- EUROPA -->
+			<group label="Europa">
+				<transform>
+					<translate time="35.5" align="True" show="False">
+						<ellipsepoints n="15" a="12.7" b="16.93" xRotationAngle="25" yRotationAngle="65"/>
+					</translate>
+					<rotate time="35.5" x="0" y="1" z="0"/>
+					<scale x="0.022" y="0.022" z="0.022"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="europa.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- GANYMEDE -->
+			<group label="Ganymede">
+				<transform>
+					<translate time="71.6" align="True" show="False">
+						<ellipsepoints n="15" a="20.32" b="27.09" xRotationAngle="120" yRotationAngle="75"/>
+					</translate>
+					<rotate time="71.6" x="0" y="1" z="0"/>
+					<scale x="0.038" y="0.038" z="0.038"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="ganymede.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- CALLISTO -->
+			<group label="Callisto">
+				<transform>
+					<translate time="166.9" align="True" show="False">
+						<ellipsepoints n="15" a="8" b="10.67" xRotationAngle="140" yRotationAngle="30"/>
+					</translate>
+					<rotate time="166.9" x="0" y="1" z="0"/>
+					<scale x="0.034" y="0.034" z="0.034"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="callisto.jpg"/>
+					</model>
+				</models>
+			</group>
+		</group>
+
+
+		<!-- SATURN'S GROUP -->
+		<group>
+			<transform>
+				<translate time="589.53" align="True">
+					<ellipsepoints n="15" a="213.75" b="285"/>
+				</translate>
+				<scale x="0.42" y="0.42" z="0.42"/>
+			</transform>
+
+			<!-- SATURN -->
+			<group label="Saturn">
+				<transform>
+					<rotate time="4.5" x="0" y="1" z="0"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="8k_saturn.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- INNER RING -->
+			<group label="Inner Ring">
+				<transform>
+					<scale x="2.38" y="2.38" z="2.38"/>
+					<rotate angle="45" x="0" y="0" z="1"/>
+					<rotate time="4.5" x="0" y="1" z="0"/>
+				</transform>
+				<models>
+					<model file="ring.3d"> <!-- ./generator torus 0.5 4 100 2 ring.3d -->
+						<texture file="ring.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- OUTER RING -->
+			<group label="Outer Ring">
+				<transform>
+					<scale x="3.2" y="3.2" z="3.2"/>
+					<rotate angle="45" x="0" y="0" z="1"/>
+					<rotate time="4.5" x="0" y="1" z="0"/>
+				</transform>
+				<models>
+					<model file="ring.3d"> <!-- ./generator torus 0.5 4 100 2 ring.3d -->
+						<texture file="ring.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- TITAN -->
+			<group label="Titan">
+				<transform>
+					<translate time="159.4" align="True" show="False">
+						<ellipsepoints n="15" a="52.9" b="70.53" xRotationAngle="90" yRotationAngle="50"/>
+					</translate>
+					<rotate time="159.4" x="0" y="1" z="0"/>
+					<scale x="0.044" y="0.044" z="0.044"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="titan.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- RHEA -->
+			<group label="Rhea">
+				<transform>
+					<translate time="45.2" align="True" show="False">
+						<ellipsepoints n="15" a="22.7" b="30.27" xRotationAngle="40" yRotationAngle="60"/>
+					</translate>
+					<rotate time="45.2" x="0" y="1" z="0"/>
+					<scale x="0.013" y="0.013" z="0.013"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="rhea.png"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- TETHYS -->
+			<group label="Tethys">
+				<transform>
+					<translate time="18.9" align="True" show="False">
+						<ellipsepoints n="15" a="12.73" b="16.97" xRotationAngle="170" yRotationAngle="20"/>
+					</translate>
+					<rotate time="18.9" x="0" y="1" z="0"/>
+					<scale x="0.0091" y="0.0091" z="0.0091"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="tethys.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- DIONE -->
+			<group label="Dione">
+				<transform>
+					<translate time="27.4" align="True" show="False">
+						<ellipsepoints n="15" a="16.36" b="21.82" xRotationAngle="110" yRotationAngle="70"/>
+					</translate>
+					<rotate time="27.4" x="0" y="1" z="0"/>
+					<scale x="0.0096" y="0.0096" z="0.0096"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="dione.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- ENCELADUS -->
+			<group label="Enceladus">
+				<transform>
+					<translate time="13.7" align="True" show="False">
+						<ellipsepoints n="15" a="10.36" b="13.81" xRotationAngle="70" yRotationAngle="30"/>
+					</translate>
+					<rotate time="13.7" x="0" y="1" z="0"/>
+					<scale x="0.0043" y="0.0043" z="0.0043"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="enceladus.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- IAPETUS -->
+			<group label="Iapetus">
+				<transform>
+					<translate time="793.2" align="True" show="False">
+						<ellipsepoints n="15" a="154.18" b="205.57" xRotationAngle="130" yRotationAngle="20"/>
+					</translate>
+					<rotate time="793.2" x="0" y="1" z="0"/>
+					<scale x="0.0126" y="0.0126" z="0.0126"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="iapetus.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- MIMAS -->
+			<group label="Mimas">
+				<transform>
+					<translate time="9.4" align="True" show="False">
+						<ellipsepoints n="15" a="8" b="10.67" xRotationAngle="20" yRotationAngle="40"/>
+					</translate>
+					<rotate time="9.4" x="0" y="1" z="0"/>
+					<scale x="0.0034" y="0.0034" z="0.0034"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="mimas.jpg"/>
+					</model>
+				</models>
+			</group>
+		</group>
+
+
+		<!-- URANUS' GROUP -->
+		<group>
+			<transform>
+				<translate time="1681.53" align="True">
+					<ellipsepoints n="15" a="427.5" b="570"/>
+				</translate>
+				<scale x="0.17" y="0.17" z="0.17"/>
+			</transform>
+
+			<!-- URANUS -->
+			<group label="Uranus">
+				<transform>
+					<rotate time="7.2" x="0" y="1" z="0"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="2k_uranus.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- MIRANDA -->
+			<group label="Miranda">
+				<transform>
+					<translate time="14.1" align="True" show="False">
+						<ellipsepoints n="15" a="8" b="10.67" xRotationAngle="60" yRotationAngle="80"/>
+					</translate>
+					<rotate time="14.1" x="0" y="1" z="0"/>
+					<scale x="0.0093" y="0.0093" z="0.0093"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="miranda.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- ARIEL -->
+			<group label="Ariel">
+				<transform>
+					<translate time="25.2" align="True" show="False">
+						<ellipsepoints n="15" a="11.84" b="15.79" xRotationAngle="50" yRotationAngle="40"/>
+					</translate>
+					<rotate time="25.2" x="0" y="1" z="0"/>
+					<scale x="0.0228" y="0.0228" z="0.0228"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="ariel.png"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- UMBRIEL -->
+			<group label="Umbriel">
+				<transform>
+					<translate time="41.2" align="True" show="False">
+						<ellipsepoints n="15" a="16.42" b="21.89" xRotationAngle="100" yRotationAngle="70"/>
+					</translate>
+					<rotate time="41.2" x="0" y="1" z="0"/>
+					<scale x="0.0231" y="0.0231" z="0.0231"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="umbriel.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- OBERON -->
+			<group label="Oberon">
+				<transform>
+					<translate time="134.6" align="True" show="False">
+						<ellipsepoints n="15" a="36.11" b="48.15" xRotationAngle="40" yRotationAngle="65"/>
+					</translate>
+					<rotate time="134.6" x="0" y="1" z="0"/>
+					<scale x="0.03" y="0.03" z="0.03"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="oberon.png"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- TITANIA -->
+			<group label="Titania">
+				<transform>
+					<translate time="87.1" align="True" show="False">
+						<ellipsepoints n="15" a="27.05" b="36.07" xRotationAngle="20" yRotationAngle="40"/>
+					</translate>
+					<rotate time="87.1" x="0" y="1" z="0"/>
+					<scale x="0.0312" y="0.0312" z="0.0312"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="titania.jpg"/>
+					</model>
+				</models>
+			</group>
+		</group>
+
+
+		<!-- NEPTUNE'S GROUP -->
+		<group>
+			<transform>
+				<translate time="3299.95" align="True">
+					<ellipsepoints n="15" a="675" b="900"/>
+				</translate>
+				<scale x="0.165" y="0.165" z="0.165"/>
+			</transform>
+
+			<!-- NEPTUNE -->
+			<group label="Neptune">
+				<transform>
+					<rotate time="6.7" x="0" y="1" z="0"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="2k_neptune.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- PROTEUS -->
+			<group label="Proteus">
+				<transform>
+					<translate time="11.2" align="True" show="False">
+						<ellipsepoints n="15" a="8" b="10.67" xRotationAngle="20" yRotationAngle="70"/>
+					</translate>
+					<rotate time="11.2" x="0" y="1" z="0"/>
+					<scale x="0.0085" y="0.0085" z="0.0085"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="proteus.jpg"/>
+					</model>
+				</models>
+			</group>
+
+			<!-- TRITON -->
+			<group label="Triton">
+				<transform>
+					<translate time="58.8" align="True" show="False">
+						<ellipsepoints n="15" a="24.23" b="32.31" xRotationAngle="160" yRotationAngle="20"/>
+					</translate>
+					<rotate time="58.8" x="0" y="1" z="0"/>
+					<scale x="0.0550" y="0.0550" z="0.0550"/>
+				</transform>
+				<models>
+					<model file="sphere.3d"> <!-- ./generator sphere 6 50 50 sphere.3d -->
+						<texture file="triton.jpg"/>
+					</model>
+				</models>
+			</group>
+		</group>
+	</group>
+</world>

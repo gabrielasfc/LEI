@@ -1,0 +1,3376 @@
+<world>
+	<!-- a world can have a camera, a window definition, and a single group -->
+	<window width="512" height="512" />
+	<camera mode="fps">
+		<position x="10" y="10" z="10" />
+		<lookAt x="0" y="0" z="0" />
+		<up x="0" y="1" z="0" />
+		<!-- optional, use these values as default-->
+		<projection fov="60" near="1" far="1200" />
+		<!-- optional, use these values as default-->
+	</camera>
+
+	<!-- CITY -->
+	<group>
+
+		<!-- FLOOR -->
+		<group>
+			<color R="105" G="105" B="105"/>
+			<models>
+				<model file="floor.3d"/>
+				<!-- ./generator plane 100 10 floor.3d-->
+			</models>
+		</group>
+
+		<!-- TREE1 -->
+		<group>
+			<transform>
+				<translate x="13.5" y="0" z="-18"/>
+			</transform>
+
+			<group>
+				<transform>
+					<translate x="0" y="2.5" z="0"/>
+				</transform>
+
+				<color R="150" G="75" B="0"/>
+
+				<models>
+					<model file="bottomtree.3d" /> <!-- ./generator cylinder 0.4 5 15 bottomtree.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="0" y="5" z="0"/>
+				</transform>
+
+				<color R="0" G="255" B="0"/>
+
+				<models>
+					<model file="toptree.3d" /> <!-- ./generator cone 1.5 3 15 15 toptree.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="0" y="3.5" z="0"/>
+				</transform>
+
+				<color R="0" G="255" B="0"/>
+
+				<models>
+					<model file="toptree1.3d" /> <!-- ./generator cone 2.25 3 15 15 toptree1.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="0" y="2" z="0"/>
+				</transform>
+
+				<color R="0" G="255" B="0"/>
+
+				<models>
+					<model file="toptree2.3d" /> <!-- ./generator cone 3 3 15 15 toptree2.3d-->
+				</models>
+			</group>
+		</group>
+
+
+		<!-- TREE2 -->
+		<group>
+			<transform>
+				<translate x="13.5" y="0" z="-30"/>
+			</transform>
+
+			<group>
+				<transform>
+					<translate x="0" y="2.5" z="0"/>
+				</transform>
+
+				<color R="150" G="75" B="0"/>
+
+				<models>
+					<model file="bottomtree.3d" /> <!-- ./generator cylinder 0.4 5 15 bottomtree.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="0" y="5" z="0"/>
+				</transform>
+
+				<color R="0" G="255" B="0"/>
+
+				<models>
+					<model file="toptree.3d" /> <!-- ./generator cone 1.5 3 15 15 toptree.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="0" y="3.5" z="0"/>
+				</transform>
+
+				<color R="0" G="255" B="0"/>
+
+				<models>
+					<model file="toptree1.3d" /> <!-- ./generator cone 2.25 3 15 15 toptree1.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="0" y="2" z="0"/>
+				</transform>
+
+				<color R="0" G="255" B="0"/>
+
+				<models>
+					<model file="toptree2.3d" /> <!-- ./generator cone 3 3 15 15 toptree2.3d-->
+				</models>
+			</group>
+		</group>
+
+		<!-- TREE3 -->
+		<group>
+			<transform>
+				<translate x="13.5" y="0" z="-42"/>
+			</transform>
+
+			<group>
+				<transform>
+					<translate x="0" y="2.5" z="0"/>
+				</transform>
+
+				<color R="150" G="75" B="0"/>
+
+				<models>
+					<model file="bottomtree.3d" /> <!-- ./generator cylinder 0.4 5 15 bottomtree.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="0" y="5" z="0"/>
+				</transform>
+
+				<color R="0" G="255" B="0"/>
+
+				<models>
+					<model file="toptree.3d" /> <!-- ./generator cone 1.5 3 15 15 toptree.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="0" y="3.5" z="0"/>
+				</transform>
+
+				<color R="0" G="255" B="0"/>
+
+				<models>
+					<model file="toptree1.3d" /> <!-- ./generator cone 2.25 3 15 15 toptree1.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="0" y="2" z="0"/>
+				</transform>
+
+				<color R="0" G="255" B="0"/>
+
+				<models>
+					<model file="toptree2.3d" /> <!-- ./generator cone 3 3 15 15 toptree2.3d-->
+				</models>
+			</group>
+		</group>
+	
+
+		<!-- TREE4 -->
+		<group>
+			<transform>
+				<translate x="-13.5" y="0" z="-25"/>
+			</transform>
+
+			<group>
+				<transform>
+					<translate x="0" y="2.5" z="0"/>
+				</transform>
+
+				<color R="150" G="75" B="0"/>
+
+				<models>
+					<model file="bottomtree.3d" /> <!-- ./generator cylinder 0.4 5 15 bottomtree.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="0" y="5" z="0"/>
+				</transform>
+
+				<color R="0" G="255" B="0"/>
+
+				<models>
+					<model file="toptree.3d" /> <!-- ./generator cone 1.5 3 15 15 toptree.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="0" y="3.5" z="0"/>
+				</transform>
+
+				<color R="0" G="255" B="0"/>
+
+				<models>
+					<model file="toptree1.3d" /> <!-- ./generator cone 2.25 3 15 15 toptree1.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="0" y="2" z="0"/>
+				</transform>
+
+				<color R="0" G="255" B="0"/>
+
+				<models>
+					<model file="toptree2.3d" /> <!-- ./generator cone 3 3 15 15 toptree2.3d-->
+				</models>
+			</group>
+		</group>
+
+
+		<!-- TREE5 -->
+		<group>
+			<transform>
+				<translate x="-22.5" y="0" z="13.5"/>
+				<scale x="0.8" y="0.8" z="0.8"/>
+			</transform>
+
+			<group>
+				<transform>
+					<translate x="0" y="2.5" z="0"/>
+				</transform>
+
+				<color R="150" G="75" B="0"/>
+
+				<models>
+					<model file="bottomtree.3d" /> <!-- ./generator cylinder 0.4 5 15 bottomtree.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="0" y="5" z="0"/>
+				</transform>
+
+				<color R="0" G="255" B="0"/>
+
+				<models>
+					<model file="toptree.3d" /> <!-- ./generator cone 1.5 3 15 15 toptree.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="0" y="3.5" z="0"/>
+				</transform>
+
+				<color R="0" G="255" B="0"/>
+
+				<models>
+					<model file="toptree1.3d" /> <!-- ./generator cone 2.25 3 15 15 toptree1.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="0" y="2" z="0"/>
+				</transform>
+
+				<color R="0" G="255" B="0"/>
+
+				<models>
+					<model file="toptree2.3d" /> <!-- ./generator cone 3 3 15 15 toptree2.3d-->
+				</models>
+			</group>
+		</group>
+
+
+			<!-- TREE6 -->
+			<group>
+				<transform>
+					<translate x="-38.5" y="0" z="13.5"/>
+					<scale x="0.8" y="0.8" z="0.8"/>
+				</transform>
+	
+				<group>
+					<transform>
+						<translate x="0" y="2.5" z="0"/>
+					</transform>
+	
+					<color R="150" G="75" B="0"/>
+	
+					<models>
+						<model file="bottomtree.3d" /> <!-- ./generator cylinder 0.4 5 15 bottomtree.3d-->
+					</models>
+				</group>
+	
+				<group>
+					<transform>
+						<translate x="0" y="5" z="0"/>
+					</transform>
+	
+					<color R="0" G="255" B="0"/>
+	
+					<models>
+						<model file="toptree.3d" /> <!-- ./generator cone 1.5 3 15 15 toptree.3d-->
+					</models>
+				</group>
+	
+				<group>
+					<transform>
+						<translate x="0" y="3.5" z="0"/>
+					</transform>
+	
+					<color R="0" G="255" B="0"/>
+	
+					<models>
+						<model file="toptree1.3d" /> <!-- ./generator cone 2.25 3 15 15 toptree1.3d-->
+					</models>
+				</group>
+	
+				<group>
+					<transform>
+						<translate x="0" y="2" z="0"/>
+					</transform>
+	
+					<color R="0" G="255" B="0"/>
+	
+					<models>
+						<model file="toptree2.3d" /> <!-- ./generator cone 3 3 15 15 toptree2.3d-->
+					</models>
+				</group>
+			</group>
+
+		<!-- LAMP -->
+		<group>
+			<transform>
+				<translate x="-12.5" y="0" z="-12.5"/>
+				<translate x="0" y="3.5" z="0"/>
+				<rotate angle="45" x="0" y="1" z="0"/>
+			</transform>
+			<color R="192" G="192" B="192"/>
+			<models>
+				<model file="cylinder1.3d"/>
+				<!-- ./generator cylinder 0.1 7 15 cylinder1.3d-->
+			</models>
+
+			<group>
+				<transform>
+					<translate x="0" y="3.5" z="0.65"/>
+					<rotate angle="90" x="1" y="0" z="0"/>
+				</transform>
+
+				<models>
+					<model file="cylinder2.3d"/>
+					<!-- ./generator cylinder 0.1 1.5 15 cylinder2.3d-->
+				</models>
+
+				<group>
+					<transform>
+						<translate x="0" y="0.7" z="0.5"/>
+					</transform>
+					<color R="255" G="255" B="0"/>
+					<models>
+						<model file="lamp.3d"/>
+						<!-- ./generator sphere 0.5 15 15 lamp.3d-->
+					</models>
+				</group>
+			</group>
+		</group>
+
+		<!-- LAMP -->
+		<group>
+			<transform>
+				<translate x="12.5" y="0" z="12.5"/>
+				<translate x="0" y="3.5" z="0"/>
+				<rotate angle="-135" x="0" y="1" z="0"/>
+			</transform>
+			<color R="192" G="192" B="192"/>
+			<models>
+				<model file="cylinder1.3d"/>
+				<!-- ./generator cylinder 0.1 7 15 cylinder1.3d-->
+			</models>
+
+			<group>
+				<transform>
+					<translate x="0" y="3.5" z="0.65"/>
+					<rotate angle="90" x="1" y="0" z="0"/>
+				</transform>
+
+				<models>
+					<model file="cylinder2.3d"/>
+					<!-- ./generator cylinder 0.1 1.5 15 cylinder2.3d-->
+				</models>
+
+				<group>
+					<transform>
+						<translate x="0" y="0.7" z="0.5"/>
+					</transform>
+					<color R="255" G="255" B="0"/>
+					<models>
+						<model file="lamp.3d"/>
+						<!-- ./generator sphere 0.5 15 15 lamp.3d-->
+					</models>
+				</group>
+			</group>
+		</group>
+	
+
+
+		<!-- VERTICAL STREET LINES -->	
+		<group>
+			<color R="255" G="255" B="255"/>
+			<transform>
+				<translate x="-45" y="0" z="0" />
+				<scale x="1.5" y="0.1" z="0.2"/>
+			</transform>
+
+			<models>
+				<model file="line.3d"/>
+				<!-- ./generator box 2 10 line.3d-->
+			</models>
+
+			<group>
+				<transform>
+					<translate x="6" y="0" z="0"/>
+				</transform>
+
+				<models>
+					<model file="line.3d"/>
+					<!-- ./generator box 2 10 line.3d-->
+				</models>
+
+				<group>
+					<transform>
+						<translate x="6" y="0" z="0"/>
+					</transform>
+
+					<models>
+						<model file="line.3d"/>
+						<!-- ./generator box 2 10 line.3d-->
+					</models>
+
+					<group>
+						<transform>
+							<translate x="6" y="0" z="0"/>
+						</transform>
+
+						<models>
+							<model file="line.3d"/>
+							<!-- ./generator box 2 10 line.3d-->
+						</models>
+
+						<group>
+							<transform>
+								<translate x="6" y="0" z="0"/>
+							</transform>
+
+							<models>
+								<model file="line.3d"/>
+								<!-- ./generator box 2 10 line.3d-->
+							</models>
+
+							<group>
+								<transform>
+									<translate x="6" y="0" z="0"/>
+								</transform>
+
+								<models>
+									<model file="line.3d"/>
+									<!-- ./generator box 2 10 line.3d-->
+								</models>
+
+								<group>
+									<transform>
+										<translate x="6" y="0" z="0"/>
+									</transform>
+
+									<models>
+										<model file="line.3d"/>
+										<!-- ./generator box 2 10 line.3d-->
+									</models>
+
+									<group>
+										<transform>
+											<translate x="6" y="0" z="0"/>
+										</transform>
+
+										<models>
+											<model file="line.3d"/>
+											<!-- ./generator box 2 10 line.3d-->
+										</models>
+
+										<group>
+											<transform>
+												<translate x="6" y="0" z="0"/>
+											</transform>
+
+											<models>
+												<model file="line.3d"/>
+												<!-- ./generator box 2 10 line.3d-->
+											</models>
+
+											<group>
+												<transform>
+													<translate x="6" y="0" z="0"/>
+												</transform>
+
+												<models>
+													<model file="line.3d"/>
+													<!-- ./generator box 2 10 line.3d-->
+												</models>
+
+												<group>
+													<transform>
+														<translate x="6" y="0" z="0"/>
+													</transform>
+
+													<models>
+														<model file="line.3d"/>
+														<!-- ./generator box 2 10 line.3d-->
+													</models>
+												</group>
+											</group>
+										</group>
+									</group>
+								</group>
+							</group>
+						</group>
+					</group>
+				</group>
+			</group>
+		</group>
+
+		<!-- HORIZONTAL STREET LINES -->
+		<group>
+			<color R="255" G="255" B="255"/>
+			<transform>
+				<rotate angle="90" x="0" y="1" z="0"/>
+				<translate x="-45" y="0" z="0" />
+				<scale x="1.5" y="0.1" z="0.2"/>
+			</transform>
+
+			<models>
+				<model file="line.3d"/>
+				<!-- ./generator box 2 10 line.3d-->
+			</models>
+
+			<group>
+				<transform>
+					<translate x="6" y="0" z="0"/>
+				</transform>
+
+				<models>
+					<model file="line.3d"/>
+					<!-- ./generator box 2 10 line.3d-->
+				</models>
+
+				<group>
+					<transform>
+						<translate x="6" y="0" z="0"/>
+					</transform>
+
+					<models>
+						<model file="line.3d"/>
+						<!-- ./generator box 2 10 line.3d-->
+					</models>
+
+					<group>
+						<transform>
+							<translate x="6" y="0" z="0"/>
+						</transform>
+
+						<models>
+							<model file="line.3d"/>
+							<!-- ./generator box 2 10 line.3d-->
+						</models>
+
+						<group>
+							<transform>
+								<translate x="6" y="0" z="0"/>
+							</transform>
+
+							<models>
+								<model file="line.3d"/>
+								<!-- ./generator box 2 10 line.3d-->
+							</models>
+
+							<group>
+								<transform>
+									<translate x="6" y="0" z="0"/>
+								</transform>
+
+								<models>
+									<model file="line.3d"/>
+									<!-- ./generator box 2 10 line.3d-->
+								</models>
+
+								<group>
+									<transform>
+										<translate x="6" y="0" z="0"/>
+									</transform>
+
+									<models>
+										<model file="line.3d"/>
+										<!-- ./generator box 2 10 line.3d-->
+									</models>
+
+									<group>
+										<transform>
+											<translate x="6" y="0" z="0"/>
+										</transform>
+
+										<models>
+											<model file="line.3d"/>
+											<!-- ./generator box 2 10 line.3d-->
+										</models>
+
+										<group>
+											<transform>
+												<translate x="6" y="0" z="0"/>
+											</transform>
+
+											<models>
+												<model file="line.3d"/>
+												<!-- ./generator box 2 10 line.3d-->
+											</models>
+
+											<group>
+												<transform>
+													<translate x="6" y="0" z="0"/>
+												</transform>
+
+												<models>
+													<model file="line.3d"/>
+													<!-- ./generator box 2 10 line.3d-->
+												</models>
+
+												<group>
+													<transform>
+														<translate x="6" y="0" z="0"/>
+													</transform>
+
+													<models>
+														<model file="line.3d"/>
+														<!-- ./generator box 2 10 line.3d-->
+													</models>
+												</group>
+											</group>
+										</group>
+									</group>
+								</group>
+							</group>
+						</group>
+					</group>
+				</group>
+			</group>
+		</group>
+		
+		<!-- WALKWAYS -->
+		<group>
+			<color R="163" G="153" B="156"/>
+
+			<group>
+				<transform>
+					<translate x="30" y="0" z="30"/>
+					<translate x="0" y="0.15" z="0"/>
+					<scale x="1" z="1" y="0.005"/>
+				</transform>
+				<models>
+					<model file="walkway.3d"/>
+					<!-- ./generator box 40 10 walkway.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="30" y="0" z="-30"/>
+					<translate x="0" y="0.15" z="0"/>
+					<scale x="1" z="1" y="0.005"/>
+				</transform>
+				<models>
+					<model file="walkway.3d"/>
+					<!-- ./generator box 40 10 walkway.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="-30" y="0" z="-30"/>
+					<translate x="0" y="0.15" z="0"/>
+					<scale x="1" z="1" y="0.005"/>
+				</transform>
+				<models>
+					<model file="walkway.3d"/>
+					<!-- ./generator box 40 10 walkway.3d-->
+				</models>
+			</group>
+
+			<group>
+				<transform>
+					<translate x="-30" y="0" z="30"/>
+					<translate x="0" y="0.15" z="0"/>
+					<scale x="1" z="1" y="0.005"/>
+				</transform>
+				<models>
+					<model file="walkway.3d"/>
+					<!-- ./generator box 40 10 walkway.3d-->
+				</models>
+			</group>
+		</group>
+
+		<!-- BUILDINGS -->
+		<group>
+			
+			<!-- BUILDING -->
+			<group>
+				<transform>
+					<translate x="30" y="0" z="-30"/>
+					<rotate angle="-90" x="0" y="1" z="0"/>
+				</transform>
+				
+				<!-- ESTRUTURA -->
+				<group>
+					<color R="184" G="186" B="186"/>
+					<transform>
+						<scale x="1" y="2.5" z="1"/>
+						<translate x="0" y="12.5" z="0"/>
+					</transform>
+					<models>
+						<model file="building.3d"/>
+						<!-- ./generator box 25 10 building.3d-->
+					</models>
+
+
+				</group>
+
+				<!-- SANCA -->
+				<group>
+					<color R="84" G="84" B="84"/>
+					<transform>
+						<translate x="0" y="15.625" z="0"/>
+						<scale x="1" y="0.05" z="1"/>
+					</transform>
+
+					<models>
+						<model file="sanca.3d"/>
+						<!-- ./generator box 27 10 sanca.3d-->
+					</models>
+				</group>
+
+
+				<!-- SANCA -->
+				<group>
+					<color R="84" G="84" B="84"/>
+					<transform>
+						<translate x="0" y="31.25" z="0"/>
+						<scale x="1" y="0.05" z="1"/>
+					</transform>
+
+					<models>
+						<model file="sanca.3d"/>
+						<!-- ./generator box 27 10 sanca.3d-->
+					</models>
+				</group>
+
+
+				<!-- SANCA -->
+				<group>
+					<color R="84" G="84" B="84"/>
+					<transform>
+						<translate x="0" y="46.875" z="0"/>
+						<scale x="1" y="0.05" z="1"/>
+					</transform>
+
+					<models>
+						<model file="sanca.3d"/>
+						<!-- ./generator box 27 10 sanca.3d-->
+					</models>
+				</group>
+
+				<!-- SANCA -->
+				<group>
+					<color R="84" G="84" B="84"/>
+					<transform>
+						<translate x="0" y="62.5" z="0"/>
+						<scale x="1" y="0.05" z="1"/>
+					</transform>
+
+					<models>
+						<model file="sanca.3d"/>
+						<!-- ./generator box 27 10 sanca.3d-->
+					</models>
+				</group>
+
+				<!-- DOOR -->
+				<group>
+					<transform>
+						<scale x="0.1" y="2.2" z="1.5"/>
+						<translate x="125" y="2.5" z="0"/>
+					</transform>
+
+					<color R="124" G="71" B="0"/>
+
+					<models>
+						<model file="door.3d"/>
+						<!-- ./generator box 5 10 door.3d-->
+					</models>
+				</group>
+
+				<!-- 1º FACHADA -->
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<translate x="12.5" y="17.625" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<translate x="12.5" y="33.25" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<translate x="12.5" y="48.875" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+				</group>
+
+				<!-- 2º FACHADA -->
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="90" x="0" y="1" z="0"/>
+						<translate x="12.5" y="17.625" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="90" x="0" y="1" z="0"/>
+						<translate x="12.5" y="33.25" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="90" x="0" y="1" z="0"/>
+						<translate x="12.5" y="48.875" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+				</group>
+
+				<!-- 3º FACHADA -->
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="180" x="0" y="1" z="0"/>
+						<translate x="12.5" y="17.625" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="180" x="0" y="1" z="0"/>
+						<translate x="12.5" y="33.25" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="180" x="0" y="1" z="0"/>
+						<translate x="12.5" y="48.875" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+				</group>
+
+				<!-- 4º FACHADA -->
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="270" x="0" y="1" z="0"/>
+						<translate x="12.5" y="17.625" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="270" x="0" y="1" z="0"/>
+						<translate x="12.5" y="33.25" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="270" x="0" y="1" z="0"/>
+						<translate x="12.5" y="48.875" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+				</group>
+
+			</group>
+
+			<!-- BUILDING -->
+			<group>
+				<transform>
+					<translate x="-30" y="0" z="-30"/>
+					<rotate angle="-90" x="0" y="1" z="0"/>
+				</transform>
+
+				<!-- ESTRUTURA -->
+				<group>
+					<color R="184" G="186" B="186"/>
+					<transform>
+						<scale x="1" y="2.5" z="1"/>
+						<translate x="0" y="12.5" z="0"/>
+					</transform>
+					<models>
+						<model file="building.3d"/>
+						<!-- ./generator box 25 10 building.3d-->
+					</models>
+
+
+				</group>
+
+				<!-- SANCA -->
+				<group>
+					<color R="84" G="84" B="84"/>
+					<transform>
+						<translate x="0" y="15.625" z="0"/>
+						<scale x="1" y="0.05" z="1"/>
+					</transform>
+
+					<models>
+						<model file="sanca.3d"/>
+						<!-- ./generator box 27 10 sanca.3d-->
+					</models>
+				</group>
+
+
+				<!-- SANCA -->
+				<group>
+					<color R="84" G="84" B="84"/>
+					<transform>
+						<translate x="0" y="31.25" z="0"/>
+						<scale x="1" y="0.05" z="1"/>
+					</transform>
+
+					<models>
+						<model file="sanca.3d"/>
+						<!-- ./generator box 27 10 sanca.3d-->
+					</models>
+				</group>
+
+
+				<!-- SANCA -->
+				<group>
+					<color R="84" G="84" B="84"/>
+					<transform>
+						<translate x="0" y="46.875" z="0"/>
+						<scale x="1" y="0.05" z="1"/>
+					</transform>
+
+					<models>
+						<model file="sanca.3d"/>
+						<!-- ./generator box 27 10 sanca.3d-->
+					</models>
+				</group>
+
+				<!-- SANCA -->
+				<group>
+					<color R="84" G="84" B="84"/>
+					<transform>
+						<translate x="0" y="62.5" z="0"/>
+						<scale x="1" y="0.05" z="1"/>
+					</transform>
+
+					<models>
+						<model file="sanca.3d"/>
+						<!-- ./generator box 27 10 sanca.3d-->
+					</models>
+				</group>
+
+				<!-- DOOR -->
+				<group>
+					<transform>
+						<scale x="0.1" y="2.2" z="1.5"/>
+						<translate x="125" y="2.5" z="0"/>
+					</transform>
+
+					<color R="124" G="71" B="0"/>
+
+					<models>
+						<model file="door.3d"/>
+						<!-- ./generator box 5 10 door.3d-->
+					</models>
+				</group>
+
+				<!-- 1º FACHADA -->
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<translate x="12.5" y="17.625" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<translate x="12.5" y="33.25" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<translate x="12.5" y="48.875" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+				</group>
+
+				<!-- 2º FACHADA -->
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="90" x="0" y="1" z="0"/>
+						<translate x="12.5" y="17.625" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="90" x="0" y="1" z="0"/>
+						<translate x="12.5" y="33.25" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="90" x="0" y="1" z="0"/>
+						<translate x="12.5" y="48.875" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+				</group>
+
+				<!-- 3º FACHADA -->
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="180" x="0" y="1" z="0"/>
+						<translate x="12.5" y="17.625" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="180" x="0" y="1" z="0"/>
+						<translate x="12.5" y="33.25" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="180" x="0" y="1" z="0"/>
+						<translate x="12.5" y="48.875" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+				</group>
+
+				<!-- 4º FACHADA -->
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="270" x="0" y="1" z="0"/>
+						<translate x="12.5" y="17.625" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="270" x="0" y="1" z="0"/>
+						<translate x="12.5" y="33.25" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="270" x="0" y="1" z="0"/>
+						<translate x="12.5" y="48.875" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+				</group>
+
+			</group>
+
+			<!-- BUILDING -->
+			<group>
+				<transform>
+					<translate x="30" y="0" z="30"/>
+					<rotate angle="90" x="0" y="1" z="0"/>
+				</transform>
+
+				<!-- ESTRUTURA -->
+				<group>
+					<color R="184" G="186" B="186"/>
+					<transform>
+						<scale x="1" y="2.5" z="1"/>
+						<translate x="0" y="12.5" z="0"/>
+					</transform>
+					<models>
+						<model file="building.3d"/>
+						<!-- ./generator box 25 10 building.3d-->
+					</models>
+
+
+				</group>
+
+				<!-- SANCA -->
+				<group>
+					<color R="84" G="84" B="84"/>
+					<transform>
+						<translate x="0" y="15.625" z="0"/>
+						<scale x="1" y="0.05" z="1"/>
+					</transform>
+
+					<models>
+						<model file="sanca.3d"/>
+						<!-- ./generator box 27 10 sanca.3d-->
+					</models>
+				</group>
+
+
+				<!-- SANCA -->
+				<group>
+					<color R="84" G="84" B="84"/>
+					<transform>
+						<translate x="0" y="31.25" z="0"/>
+						<scale x="1" y="0.05" z="1"/>
+					</transform>
+
+					<models>
+						<model file="sanca.3d"/>
+						<!-- ./generator box 27 10 sanca.3d-->
+					</models>
+				</group>
+
+
+				<!-- SANCA -->
+				<group>
+					<color R="84" G="84" B="84"/>
+					<transform>
+						<translate x="0" y="46.875" z="0"/>
+						<scale x="1" y="0.05" z="1"/>
+					</transform>
+
+					<models>
+						<model file="sanca.3d"/>
+						<!-- ./generator box 27 10 sanca.3d-->
+					</models>
+				</group>
+
+				<!-- SANCA -->
+				<group>
+					<color R="84" G="84" B="84"/>
+					<transform>
+						<translate x="0" y="62.5" z="0"/>
+						<scale x="1" y="0.05" z="1"/>
+					</transform>
+
+					<models>
+						<model file="sanca.3d"/>
+						<!-- ./generator box 27 10 sanca.3d-->
+					</models>
+				</group>
+
+				<!-- DOOR -->
+				<group>
+					<transform>
+						<scale x="0.1" y="2.2" z="1.5"/>
+						<translate x="125" y="2.5" z="0"/>
+					</transform>
+
+					<color R="124" G="71" B="0"/>
+
+					<models>
+						<model file="door.3d"/>
+						<!-- ./generator box 5 10 door.3d-->
+					</models>
+				</group>
+
+				<!-- 1º FACHADA -->
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<translate x="12.5" y="17.625" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<translate x="12.5" y="33.25" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<translate x="12.5" y="48.875" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+				</group>
+
+				<!-- 2º FACHADA -->
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="90" x="0" y="1" z="0"/>
+						<translate x="12.5" y="17.625" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="90" x="0" y="1" z="0"/>
+						<translate x="12.5" y="33.25" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="90" x="0" y="1" z="0"/>
+						<translate x="12.5" y="48.875" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+				</group>
+
+				<!-- 3º FACHADA -->
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="180" x="0" y="1" z="0"/>
+						<translate x="12.5" y="17.625" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="180" x="0" y="1" z="0"/>
+						<translate x="12.5" y="33.25" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="180" x="0" y="1" z="0"/>
+						<translate x="12.5" y="48.875" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+				</group>
+
+				<!-- 4º FACHADA -->
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="270" x="0" y="1" z="0"/>
+						<translate x="12.5" y="17.625" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="270" x="0" y="1" z="0"/>
+						<translate x="12.5" y="33.25" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="270" x="0" y="1" z="0"/>
+						<translate x="12.5" y="48.875" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+				</group>
+
+			</group>
+
+			<!-- BUILDING -->
+			<group>
+				<transform>
+					<translate x="-30" y="0" z="30"/>
+					<rotate angle="90" x="0" y="1" z="0"/>
+				</transform>
+				
+				<!-- ESTRUTURA -->
+				<group>
+					<color R="184" G="186" B="186"/>
+					<transform>
+						<scale x="1" y="2.5" z="1"/>
+						<translate x="0" y="12.5" z="0"/>
+					</transform>
+					<models>
+						<model file="building.3d"/>
+						<!-- ./generator box 25 10 building.3d-->
+					</models>
+
+
+				</group>
+
+				<!-- SANCA -->
+				<group>
+					<color R="84" G="84" B="84"/>
+					<transform>
+						<translate x="0" y="15.625" z="0"/>
+						<scale x="1" y="0.05" z="1"/>
+					</transform>
+
+					<models>
+						<model file="sanca.3d"/>
+						<!-- ./generator box 27 10 sanca.3d-->
+					</models>
+				</group>
+
+
+				<!-- SANCA -->
+				<group>
+					<color R="84" G="84" B="84"/>
+					<transform>
+						<translate x="0" y="31.25" z="0"/>
+						<scale x="1" y="0.05" z="1"/>
+					</transform>
+
+					<models>
+						<model file="sanca.3d"/>
+						<!-- ./generator box 27 10 sanca.3d-->
+					</models>
+				</group>
+
+
+				<!-- SANCA -->
+				<group>
+					<color R="84" G="84" B="84"/>
+					<transform>
+						<translate x="0" y="46.875" z="0"/>
+						<scale x="1" y="0.05" z="1"/>
+					</transform>
+
+					<models>
+						<model file="sanca.3d"/>
+						<!-- ./generator box 27 10 sanca.3d-->
+					</models>
+				</group>
+
+				<!-- SANCA -->
+				<group>
+					<color R="84" G="84" B="84"/>
+					<transform>
+						<translate x="0" y="62.5" z="0"/>
+						<scale x="1" y="0.05" z="1"/>
+					</transform>
+
+					<models>
+						<model file="sanca.3d"/>
+						<!-- ./generator box 27 10 sanca.3d-->
+					</models>
+				</group>
+
+				<!-- DOOR -->
+				<group>
+					<transform>
+						<scale x="0.1" y="2.2" z="1.5"/>
+						<translate x="125" y="2.5" z="0"/>
+					</transform>
+
+					<color R="124" G="71" B="0"/>
+
+					<models>
+						<model file="door.3d"/>
+						<!-- ./generator box 5 10 door.3d-->
+					</models>
+				</group>
+
+				<!-- 1º FACHADA -->
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<translate x="12.5" y="17.625" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<translate x="12.5" y="33.25" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<translate x="12.5" y="48.875" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+				</group>
+
+				<!-- 2º FACHADA -->
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="90" x="0" y="1" z="0"/>
+						<translate x="12.5" y="17.625" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="90" x="0" y="1" z="0"/>
+						<translate x="12.5" y="33.25" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="90" x="0" y="1" z="0"/>
+						<translate x="12.5" y="48.875" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+				</group>
+
+				<!-- 3º FACHADA -->
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="180" x="0" y="1" z="0"/>
+						<translate x="12.5" y="17.625" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="180" x="0" y="1" z="0"/>
+						<translate x="12.5" y="33.25" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="180" x="0" y="1" z="0"/>
+						<translate x="12.5" y="48.875" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+				</group>
+
+				<!-- 4º FACHADA -->
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="270" x="0" y="1" z="0"/>
+						<translate x="12.5" y="17.625" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="270" x="0" y="1" z="0"/>
+						<translate x="12.5" y="33.25" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+				</group>
+
+				<!-- 3 JANELAS -->
+				<group>
+					<transform>
+						<rotate angle="270" x="0" y="1" z="0"/>
+						<translate x="12.5" y="48.875" z="0"/>
+					</transform>
+
+					<color R="0" G="0" B="26"/>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="0"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="-7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+					<group>
+						<transform>
+							<scale x="0.1" y="2.2" z="1"/>
+							<translate x="0" y="2.5" z="7.5"/>
+						</transform>
+
+						<models>
+							<model file="window.3d"/>
+							<!-- ./generator box 5 10 window.3d-->
+						</models>
+					</group>
+
+				</group>
+
+			</group>
+
+		</group>
+	</group>
+</world>
