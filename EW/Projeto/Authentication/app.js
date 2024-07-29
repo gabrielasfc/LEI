@@ -34,8 +34,8 @@ passport.deserializeUser(User.deserializeUser());
 passport.use(
   new FacebookStrategy(
     {
-      clientID: "",
-      clientSecret: "",
+      clientID: process.env.FACEBOOK_CLIENT_ID,
+      clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
       callbackURL: "http://localhost:8072/login/facebook/callback",
     },
     function (accessToken, refreshToken, profile, cb) {
@@ -78,9 +78,8 @@ passport.use(
 passport.use(
   new GoogleStrategy(
     {
-      clientID:
-        "",
-      clientSecret: "",
+      clientID: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
       callbackURL: "http://localhost:8072/login/google/callback",
     },
     function (accessToken, refreshToken, profile, cb) {
